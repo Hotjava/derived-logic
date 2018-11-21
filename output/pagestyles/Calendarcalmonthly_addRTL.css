@@ -1,0 +1,134 @@
+body.page-Calendarcalmonthly_add
+{
+padding-top:10px; padding-left:10px;
+}
+.page-Calendarcalmonthly_add .rnr-c-fields,
+  .rnr-pagewrapper .page-Calendarcalmonthly_add .rnr-c-fields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalmonthly_add .rnr-c-fields
+{
+margin-bottom:5px;
+}
+.page-Calendarcalmonthly_add .rnr-c-fields,
+  .rnr-pagewrapper .page-Calendarcalmonthly_add .rnr-c-fields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalmonthly_add .rnr-c-fields
+{
+min-width: 500px; display:inline-block
+}
+.page-Calendarcalmonthly_add .rnr-cw-fields,
+  .rnr-pagewrapper .page-Calendarcalmonthly_add .rnr-cw-fields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalmonthly_add .rnr-cw-fields
+{
+text-align: left;
+}
+.page-Calendarcalmonthly_add .rnr-b-addheader,
+  .rnr-pagewrapper .page-Calendarcalmonthly_add .rnr-b-addheader,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalmonthly_add .rnr-b-addheader
+{
+white-space: nowrap;
+}
+.page-Calendarcalmonthly_add .rnr-b-addheader,
+  .rnr-pagewrapper .page-Calendarcalmonthly_add .rnr-b-addheader,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalmonthly_add .rnr-b-addheader
+{
+text-align: right;
+}
+.page-Calendarcalmonthly_add .rnr-b-addheader > *,
+  .rnr-pagewrapper .page-Calendarcalmonthly_add .rnr-b-addheader > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalmonthly_add .rnr-b-addheader > *
+{
+font-size: 120%;
+}
+.page-Calendarcalmonthly_add .rnr-b-message,
+  .rnr-pagewrapper .page-Calendarcalmonthly_add .rnr-b-message,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalmonthly_add .rnr-b-message
+{
+white-space: nowrap;
+}
+.page-Calendarcalmonthly_add .rnr-b-message,
+  .rnr-pagewrapper .page-Calendarcalmonthly_add .rnr-b-message,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalmonthly_add .rnr-b-message
+{
+text-align: right;
+}
+.page-Calendarcalmonthly_add .rnr-b-message > *,
+  .rnr-pagewrapper .page-Calendarcalmonthly_add .rnr-b-message > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalmonthly_add .rnr-b-message > *
+{
+
+}
+.page-Calendarcalmonthly_add .rnr-b-addfields,
+  .rnr-pagewrapper .page-Calendarcalmonthly_add .rnr-b-addfields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalmonthly_add .rnr-b-addfields
+{
+white-space: nowrap;
+}
+.page-Calendarcalmonthly_add .rnr-b-addfields,
+  .rnr-pagewrapper .page-Calendarcalmonthly_add .rnr-b-addfields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalmonthly_add .rnr-b-addfields
+{
+text-align: right;
+}
+.page-Calendarcalmonthly_add .rnr-b-addfields > *,
+  .rnr-pagewrapper .page-Calendarcalmonthly_add .rnr-b-addfields > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalmonthly_add .rnr-b-addfields > *
+{
+
+}
+.page-Calendarcalmonthly_add .rnr-b-addbuttons,
+  .rnr-pagewrapper .page-Calendarcalmonthly_add .rnr-b-addbuttons,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalmonthly_add .rnr-b-addbuttons
+{
+white-space: nowrap;
+}
+.page-Calendarcalmonthly_add .rnr-b-addbuttons,
+  .rnr-pagewrapper .page-Calendarcalmonthly_add .rnr-b-addbuttons,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalmonthly_add .rnr-b-addbuttons
+{
+text-align: right;
+}
+.page-Calendarcalmonthly_add .rnr-b-addbuttons > *,
+  .rnr-pagewrapper .page-Calendarcalmonthly_add .rnr-b-addbuttons > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalmonthly_add .rnr-b-addbuttons > *
+{
+
+}
+.page-Calendarcalmonthly_add .rnr-c-details,
+  .rnr-pagewrapper .page-Calendarcalmonthly_add .rnr-c-details,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalmonthly_add .rnr-c-details
+{
+margin-bottom:5px;
+}
+.page-Calendarcalmonthly_add .rnr-c-details,
+  .rnr-pagewrapper .page-Calendarcalmonthly_add .rnr-c-details,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalmonthly_add .rnr-c-details
+{
+min-width: 500px; display:inline-block
+}
+.page-Calendarcalmonthly_add .rnr-cw-details,
+  .rnr-pagewrapper .page-Calendarcalmonthly_add .rnr-cw-details,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalmonthly_add .rnr-cw-details
+{
+text-align: left;
+}
+.page-Calendarcalmonthly_add .rnr-b-adddetails,
+  .rnr-pagewrapper .page-Calendarcalmonthly_add .rnr-b-adddetails,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalmonthly_add .rnr-b-adddetails
+{
+white-space: nowrap;
+}
+.page-Calendarcalmonthly_add .rnr-b-adddetails,
+  .rnr-pagewrapper .page-Calendarcalmonthly_add .rnr-b-adddetails,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalmonthly_add .rnr-b-adddetails
+{
+text-align: right;
+}
+.page-Calendarcalmonthly_add .rnr-b-adddetails > *,
+  .rnr-pagewrapper .page-Calendarcalmonthly_add .rnr-b-adddetails > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalmonthly_add .rnr-b-adddetails > *
+{
+
+}
+body.page-Calendarcalmonthly_add .rnr-top
+{
+padding-right: 5px;
+}

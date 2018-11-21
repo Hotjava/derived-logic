@@ -1,0 +1,43 @@
+<style>
+	.rnr-b-calweekly_list{width:99%};
+</style>
+<table style="width:100%;min-width:900px" align=center class="rnr-c">
+	##repeat 7 @i##
+	<tr>
+		<td>
+		{BEGIN row00##@i##Datevisible}
+			<table height=100 width=100% cellpadding=3 {$row00##@i##TableNowvalue} class="rnr-c">
+				<tr>
+					<td height=20 align=right class="">
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr class="rnr-row style3">
+								##if @TABLE.bAdd##
+								{BEGIN allow_add}
+								<td align=left class="rnr-cc rnr-cc1" style="width:100px">
+									&nbsp;&nbsp;<a {$row00AddHideW##@i##value} href="" id=addButton##@i## {$addAttr##@i##}>##message ADD_NEW##</a>
+								</td>
+								{END allow_add}
+								##endif##	
+								<td align=right>
+									<a href="caldaily_list.##@ext##?{$row00Dateadd##@i##value}">
+									{$row00##@i##Datevalue}
+									</a>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr >
+					<td align=left valign=top id="add{$row00##@i##sDayvalue}" class="rnr-cc" {$row00##@i##Daystyle}>
+						{$row00##@i##Dayvalue}
+					</td>
+				</tr>
+				<tr class="rnr-row style1">
+					<td height=5 >&nbsp;</td>
+				</tr>
+			</table>
+		{END row00##@i##Datevisible}
+		</td>
+	</tr>
+	##endrepeat##
+</table>

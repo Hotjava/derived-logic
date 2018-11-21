@@ -1,0 +1,56 @@
+<span class="rnr-buttons-group">
+##if @TABLE.bPrinterFriendly || Fields[bAdvancedSearchPage && bAdvancedSearch].len || @TABLE.bExportTo && !IsReport(@TABLE) || @TABLE.bImport ##
+{BEGIN moreButtons}
+<a class="rnr-button" id="extraButtonsToggler{$id}" href="#">##message MORE##...</a>
+<ul class="rnr-list rnr-buttons-group" id="extraButtonsGroup{$id}">
+##if @TABLE.bPrinterFriendly##
+
+<li>
+	<a target="_blank" href="##@TABLE.strShortTableName h##_print.##@ext##?{$crosstable_attrs}" class="rnr-button link" {$printlink_attrs}>##if IsReport(@TABLE)####message PRINTER_FRIENDLY####else####message PRINT_THIS_PAGE####endif##</a>
+</li>
+
+##if @TABLE.bPrintAll##
+{BEGIN printall_link}
+<li>
+	<a target="_blank" href="##@TABLE.strShortTableName h##_print.##@ext##?all=1&amp;{$crosstable_attrs}" class="rnr-button link" {$printalllink_attrs}>##if IsReport(@TABLE)####message PRINT_WHOLE_REPORT####else####message PRINT_ALL_PAGES####endif##</a>
+</li>
+{END printall_link}
+##endif##
+##endif##
+
+##if Fields[bAdvancedSearchPage && bAdvancedSearch].len##
+{BEGIN asearch_link}
+<li>
+	<a href="##@TABLE.strShortTableName h##_search.##@ext##" class="rnr-button link" {$advsearchlink_attrs}>##message ADVANCED_SEARCH##</a>
+</li>
+{END asearch_link}
+##endif##
+
+##if @TABLE.bExportTo && !IsReport(@TABLE)##
+{BEGIN export_link}
+<li>
+	<a target="_blank" href="##@TABLE.strShortTableName h##_export.##@ext##" class="rnr-button link" {$exportlink_attrs}>##message EXPORT_RESULTS##</a>
+</li>
+{END export_link}
+##endif##
+
+##if @TABLE.bImport##
+{BEGIN import_link}
+<li>
+	<a href="##@TABLE.strShortTableName h##_import.##@ext##?{$crosstable_attrs}" class="rnr-button link" {$importlink_attrs}>##message IMPORT##</a>
+</li>
+{END import_link}
+##endif##
+</ul>
+{END moreButtons}
+##endif##
+##if @TABLE.bPrinterFriendly && IsReport(@TABLE)##
+{BEGIN export_link}
+	<a href="##@TABLE.strShortTableName h##_print.##@ext##?all=1&amp;format=excel" {$excellink_attrs}><img alt="##message EXPORT_TO_EXCEL##" src="images/excel.gif" border="0"></a>
+	<a href="##@TABLE.strShortTableName h##_print.##@ext##?all=1&amp;format=word" {$wordlink_attrs}><img alt="##message EXPORT_TO_WORD##" src="images/word.gif" border="0" ></a>
+	##if @ext=="php" && (@TABLE.bViewPagePDF || @TABLE.bPrinterPagePDF)##
+	<a target="_blank" href="##@TABLE.strShortTableName h##_print.##@ext##?all=1&amp;format=pdf" {$pdflink_attrs}><img alt="##message EXPORT_TO_PDF##" src="images/pdf.gif" border="0"></a>
+	##endif##
+{END export_link}
+##endif##
+</span>

@@ -1,0 +1,170 @@
+body.page-preview
+{
+padding-top:10px; padding-left:10px;
+}
+.page-preview .rnr-c-grid .rnr-cs.rnr-cs.rnr-cs.rnr-cs.rnr-cs.rnr-cs,
+  .rnr-pagewrapper .page-preview .rnr-c-grid .rnr-cs.rnr-cs.rnr-cs.rnr-cs.rnr-cs.rnr-cs,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-c-grid .rnr-cs.rnr-cs.rnr-cs.rnr-cs.rnr-cs.rnr-cs
+{
+width: 10px;
+}
+.page-preview .rnr-c-grid .rnr-rs,
+  .rnr-pagewrapper .page-preview .rnr-c-grid .rnr-rs,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-c-grid .rnr-rs
+{
+height: 10px;
+}
+.page-preview .rnr-c-grid,
+  .rnr-pagewrapper .page-preview .rnr-c-grid,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-c-grid
+{
+margin-bottom:5px;
+}
+.page-preview .rnr-c-grid,
+  .rnr-pagewrapper .page-preview .rnr-c-grid,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-c-grid
+{
+min-width: 800px;
+}
+.page-preview .rnr-b-calyearly_list,
+  .rnr-pagewrapper .page-preview .rnr-b-calyearly_list,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-calyearly_list
+{
+white-space: nowrap;
+}
+.page-preview .rnr-b-calyearly_list,
+  .rnr-pagewrapper .page-preview .rnr-b-calyearly_list,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-calyearly_list
+{
+text-align: right;
+}
+.page-preview .rnr-b-calyearly_list > *,
+  .rnr-pagewrapper .page-preview .rnr-b-calyearly_list > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-calyearly_list > *
+{
+
+}
+body.page-preview  > * > * > .rnr-center
+{
+width:100%;
+}
+body.page-preview .rnr-center
+{
+padding-right: 5px;
+}
+.page-preview .rnr-c-add_css,
+  .rnr-pagewrapper .page-preview .rnr-c-add_css,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-c-add_css
+{
+margin-bottom:5px;
+}
+.page-preview .rnr-b-add_css,
+  .rnr-pagewrapper .page-preview .rnr-b-add_css,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-add_css
+{
+white-space: nowrap;
+}
+.page-preview .rnr-b-add_css,
+  .rnr-pagewrapper .page-preview .rnr-b-add_css,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-add_css
+{
+text-align: right;
+}
+.page-preview .rnr-b-add_css > *,
+  .rnr-pagewrapper .page-preview .rnr-b-add_css > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-add_css > *
+{
+
+}
+.page-preview .rnr-c-hmenu,
+  .rnr-pagewrapper .page-preview .rnr-c-hmenu,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-c-hmenu
+{
+margin-bottom:0px;
+}
+.page-preview .rnr-c-hmenu,
+  .rnr-pagewrapper .page-preview .rnr-c-hmenu,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-c-hmenu
+{
+min-width: 100px;
+}
+.page-preview .rnr-b-calyearly_nav,
+  .rnr-pagewrapper .page-preview .rnr-b-calyearly_nav,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-calyearly_nav
+{
+white-space: nowrap;
+}
+.page-preview .rnr-b-calyearly_nav,
+  .rnr-pagewrapper .page-preview .rnr-b-calyearly_nav,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-calyearly_nav
+{
+text-align: right;
+}
+.page-preview .rnr-b-calyearly_nav > *,
+  .rnr-pagewrapper .page-preview .rnr-b-calyearly_nav > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-calyearly_nav > *
+{
+
+}
+.page-preview .rnr-b-hmenu,
+  .rnr-pagewrapper .page-preview .rnr-b-hmenu,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-hmenu
+{
+white-space: nowrap;
+}
+.page-preview .rnr-b-hmenu,
+  .rnr-pagewrapper .page-preview .rnr-b-hmenu,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-hmenu
+{
+text-align: left;
+}
+.page-preview .rnr-b-hmenu > *,
+  .rnr-pagewrapper .page-preview .rnr-b-hmenu > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-hmenu > *
+{
+
+}
+.page-preview .rnr-b-languages,
+  .rnr-pagewrapper .page-preview .rnr-b-languages,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-languages
+{
+white-space: nowrap;
+}
+.page-preview .rnr-b-languages,
+  .rnr-pagewrapper .page-preview .rnr-b-languages,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-languages
+{
+text-align: left;
+}
+.page-preview .rnr-b-languages > *,
+  .rnr-pagewrapper .page-preview .rnr-b-languages > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-languages > *
+{
+
+}
+.page-preview .rnr-b-loggedas,
+  .rnr-pagewrapper .page-preview .rnr-b-loggedas,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-loggedas
+{
+white-space: nowrap;
+}
+.page-preview .rnr-b-loggedas,
+  .rnr-pagewrapper .page-preview .rnr-b-loggedas,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-loggedas
+{
+text-align: left;
+}
+.page-preview .rnr-b-loggedas > *,
+  .rnr-pagewrapper .page-preview .rnr-b-loggedas > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-loggedas > *
+{
+
+}
+body.page-preview .rnr-toptable
+{
+width:100%;
+}
+body.page-preview .rnr-top
+{
+padding-right: 5px;
+}

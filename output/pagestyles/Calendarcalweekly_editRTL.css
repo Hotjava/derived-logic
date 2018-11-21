@@ -1,0 +1,134 @@
+body.page-Calendarcalweekly_edit
+{
+padding-top:10px; padding-left:10px;
+}
+.page-Calendarcalweekly_edit .rnr-c-fields,
+  .rnr-pagewrapper .page-Calendarcalweekly_edit .rnr-c-fields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalweekly_edit .rnr-c-fields
+{
+margin-bottom:5px;
+}
+.page-Calendarcalweekly_edit .rnr-c-fields,
+  .rnr-pagewrapper .page-Calendarcalweekly_edit .rnr-c-fields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalweekly_edit .rnr-c-fields
+{
+min-width: 500px; display:inline-block
+}
+.page-Calendarcalweekly_edit .rnr-cw-fields,
+  .rnr-pagewrapper .page-Calendarcalweekly_edit .rnr-cw-fields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalweekly_edit .rnr-cw-fields
+{
+text-align: center;
+}
+.page-Calendarcalweekly_edit .rnr-b-editheader,
+  .rnr-pagewrapper .page-Calendarcalweekly_edit .rnr-b-editheader,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalweekly_edit .rnr-b-editheader
+{
+white-space: nowrap;
+}
+.page-Calendarcalweekly_edit .rnr-b-editheader,
+  .rnr-pagewrapper .page-Calendarcalweekly_edit .rnr-b-editheader,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalweekly_edit .rnr-b-editheader
+{
+text-align: right;
+}
+.page-Calendarcalweekly_edit .rnr-b-editheader > *,
+  .rnr-pagewrapper .page-Calendarcalweekly_edit .rnr-b-editheader > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalweekly_edit .rnr-b-editheader > *
+{
+font-size: 120%;
+}
+.page-Calendarcalweekly_edit .rnr-b-message,
+  .rnr-pagewrapper .page-Calendarcalweekly_edit .rnr-b-message,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalweekly_edit .rnr-b-message
+{
+white-space: nowrap;
+}
+.page-Calendarcalweekly_edit .rnr-b-message,
+  .rnr-pagewrapper .page-Calendarcalweekly_edit .rnr-b-message,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalweekly_edit .rnr-b-message
+{
+text-align: right;
+}
+.page-Calendarcalweekly_edit .rnr-b-message > *,
+  .rnr-pagewrapper .page-Calendarcalweekly_edit .rnr-b-message > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalweekly_edit .rnr-b-message > *
+{
+
+}
+.page-Calendarcalweekly_edit .rnr-b-editfields,
+  .rnr-pagewrapper .page-Calendarcalweekly_edit .rnr-b-editfields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalweekly_edit .rnr-b-editfields
+{
+white-space: nowrap;
+}
+.page-Calendarcalweekly_edit .rnr-b-editfields,
+  .rnr-pagewrapper .page-Calendarcalweekly_edit .rnr-b-editfields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalweekly_edit .rnr-b-editfields
+{
+text-align: right;
+}
+.page-Calendarcalweekly_edit .rnr-b-editfields > *,
+  .rnr-pagewrapper .page-Calendarcalweekly_edit .rnr-b-editfields > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalweekly_edit .rnr-b-editfields > *
+{
+
+}
+.page-Calendarcalweekly_edit .rnr-b-editbuttons,
+  .rnr-pagewrapper .page-Calendarcalweekly_edit .rnr-b-editbuttons,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalweekly_edit .rnr-b-editbuttons
+{
+white-space: nowrap;
+}
+.page-Calendarcalweekly_edit .rnr-b-editbuttons,
+  .rnr-pagewrapper .page-Calendarcalweekly_edit .rnr-b-editbuttons,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalweekly_edit .rnr-b-editbuttons
+{
+text-align: right;
+}
+.page-Calendarcalweekly_edit .rnr-b-editbuttons > *,
+  .rnr-pagewrapper .page-Calendarcalweekly_edit .rnr-b-editbuttons > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalweekly_edit .rnr-b-editbuttons > *
+{
+
+}
+.page-Calendarcalweekly_edit .rnr-c-details,
+  .rnr-pagewrapper .page-Calendarcalweekly_edit .rnr-c-details,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalweekly_edit .rnr-c-details
+{
+margin-bottom:5px;
+}
+.page-Calendarcalweekly_edit .rnr-c-details,
+  .rnr-pagewrapper .page-Calendarcalweekly_edit .rnr-c-details,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalweekly_edit .rnr-c-details
+{
+min-width: 500px; display:inline-block
+}
+.page-Calendarcalweekly_edit .rnr-cw-details,
+  .rnr-pagewrapper .page-Calendarcalweekly_edit .rnr-cw-details,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalweekly_edit .rnr-cw-details
+{
+text-align: left;
+}
+.page-Calendarcalweekly_edit .rnr-b-editdetails,
+  .rnr-pagewrapper .page-Calendarcalweekly_edit .rnr-b-editdetails,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalweekly_edit .rnr-b-editdetails
+{
+white-space: nowrap;
+}
+.page-Calendarcalweekly_edit .rnr-b-editdetails,
+  .rnr-pagewrapper .page-Calendarcalweekly_edit .rnr-b-editdetails,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalweekly_edit .rnr-b-editdetails
+{
+text-align: right;
+}
+.page-Calendarcalweekly_edit .rnr-b-editdetails > *,
+  .rnr-pagewrapper .page-Calendarcalweekly_edit .rnr-b-editdetails > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalweekly_edit .rnr-b-editdetails > *
+{
+
+}
+body.page-Calendarcalweekly_edit .rnr-top
+{
+padding-right: 5px;
+}

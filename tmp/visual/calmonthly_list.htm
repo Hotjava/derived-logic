@@ -1,0 +1,1197 @@
+<!doctype html>
+<html  {$html_attrs}>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      {$pagetitle}
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link REL="stylesheet" href="styles/default.css" type="text/css">
+    <link REL="stylesheet" href="styles/calendar.css" type="text/css">
+    {BEGIN rtlCSS}
+      <link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+    {END rtlCSS}
+    {BEGIN styleCSSFiles}
+      <link REL="stylesheet" href="{$stylepath}" type="text/css">
+    {END styleCSSFiles}
+  </head>
+  <BODY class="{$stylename} function-list" {$bodyattrs}>
+    <script type="text/javascript" src="include/jquery-3.3.1.min.js">
+    </script>
+    <script type="text/javascript" src="include/calendar_nav.js">
+    </script>
+    {BEGIN body}
+      {$header}
+      {$event Monthly_Next_Prev}
+      <style>
+        {$containerCss}
+      </style>
+      <DIV class="bs-top">
+        {BEGIN container_top}
+          <DIV {$top_chiddenattr} data-pageid="{$pageid}" data-container="top" class="container">
+            {BEGIN container_menu}
+              <NAV {$menu_chiddenattr} data-pageid="{$pageid}" data-container="menu" class="navbar navbar-default">
+                {BEGIN container_hdr}
+                  <DIV {$hdr_chiddenattr} data-pageid="{$pageid}" data-container="hdr" class="navbar-header">
+                    {BEGIN logo_block}
+                      <A href="{$home_link}" {$logo_hiddenattr} data-pageid="{$pageid}" data-brick="logo" class="navbar-brand">
+                        {$logo}
+                      </a>
+                    {END logo_block}
+                    {BEGIN collapse_block}
+                      <BUTTON {$bsnavbarcollapse_hiddenattr} data-pageid="{$pageid}" data-brick="bsnavbarcollapse" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target=".bs-navcontrolled">
+                        <SPAN class="sr-only">
+                          Toggle navigation
+                        </span>
+                        <SPAN class="icon-bar">
+                        </span>
+                      </button>
+                    {END collapse_block}
+                  </div>
+                {END container_hdr}
+                {BEGIN container_menu_1}
+                  <DIV {$menu_1_chiddenattr} data-pageid="{$pageid}" data-container="menu_1" class="bs-navform navbar-collapse bs-hidden-xs bs-navcontrolled" aria-expanded="false">
+                    {BEGIN menu_block}
+                      {$menu main horizontal}
+                    {END menu_block}
+                    {BEGIN container_more}
+                      <DIV {$more_chiddenattr} data-pageid="{$pageid}" data-container="more" class="navbar-right navbar-form">
+                        {BEGIN security_block}
+                          <SPAN {$loggedas_hiddenattr} data-pageid="{$pageid}" data-brick="loggedas" id="login_block{$id}" class="bs-navsection">
+                            {BEGIN guestloginbutton}
+                              <BUTTON class="btn btn-info" type="button" {$guestloginlink_attrs}>
+                                Login
+                              </button>
+                            {END guestloginbutton}
+                            {BEGIN loggedas_message}
+                              <SPAN class="dropdown">
+                                <BUTTON class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <SPAN class="glyphicon glyphicon-user">
+                                  </span>
+                                  {$username}
+                                </button>
+                                <UL class="dropdown-menu">
+                                  {BEGIN logoutbutton}
+                                    <li>
+                                      <a href="#" {$logoutlink_attrs}>
+                                        Log out
+                                      </a>
+                                    </li>
+                                  {END logoutbutton}
+                                </ul>
+                              </span>
+                            {END loggedas_message}
+                          </span>
+                        {END security_block}
+                      </div>
+                    {END container_more}
+                    {BEGIN container_more_1}
+                      <DIV {$more_1_chiddenattr} data-pageid="{$pageid}" data-container="more_1" class="navbar-right navbar-form">
+                        {BEGIN searchform_block}
+                          <SPAN {$search_hiddenattr} data-pageid="{$pageid}" data-brick="search" class="form-group">
+                          </span>
+                        {END searchform_block}
+                      </div>
+                    {END container_more_1}
+                    {BEGIN container_more_1}
+                      <DIV {$more_1_chiddenattr} data-pageid="{$pageid}" data-container="more_1" class="navbar-right navbar-form">
+                        {BEGIN searchform_block}
+                          <SPAN {$search_hiddenattr} data-pageid="{$pageid}" data-brick="search" class="form-group">
+                            <DIV class="input-group">
+                              {BEGIN searchform_text}
+                                <INPUT type="search" class="form-control" {$searchfor_attrs} size="25">
+                              {END searchform_text}
+                              <SPAN class="input-group-btn">
+                                {BEGIN searchform_showall}
+                                  <BUTTON class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs} title="Show all">
+                                    <SPAN class="glyphicon glyphicon-remove">
+                                    </span>
+                                  </button>
+                                {END searchform_showall}
+                                {BEGIN searchform_search}
+                                  <BUTTON {$searchbutton_attrs} class="btn btn-primary">
+                                    <SPAN class="glyphicon glyphicon-search">
+                                    </span>
+                                  </button>
+                                {END searchform_search}
+                              </span>
+                            </div>
+                          </span>
+                        {END searchform_block}
+                      </div>
+                    {END container_more_1}
+                  </div>
+                {END container_menu_1}
+              </nav>
+            {END container_menu}
+            {BEGIN container_breadcrumbs}
+              <DIV {$breadcrumbs_chiddenattr} data-pageid="{$pageid}" data-container="breadcrumbs" class=" ">
+                {BEGIN container_bc}
+                  <DIV {$bc_chiddenattr} data-pageid="{$pageid}" data-container="bc" class=" ">
+                    {BEGIN breadcrumbs}
+                      <OL class="breadcrumb">
+                        <li >
+                          <a href="{$home_link}">
+                            <SPAN class="glyphicon glyphicon-home">
+                            </span>
+                          </a>
+                          {$crumb_dropdown}
+                        </li>
+                        {BEGIN crumb}
+                          <LI class="{$crumb_item_class}">
+                            {BEGIN crumb_title_link}
+                              <a {$crumb_attrs}>
+                                {$crumb_title}
+                              </a>
+                            {END crumb_title_link}
+                            {BEGIN crumb_title_span}
+                              <span {$crumb_attrs}>
+                                {$crumb_title}
+                              </span>
+                            {END crumb_title_span}
+                            {$crumb_dropdown}
+                          </li>
+                        {END crumb}
+                      </ol>
+                    {END breadcrumbs}
+                  </div>
+                {END container_bc}
+              </div>
+            {END container_breadcrumbs}
+          </div>
+        {END container_top}
+      </div>
+      <DIV class="bs-middle bs-centered">
+        <DIV class="bs-topmiddle">
+        </div>
+        <DIV class="bs-left" {$blockattr_left}>
+        </div>
+        <DIV >
+          {BEGIN container_form}
+            <DIV >
+              <DIV style="white-space: nowrap;" class="style1 rnr-bl rnr-b-calmonthly_list {$brickclass_calmonthly_list}">
+                <style>
+                  .rnr-b-calmonthly_list
+                  {
+                  width:99%;
+                  -moz-user-select: none;
+                  -khtml-user-select: none;
+                  -ms-user-select: none;
+                  user-select: none;
+                  }
+                </style>
+                <TABLE style="width:100%;" align=center class="rnr-c" id="table_calweekly">
+                  <tr style="float:right; margin-bottom:5px">
+                    <td id="cal_nav">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <TABLE align="center" width="100%" cellpadding=0 cellspacing=1 class="calendar-grid">
+                        <TR class="rnr-row style2">
+                          <td width="2%"  height=20>
+                          </td>
+                          <td  width="14%" style="text-align:center" valign=middle>
+                            {$row00sdname1}
+                          </td>
+                          <td  width="14%" style="text-align:center" valign=middle>
+                            {$row00sdname2}
+                          </td>
+                          <td  width="14%" style="text-align:center" valign=middle>
+                            {$row00sdname3}
+                          </td>
+                          <td  width="14%" style="text-align:center" valign=middle>
+                            {$row00sdname4}
+                          </td>
+                          <td  width="14%" style="text-align:center" valign=middle>
+                            {$row00sdname5}
+                          </td>
+                          <td  width="14%" style="text-align:center" valign=middle>
+                            {$row00sdname6}
+                          </td>
+                          <TD width="14%" style="text-align:center" valign=middle class="calendar-th-right">
+                            {$row00sdname7}
+                          </td>
+                        </tr>
+                        <TR class="rnr-row style1">
+                          <TD align=center width="2%" class="calendar-th-bottom">
+                            {$week_link1}
+                          </td>
+                          <td width="14%" valign=top style="white-space: normal;">
+                            {BEGIN row001Datevisible}
+                              <table height=150 width=100% cellpadding=1  {$row001TableNowvalue}>
+                                <TR class="rnr-row style3" style="height:16pt;">
+                                  <td style="text-align:right" colspan=2>
+                                    {$row001Datevaluenon}
+                                    <A href="caldaily_list.php?{$row00Dateadd1value}" class="calendar_daynumber">
+                                      {$row001Datevalue}
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr {$buttonAttr1} {$addAttr1}>
+                                  <td {$row001Daystyle} align=left height="90%" colspan=2 valign=top width="14%" id="add{$row001sDayvalue}" 
+								{$onmouseovervalue1}
+								>
+                                    {$row001Dayvalue}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              </table>
+                            {END row001Datevisible}
+                          </td>
+                          <td width="14%" valign=top style="white-space: normal;">
+                            {BEGIN row002Datevisible}
+                              <table height=150 width=100% cellpadding=1  {$row002TableNowvalue}>
+                                <TR class="rnr-row style3" style="height:16pt;">
+                                  <td style="text-align:right" colspan=2>
+                                    {$row002Datevaluenon}
+                                    <A href="caldaily_list.php?{$row00Dateadd2value}" class="calendar_daynumber">
+                                      {$row002Datevalue}
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr {$buttonAttr2} {$addAttr2}>
+                                  <td {$row002Daystyle} align=left height="90%" colspan=2 valign=top width="14%" id="add{$row002sDayvalue}" 
+								{$onmouseovervalue2}
+								>
+                                    {$row002Dayvalue}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              </table>
+                            {END row002Datevisible}
+                          </td>
+                          <td width="14%" valign=top style="white-space: normal;">
+                            {BEGIN row003Datevisible}
+                              <table height=150 width=100% cellpadding=1  {$row003TableNowvalue}>
+                                <TR class="rnr-row style3" style="height:16pt;">
+                                  <td style="text-align:right" colspan=2>
+                                    {$row003Datevaluenon}
+                                    <A href="caldaily_list.php?{$row00Dateadd3value}" class="calendar_daynumber">
+                                      {$row003Datevalue}
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr {$buttonAttr3} {$addAttr3}>
+                                  <td {$row003Daystyle} align=left height="90%" colspan=2 valign=top width="14%" id="add{$row003sDayvalue}" 
+								{$onmouseovervalue3}
+								>
+                                    {$row003Dayvalue}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              </table>
+                            {END row003Datevisible}
+                          </td>
+                          <td width="14%" valign=top style="white-space: normal;">
+                            {BEGIN row004Datevisible}
+                              <table height=150 width=100% cellpadding=1  {$row004TableNowvalue}>
+                                <TR class="rnr-row style3" style="height:16pt;">
+                                  <td style="text-align:right" colspan=2>
+                                    {$row004Datevaluenon}
+                                    <A href="caldaily_list.php?{$row00Dateadd4value}" class="calendar_daynumber">
+                                      {$row004Datevalue}
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr {$buttonAttr4} {$addAttr4}>
+                                  <td {$row004Daystyle} align=left height="90%" colspan=2 valign=top width="14%" id="add{$row004sDayvalue}" 
+								{$onmouseovervalue4}
+								>
+                                    {$row004Dayvalue}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              </table>
+                            {END row004Datevisible}
+                          </td>
+                          <td width="14%" valign=top style="white-space: normal;">
+                            {BEGIN row005Datevisible}
+                              <table height=150 width=100% cellpadding=1  {$row005TableNowvalue}>
+                                <TR class="rnr-row style3" style="height:16pt;">
+                                  <td style="text-align:right" colspan=2>
+                                    {$row005Datevaluenon}
+                                    <A href="caldaily_list.php?{$row00Dateadd5value}" class="calendar_daynumber">
+                                      {$row005Datevalue}
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr {$buttonAttr5} {$addAttr5}>
+                                  <td {$row005Daystyle} align=left height="90%" colspan=2 valign=top width="14%" id="add{$row005sDayvalue}" 
+								{$onmouseovervalue5}
+								>
+                                    {$row005Dayvalue}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              </table>
+                            {END row005Datevisible}
+                          </td>
+                          <td width="14%" valign=top style="white-space: normal;">
+                            {BEGIN row006Datevisible}
+                              <table height=150 width=100% cellpadding=1  {$row006TableNowvalue}>
+                                <TR class="rnr-row style3" style="height:16pt;">
+                                  <td style="text-align:right" colspan=2>
+                                    {$row006Datevaluenon}
+                                    <A href="caldaily_list.php?{$row00Dateadd6value}" class="calendar_daynumber">
+                                      {$row006Datevalue}
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr {$buttonAttr6} {$addAttr6}>
+                                  <td {$row006Daystyle} align=left height="90%" colspan=2 valign=top width="14%" id="add{$row006sDayvalue}" 
+								{$onmouseovervalue6}
+								>
+                                    {$row006Dayvalue}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              </table>
+                            {END row006Datevisible}
+                          </td>
+                          <td width="14%" valign=top style="white-space: normal;">
+                            {BEGIN row007Datevisible}
+                              <table height=150 width=100% cellpadding=1  {$row007TableNowvalue}>
+                                <TR class="rnr-row style3" style="height:16pt;">
+                                  <td style="text-align:right" colspan=2>
+                                    {$row007Datevaluenon}
+                                    <A href="caldaily_list.php?{$row00Dateadd7value}" class="calendar_daynumber">
+                                      {$row007Datevalue}
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr {$buttonAttr7} {$addAttr7}>
+                                  <td {$row007Daystyle} align=left height="90%" colspan=2 valign=top width="14%" id="add{$row007sDayvalue}" 
+								{$onmouseovervalue7}
+								>
+                                    {$row007Dayvalue}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              </table>
+                            {END row007Datevisible}
+                          </td>
+                        </tr>
+                        <TR class="rnr-row style1">
+                          <TD align=center width="2%" class="calendar-th-bottom">
+                            {$week_link2}
+                          </td>
+                          <td width="14%" valign=top style="white-space: normal;">
+                            {BEGIN row008Datevisible}
+                              <table height=150 width=100% cellpadding=1  {$row008TableNowvalue}>
+                                <TR class="rnr-row style3" style="height:16pt;">
+                                  <td style="text-align:right" colspan=2>
+                                    {$row008Datevaluenon}
+                                    <A href="caldaily_list.php?{$row00Dateadd8value}" class="calendar_daynumber">
+                                      {$row008Datevalue}
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr {$buttonAttr8} {$addAttr8}>
+                                  <td {$row008Daystyle} align=left height="90%" colspan=2 valign=top width="14%" id="add{$row008sDayvalue}" 
+								{$onmouseovervalue8}
+								>
+                                    {$row008Dayvalue}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              </table>
+                            {END row008Datevisible}
+                          </td>
+                          <td width="14%" valign=top style="white-space: normal;">
+                            {BEGIN row009Datevisible}
+                              <table height=150 width=100% cellpadding=1  {$row009TableNowvalue}>
+                                <TR class="rnr-row style3" style="height:16pt;">
+                                  <td style="text-align:right" colspan=2>
+                                    {$row009Datevaluenon}
+                                    <A href="caldaily_list.php?{$row00Dateadd9value}" class="calendar_daynumber">
+                                      {$row009Datevalue}
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr {$buttonAttr9} {$addAttr9}>
+                                  <td {$row009Daystyle} align=left height="90%" colspan=2 valign=top width="14%" id="add{$row009sDayvalue}" 
+								{$onmouseovervalue9}
+								>
+                                    {$row009Dayvalue}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              </table>
+                            {END row009Datevisible}
+                          </td>
+                          <td width="14%" valign=top style="white-space: normal;">
+                            {BEGIN row0010Datevisible}
+                              <table height=150 width=100% cellpadding=1  {$row0010TableNowvalue}>
+                                <TR class="rnr-row style3" style="height:16pt;">
+                                  <td style="text-align:right" colspan=2>
+                                    {$row0010Datevaluenon}
+                                    <A href="caldaily_list.php?{$row00Dateadd10value}" class="calendar_daynumber">
+                                      {$row0010Datevalue}
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr {$buttonAttr10} {$addAttr10}>
+                                  <td {$row0010Daystyle} align=left height="90%" colspan=2 valign=top width="14%" id="add{$row0010sDayvalue}" 
+								{$onmouseovervalue10}
+								>
+                                    {$row0010Dayvalue}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              </table>
+                            {END row0010Datevisible}
+                          </td>
+                          <td width="14%" valign=top style="white-space: normal;">
+                            {BEGIN row0011Datevisible}
+                              <table height=150 width=100% cellpadding=1  {$row0011TableNowvalue}>
+                                <TR class="rnr-row style3" style="height:16pt;">
+                                  <td style="text-align:right" colspan=2>
+                                    {$row0011Datevaluenon}
+                                    <A href="caldaily_list.php?{$row00Dateadd11value}" class="calendar_daynumber">
+                                      {$row0011Datevalue}
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr {$buttonAttr11} {$addAttr11}>
+                                  <td {$row0011Daystyle} align=left height="90%" colspan=2 valign=top width="14%" id="add{$row0011sDayvalue}" 
+								{$onmouseovervalue11}
+								>
+                                    {$row0011Dayvalue}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              </table>
+                            {END row0011Datevisible}
+                          </td>
+                          <td width="14%" valign=top style="white-space: normal;">
+                            {BEGIN row0012Datevisible}
+                              <table height=150 width=100% cellpadding=1  {$row0012TableNowvalue}>
+                                <TR class="rnr-row style3" style="height:16pt;">
+                                  <td style="text-align:right" colspan=2>
+                                    {$row0012Datevaluenon}
+                                    <A href="caldaily_list.php?{$row00Dateadd12value}" class="calendar_daynumber">
+                                      {$row0012Datevalue}
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr {$buttonAttr12} {$addAttr12}>
+                                  <td {$row0012Daystyle} align=left height="90%" colspan=2 valign=top width="14%" id="add{$row0012sDayvalue}" 
+								{$onmouseovervalue12}
+								>
+                                    {$row0012Dayvalue}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              </table>
+                            {END row0012Datevisible}
+                          </td>
+                          <td width="14%" valign=top style="white-space: normal;">
+                            {BEGIN row0013Datevisible}
+                              <table height=150 width=100% cellpadding=1  {$row0013TableNowvalue}>
+                                <TR class="rnr-row style3" style="height:16pt;">
+                                  <td style="text-align:right" colspan=2>
+                                    {$row0013Datevaluenon}
+                                    <A href="caldaily_list.php?{$row00Dateadd13value}" class="calendar_daynumber">
+                                      {$row0013Datevalue}
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr {$buttonAttr13} {$addAttr13}>
+                                  <td {$row0013Daystyle} align=left height="90%" colspan=2 valign=top width="14%" id="add{$row0013sDayvalue}" 
+								{$onmouseovervalue13}
+								>
+                                    {$row0013Dayvalue}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              </table>
+                            {END row0013Datevisible}
+                          </td>
+                          <td width="14%" valign=top style="white-space: normal;">
+                            {BEGIN row0014Datevisible}
+                              <table height=150 width=100% cellpadding=1  {$row0014TableNowvalue}>
+                                <TR class="rnr-row style3" style="height:16pt;">
+                                  <td style="text-align:right" colspan=2>
+                                    {$row0014Datevaluenon}
+                                    <A href="caldaily_list.php?{$row00Dateadd14value}" class="calendar_daynumber">
+                                      {$row0014Datevalue}
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr {$buttonAttr14} {$addAttr14}>
+                                  <td {$row0014Daystyle} align=left height="90%" colspan=2 valign=top width="14%" id="add{$row0014sDayvalue}" 
+								{$onmouseovervalue14}
+								>
+                                    {$row0014Dayvalue}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              </table>
+                            {END row0014Datevisible}
+                          </td>
+                        </tr>
+                        <TR class="rnr-row style1">
+                          <TD align=center width="2%" class="calendar-th-bottom">
+                            {$week_link3}
+                          </td>
+                          <td width="14%" valign=top style="white-space: normal;">
+                            {BEGIN row0015Datevisible}
+                              <table height=150 width=100% cellpadding=1  {$row0015TableNowvalue}>
+                                <TR class="rnr-row style3" style="height:16pt;">
+                                  <td style="text-align:right" colspan=2>
+                                    {$row0015Datevaluenon}
+                                    <A href="caldaily_list.php?{$row00Dateadd15value}" class="calendar_daynumber">
+                                      {$row0015Datevalue}
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr {$buttonAttr15} {$addAttr15}>
+                                  <td {$row0015Daystyle} align=left height="90%" colspan=2 valign=top width="14%" id="add{$row0015sDayvalue}" 
+								{$onmouseovervalue15}
+								>
+                                    {$row0015Dayvalue}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              </table>
+                            {END row0015Datevisible}
+                          </td>
+                          <td width="14%" valign=top style="white-space: normal;">
+                            {BEGIN row0016Datevisible}
+                              <table height=150 width=100% cellpadding=1  {$row0016TableNowvalue}>
+                                <TR class="rnr-row style3" style="height:16pt;">
+                                  <td style="text-align:right" colspan=2>
+                                    {$row0016Datevaluenon}
+                                    <A href="caldaily_list.php?{$row00Dateadd16value}" class="calendar_daynumber">
+                                      {$row0016Datevalue}
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr {$buttonAttr16} {$addAttr16}>
+                                  <td {$row0016Daystyle} align=left height="90%" colspan=2 valign=top width="14%" id="add{$row0016sDayvalue}" 
+								{$onmouseovervalue16}
+								>
+                                    {$row0016Dayvalue}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              </table>
+                            {END row0016Datevisible}
+                          </td>
+                          <td width="14%" valign=top style="white-space: normal;">
+                            {BEGIN row0017Datevisible}
+                              <table height=150 width=100% cellpadding=1  {$row0017TableNowvalue}>
+                                <TR class="rnr-row style3" style="height:16pt;">
+                                  <td style="text-align:right" colspan=2>
+                                    {$row0017Datevaluenon}
+                                    <A href="caldaily_list.php?{$row00Dateadd17value}" class="calendar_daynumber">
+                                      {$row0017Datevalue}
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr {$buttonAttr17} {$addAttr17}>
+                                  <td {$row0017Daystyle} align=left height="90%" colspan=2 valign=top width="14%" id="add{$row0017sDayvalue}" 
+								{$onmouseovervalue17}
+								>
+                                    {$row0017Dayvalue}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              </table>
+                            {END row0017Datevisible}
+                          </td>
+                          <td width="14%" valign=top style="white-space: normal;">
+                            {BEGIN row0018Datevisible}
+                              <table height=150 width=100% cellpadding=1  {$row0018TableNowvalue}>
+                                <TR class="rnr-row style3" style="height:16pt;">
+                                  <td style="text-align:right" colspan=2>
+                                    {$row0018Datevaluenon}
+                                    <A href="caldaily_list.php?{$row00Dateadd18value}" class="calendar_daynumber">
+                                      {$row0018Datevalue}
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr {$buttonAttr18} {$addAttr18}>
+                                  <td {$row0018Daystyle} align=left height="90%" colspan=2 valign=top width="14%" id="add{$row0018sDayvalue}" 
+								{$onmouseovervalue18}
+								>
+                                    {$row0018Dayvalue}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              </table>
+                            {END row0018Datevisible}
+                          </td>
+                          <td width="14%" valign=top style="white-space: normal;">
+                            {BEGIN row0019Datevisible}
+                              <table height=150 width=100% cellpadding=1  {$row0019TableNowvalue}>
+                                <TR class="rnr-row style3" style="height:16pt;">
+                                  <td style="text-align:right" colspan=2>
+                                    {$row0019Datevaluenon}
+                                    <A href="caldaily_list.php?{$row00Dateadd19value}" class="calendar_daynumber">
+                                      {$row0019Datevalue}
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr {$buttonAttr19} {$addAttr19}>
+                                  <td {$row0019Daystyle} align=left height="90%" colspan=2 valign=top width="14%" id="add{$row0019sDayvalue}" 
+								{$onmouseovervalue19}
+								>
+                                    {$row0019Dayvalue}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              </table>
+                            {END row0019Datevisible}
+                          </td>
+                          <td width="14%" valign=top style="white-space: normal;">
+                            {BEGIN row0020Datevisible}
+                              <table height=150 width=100% cellpadding=1  {$row0020TableNowvalue}>
+                                <TR class="rnr-row style3" style="height:16pt;">
+                                  <td style="text-align:right" colspan=2>
+                                    {$row0020Datevaluenon}
+                                    <A href="caldaily_list.php?{$row00Dateadd20value}" class="calendar_daynumber">
+                                      {$row0020Datevalue}
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr {$buttonAttr20} {$addAttr20}>
+                                  <td {$row0020Daystyle} align=left height="90%" colspan=2 valign=top width="14%" id="add{$row0020sDayvalue}" 
+								{$onmouseovervalue20}
+								>
+                                    {$row0020Dayvalue}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              </table>
+                            {END row0020Datevisible}
+                          </td>
+                          <td width="14%" valign=top style="white-space: normal;">
+                            {BEGIN row0021Datevisible}
+                              <table height=150 width=100% cellpadding=1  {$row0021TableNowvalue}>
+                                <TR class="rnr-row style3" style="height:16pt;">
+                                  <td style="text-align:right" colspan=2>
+                                    {$row0021Datevaluenon}
+                                    <A href="caldaily_list.php?{$row00Dateadd21value}" class="calendar_daynumber">
+                                      {$row0021Datevalue}
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr {$buttonAttr21} {$addAttr21}>
+                                  <td {$row0021Daystyle} align=left height="90%" colspan=2 valign=top width="14%" id="add{$row0021sDayvalue}" 
+								{$onmouseovervalue21}
+								>
+                                    {$row0021Dayvalue}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              </table>
+                            {END row0021Datevisible}
+                          </td>
+                        </tr>
+                        <TR class="rnr-row style1">
+                          <TD align=center width="2%" class="calendar-th-bottom">
+                            {$week_link4}
+                          </td>
+                          <td width="14%" valign=top style="white-space: normal;">
+                            {BEGIN row0022Datevisible}
+                              <table height=150 width=100% cellpadding=1  {$row0022TableNowvalue}>
+                                <TR class="rnr-row style3" style="height:16pt;">
+                                  <td style="text-align:right" colspan=2>
+                                    {$row0022Datevaluenon}
+                                    <A href="caldaily_list.php?{$row00Dateadd22value}" class="calendar_daynumber">
+                                      {$row0022Datevalue}
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr {$buttonAttr22} {$addAttr22}>
+                                  <td {$row0022Daystyle} align=left height="90%" colspan=2 valign=top width="14%" id="add{$row0022sDayvalue}" 
+								{$onmouseovervalue22}
+								>
+                                    {$row0022Dayvalue}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              </table>
+                            {END row0022Datevisible}
+                          </td>
+                          <td width="14%" valign=top style="white-space: normal;">
+                            {BEGIN row0023Datevisible}
+                              <table height=150 width=100% cellpadding=1  {$row0023TableNowvalue}>
+                                <TR class="rnr-row style3" style="height:16pt;">
+                                  <td style="text-align:right" colspan=2>
+                                    {$row0023Datevaluenon}
+                                    <A href="caldaily_list.php?{$row00Dateadd23value}" class="calendar_daynumber">
+                                      {$row0023Datevalue}
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr {$buttonAttr23} {$addAttr23}>
+                                  <td {$row0023Daystyle} align=left height="90%" colspan=2 valign=top width="14%" id="add{$row0023sDayvalue}" 
+								{$onmouseovervalue23}
+								>
+                                    {$row0023Dayvalue}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              </table>
+                            {END row0023Datevisible}
+                          </td>
+                          <td width="14%" valign=top style="white-space: normal;">
+                            {BEGIN row0024Datevisible}
+                              <table height=150 width=100% cellpadding=1  {$row0024TableNowvalue}>
+                                <TR class="rnr-row style3" style="height:16pt;">
+                                  <td style="text-align:right" colspan=2>
+                                    {$row0024Datevaluenon}
+                                    <A href="caldaily_list.php?{$row00Dateadd24value}" class="calendar_daynumber">
+                                      {$row0024Datevalue}
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr {$buttonAttr24} {$addAttr24}>
+                                  <td {$row0024Daystyle} align=left height="90%" colspan=2 valign=top width="14%" id="add{$row0024sDayvalue}" 
+								{$onmouseovervalue24}
+								>
+                                    {$row0024Dayvalue}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              </table>
+                            {END row0024Datevisible}
+                          </td>
+                          <td width="14%" valign=top style="white-space: normal;">
+                            {BEGIN row0025Datevisible}
+                              <table height=150 width=100% cellpadding=1  {$row0025TableNowvalue}>
+                                <TR class="rnr-row style3" style="height:16pt;">
+                                  <td style="text-align:right" colspan=2>
+                                    {$row0025Datevaluenon}
+                                    <A href="caldaily_list.php?{$row00Dateadd25value}" class="calendar_daynumber">
+                                      {$row0025Datevalue}
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr {$buttonAttr25} {$addAttr25}>
+                                  <td {$row0025Daystyle} align=left height="90%" colspan=2 valign=top width="14%" id="add{$row0025sDayvalue}" 
+								{$onmouseovervalue25}
+								>
+                                    {$row0025Dayvalue}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              </table>
+                            {END row0025Datevisible}
+                          </td>
+                          <td width="14%" valign=top style="white-space: normal;">
+                            {BEGIN row0026Datevisible}
+                              <table height=150 width=100% cellpadding=1  {$row0026TableNowvalue}>
+                                <TR class="rnr-row style3" style="height:16pt;">
+                                  <td style="text-align:right" colspan=2>
+                                    {$row0026Datevaluenon}
+                                    <A href="caldaily_list.php?{$row00Dateadd26value}" class="calendar_daynumber">
+                                      {$row0026Datevalue}
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr {$buttonAttr26} {$addAttr26}>
+                                  <td {$row0026Daystyle} align=left height="90%" colspan=2 valign=top width="14%" id="add{$row0026sDayvalue}" 
+								{$onmouseovervalue26}
+								>
+                                    {$row0026Dayvalue}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              </table>
+                            {END row0026Datevisible}
+                          </td>
+                          <td width="14%" valign=top style="white-space: normal;">
+                            {BEGIN row0027Datevisible}
+                              <table height=150 width=100% cellpadding=1  {$row0027TableNowvalue}>
+                                <TR class="rnr-row style3" style="height:16pt;">
+                                  <td style="text-align:right" colspan=2>
+                                    {$row0027Datevaluenon}
+                                    <A href="caldaily_list.php?{$row00Dateadd27value}" class="calendar_daynumber">
+                                      {$row0027Datevalue}
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr {$buttonAttr27} {$addAttr27}>
+                                  <td {$row0027Daystyle} align=left height="90%" colspan=2 valign=top width="14%" id="add{$row0027sDayvalue}" 
+								{$onmouseovervalue27}
+								>
+                                    {$row0027Dayvalue}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              </table>
+                            {END row0027Datevisible}
+                          </td>
+                          <td width="14%" valign=top style="white-space: normal;">
+                            {BEGIN row0028Datevisible}
+                              <table height=150 width=100% cellpadding=1  {$row0028TableNowvalue}>
+                                <TR class="rnr-row style3" style="height:16pt;">
+                                  <td style="text-align:right" colspan=2>
+                                    {$row0028Datevaluenon}
+                                    <A href="caldaily_list.php?{$row00Dateadd28value}" class="calendar_daynumber">
+                                      {$row0028Datevalue}
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr {$buttonAttr28} {$addAttr28}>
+                                  <td {$row0028Daystyle} align=left height="90%" colspan=2 valign=top width="14%" id="add{$row0028sDayvalue}" 
+								{$onmouseovervalue28}
+								>
+                                    {$row0028Dayvalue}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              </table>
+                            {END row0028Datevisible}
+                          </td>
+                        </tr>
+                        <TR class="rnr-row style1">
+                          <TD align=center width="2%" class="calendar-th-bottom">
+                            {$week_link5}
+                          </td>
+                          <td width="14%" valign=top style="white-space: normal;">
+                            {BEGIN row0029Datevisible}
+                              <table height=150 width=100% cellpadding=1  {$row0029TableNowvalue}>
+                                <TR class="rnr-row style3" style="height:16pt;">
+                                  <td style="text-align:right" colspan=2>
+                                    {$row0029Datevaluenon}
+                                    <A href="caldaily_list.php?{$row00Dateadd29value}" class="calendar_daynumber">
+                                      {$row0029Datevalue}
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr {$buttonAttr29} {$addAttr29}>
+                                  <td {$row0029Daystyle} align=left height="90%" colspan=2 valign=top width="14%" id="add{$row0029sDayvalue}" 
+								{$onmouseovervalue29}
+								>
+                                    {$row0029Dayvalue}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              </table>
+                            {END row0029Datevisible}
+                          </td>
+                          <td width="14%" valign=top style="white-space: normal;">
+                            {BEGIN row0030Datevisible}
+                              <table height=150 width=100% cellpadding=1  {$row0030TableNowvalue}>
+                                <TR class="rnr-row style3" style="height:16pt;">
+                                  <td style="text-align:right" colspan=2>
+                                    {$row0030Datevaluenon}
+                                    <A href="caldaily_list.php?{$row00Dateadd30value}" class="calendar_daynumber">
+                                      {$row0030Datevalue}
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr {$buttonAttr30} {$addAttr30}>
+                                  <td {$row0030Daystyle} align=left height="90%" colspan=2 valign=top width="14%" id="add{$row0030sDayvalue}" 
+								{$onmouseovervalue30}
+								>
+                                    {$row0030Dayvalue}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              </table>
+                            {END row0030Datevisible}
+                          </td>
+                          <td width="14%" valign=top style="white-space: normal;">
+                            {BEGIN row0031Datevisible}
+                              <table height=150 width=100% cellpadding=1  {$row0031TableNowvalue}>
+                                <TR class="rnr-row style3" style="height:16pt;">
+                                  <td style="text-align:right" colspan=2>
+                                    {$row0031Datevaluenon}
+                                    <A href="caldaily_list.php?{$row00Dateadd31value}" class="calendar_daynumber">
+                                      {$row0031Datevalue}
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr {$buttonAttr31} {$addAttr31}>
+                                  <td {$row0031Daystyle} align=left height="90%" colspan=2 valign=top width="14%" id="add{$row0031sDayvalue}" 
+								{$onmouseovervalue31}
+								>
+                                    {$row0031Dayvalue}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              </table>
+                            {END row0031Datevisible}
+                          </td>
+                          <td width="14%" valign=top style="white-space: normal;">
+                            {BEGIN row0032Datevisible}
+                              <table height=150 width=100% cellpadding=1  {$row0032TableNowvalue}>
+                                <TR class="rnr-row style3" style="height:16pt;">
+                                  <td style="text-align:right" colspan=2>
+                                    {$row0032Datevaluenon}
+                                    <A href="caldaily_list.php?{$row00Dateadd32value}" class="calendar_daynumber">
+                                      {$row0032Datevalue}
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr {$buttonAttr32} {$addAttr32}>
+                                  <td {$row0032Daystyle} align=left height="90%" colspan=2 valign=top width="14%" id="add{$row0032sDayvalue}" 
+								{$onmouseovervalue32}
+								>
+                                    {$row0032Dayvalue}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              </table>
+                            {END row0032Datevisible}
+                          </td>
+                          <td width="14%" valign=top style="white-space: normal;">
+                            {BEGIN row0033Datevisible}
+                              <table height=150 width=100% cellpadding=1  {$row0033TableNowvalue}>
+                                <TR class="rnr-row style3" style="height:16pt;">
+                                  <td style="text-align:right" colspan=2>
+                                    {$row0033Datevaluenon}
+                                    <A href="caldaily_list.php?{$row00Dateadd33value}" class="calendar_daynumber">
+                                      {$row0033Datevalue}
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr {$buttonAttr33} {$addAttr33}>
+                                  <td {$row0033Daystyle} align=left height="90%" colspan=2 valign=top width="14%" id="add{$row0033sDayvalue}" 
+								{$onmouseovervalue33}
+								>
+                                    {$row0033Dayvalue}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              </table>
+                            {END row0033Datevisible}
+                          </td>
+                          <td width="14%" valign=top style="white-space: normal;">
+                            {BEGIN row0034Datevisible}
+                              <table height=150 width=100% cellpadding=1  {$row0034TableNowvalue}>
+                                <TR class="rnr-row style3" style="height:16pt;">
+                                  <td style="text-align:right" colspan=2>
+                                    {$row0034Datevaluenon}
+                                    <A href="caldaily_list.php?{$row00Dateadd34value}" class="calendar_daynumber">
+                                      {$row0034Datevalue}
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr {$buttonAttr34} {$addAttr34}>
+                                  <td {$row0034Daystyle} align=left height="90%" colspan=2 valign=top width="14%" id="add{$row0034sDayvalue}" 
+								{$onmouseovervalue34}
+								>
+                                    {$row0034Dayvalue}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              </table>
+                            {END row0034Datevisible}
+                          </td>
+                          <td width="14%" valign=top style="white-space: normal;">
+                            {BEGIN row0035Datevisible}
+                              <table height=150 width=100% cellpadding=1  {$row0035TableNowvalue}>
+                                <TR class="rnr-row style3" style="height:16pt;">
+                                  <td style="text-align:right" colspan=2>
+                                    {$row0035Datevaluenon}
+                                    <A href="caldaily_list.php?{$row00Dateadd35value}" class="calendar_daynumber">
+                                      {$row0035Datevalue}
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr {$buttonAttr35} {$addAttr35}>
+                                  <td {$row0035Daystyle} align=left height="90%" colspan=2 valign=top width="14%" id="add{$row0035sDayvalue}" 
+								{$onmouseovervalue35}
+								>
+                                    {$row0035Dayvalue}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              </table>
+                            {END row0035Datevisible}
+                          </td>
+                        </tr>
+                        <TR class="rnr-row style1">
+                          <TD align=center width="2%" class="calendar-th-bottom">
+                            {$week_link6}
+                          </td>
+                          <td width="14%" valign=top style="white-space: normal;">
+                            {BEGIN row0036Datevisible}
+                              <table height=150 width=100% cellpadding=1  {$row0036TableNowvalue}>
+                                <TR class="rnr-row style3" style="height:16pt;">
+                                  <td style="text-align:right" colspan=2>
+                                    {$row0036Datevaluenon}
+                                    <A href="caldaily_list.php?{$row00Dateadd36value}" class="calendar_daynumber">
+                                      {$row0036Datevalue}
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr {$buttonAttr36} {$addAttr36}>
+                                  <td {$row0036Daystyle} align=left height="90%" colspan=2 valign=top width="14%" id="add{$row0036sDayvalue}" 
+								{$onmouseovervalue36}
+								>
+                                    {$row0036Dayvalue}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              </table>
+                            {END row0036Datevisible}
+                          </td>
+                          <td width="14%" valign=top style="white-space: normal;">
+                            {BEGIN row0037Datevisible}
+                              <table height=150 width=100% cellpadding=1  {$row0037TableNowvalue}>
+                                <TR class="rnr-row style3" style="height:16pt;">
+                                  <td style="text-align:right" colspan=2>
+                                    {$row0037Datevaluenon}
+                                    <A href="caldaily_list.php?{$row00Dateadd37value}" class="calendar_daynumber">
+                                      {$row0037Datevalue}
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr {$buttonAttr37} {$addAttr37}>
+                                  <td {$row0037Daystyle} align=left height="90%" colspan=2 valign=top width="14%" id="add{$row0037sDayvalue}" 
+								{$onmouseovervalue37}
+								>
+                                    {$row0037Dayvalue}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              </table>
+                            {END row0037Datevisible}
+                          </td>
+                          <td width="14%" valign=top style="white-space: normal;">
+                            {BEGIN row0038Datevisible}
+                              <table height=150 width=100% cellpadding=1  {$row0038TableNowvalue}>
+                                <TR class="rnr-row style3" style="height:16pt;">
+                                  <td style="text-align:right" colspan=2>
+                                    {$row0038Datevaluenon}
+                                    <A href="caldaily_list.php?{$row00Dateadd38value}" class="calendar_daynumber">
+                                      {$row0038Datevalue}
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr {$buttonAttr38} {$addAttr38}>
+                                  <td {$row0038Daystyle} align=left height="90%" colspan=2 valign=top width="14%" id="add{$row0038sDayvalue}" 
+								{$onmouseovervalue38}
+								>
+                                    {$row0038Dayvalue}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              </table>
+                            {END row0038Datevisible}
+                          </td>
+                          <td width="14%" valign=top style="white-space: normal;">
+                            {BEGIN row0039Datevisible}
+                              <table height=150 width=100% cellpadding=1  {$row0039TableNowvalue}>
+                                <TR class="rnr-row style3" style="height:16pt;">
+                                  <td style="text-align:right" colspan=2>
+                                    {$row0039Datevaluenon}
+                                    <A href="caldaily_list.php?{$row00Dateadd39value}" class="calendar_daynumber">
+                                      {$row0039Datevalue}
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr {$buttonAttr39} {$addAttr39}>
+                                  <td {$row0039Daystyle} align=left height="90%" colspan=2 valign=top width="14%" id="add{$row0039sDayvalue}" 
+								{$onmouseovervalue39}
+								>
+                                    {$row0039Dayvalue}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              </table>
+                            {END row0039Datevisible}
+                          </td>
+                          <td width="14%" valign=top style="white-space: normal;">
+                            {BEGIN row0040Datevisible}
+                              <table height=150 width=100% cellpadding=1  {$row0040TableNowvalue}>
+                                <TR class="rnr-row style3" style="height:16pt;">
+                                  <td style="text-align:right" colspan=2>
+                                    {$row0040Datevaluenon}
+                                    <A href="caldaily_list.php?{$row00Dateadd40value}" class="calendar_daynumber">
+                                      {$row0040Datevalue}
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr {$buttonAttr40} {$addAttr40}>
+                                  <td {$row0040Daystyle} align=left height="90%" colspan=2 valign=top width="14%" id="add{$row0040sDayvalue}" 
+								{$onmouseovervalue40}
+								>
+                                    {$row0040Dayvalue}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              </table>
+                            {END row0040Datevisible}
+                          </td>
+                          <td width="14%" valign=top style="white-space: normal;">
+                            {BEGIN row0041Datevisible}
+                              <table height=150 width=100% cellpadding=1  {$row0041TableNowvalue}>
+                                <TR class="rnr-row style3" style="height:16pt;">
+                                  <td style="text-align:right" colspan=2>
+                                    {$row0041Datevaluenon}
+                                    <A href="caldaily_list.php?{$row00Dateadd41value}" class="calendar_daynumber">
+                                      {$row0041Datevalue}
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr {$buttonAttr41} {$addAttr41}>
+                                  <td {$row0041Daystyle} align=left height="90%" colspan=2 valign=top width="14%" id="add{$row0041sDayvalue}" 
+								{$onmouseovervalue41}
+								>
+                                    {$row0041Dayvalue}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              </table>
+                            {END row0041Datevisible}
+                          </td>
+                          <td width="14%" valign=top style="white-space: normal;">
+                            {BEGIN row0042Datevisible}
+                              <table height=150 width=100% cellpadding=1  {$row0042TableNowvalue}>
+                                <TR class="rnr-row style3" style="height:16pt;">
+                                  <td style="text-align:right" colspan=2>
+                                    {$row0042Datevaluenon}
+                                    <A href="caldaily_list.php?{$row00Dateadd42value}" class="calendar_daynumber">
+                                      {$row0042Datevalue}
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr {$buttonAttr42} {$addAttr42}>
+                                  <td {$row0042Daystyle} align=left height="90%" colspan=2 valign=top width="14%" id="add{$row0042sDayvalue}" 
+								{$onmouseovervalue42}
+								>
+                                    {$row0042Dayvalue}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              </table>
+                            {END row0042Datevisible}
+                          </td>
+                        </tr>
+                        <!--<tr height=30>
+					<td colspan=1>&nbsp;</td>
+				</tr>-->
+                      </table>
+                    </td>
+                  </tr>
+                  <TR class="rnr-row style2">
+                    <TD class="rnr-cc">
+                      &nbsp;
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <DIV class="rnr-hfiller">
+              </div>
+            </div>
+          {END container_form}
+        </div>
+        <DIV class="bs-right">
+        </div>
+      </div>
+      <DIV class="bs-bottom">
+      </div>
+      {$footer}
+    {END body}
+  </body>
+</html>

@@ -1,0 +1,117 @@
+<div {$pageattrs}>
+
+{BEGIN container_column}
+<div class="rnr-c rnr-ch rnr-c-column">
+
+{BEGIN masterlist_title}
+<div  class="style1 rnr-bl rnr-b-masterprintheader {$brickclass_masterprintheader}"><span>{$pagetitlelabel renewals masterprint}</span></div>
+{END masterlist_title}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_column}
+
+
+
+{BEGIN container_mastergrid}
+
+
+
+<table {$bsmasterprintgrid_hiddenattr} data-pageid="{$pageid}" data-brick="bsmasterprintgrid" class="table rnr-b-mastergridfields rnr-gridtable" >
+		<thead>
+		<tr>
+			<th class="{$id_class}">{$label renewals id}</th>
+			<th class="{$request_date_class}">{$label renewals request_date}</th>
+			<th class="{$quote_ref_class}">{$label renewals quote_ref}</th>
+			<th class="{$po_class}">{$label renewals po}</th>
+			<th class="{$cc_so_class}">{$label renewals cc_so}</th>
+			<th class="{$supplier_ref_class}">{$label renewals supplier_ref}</th>
+			<th class="{$supplier_order_ref_class}">{$label renewals supplier_order_ref}</th>
+			<th class="{$pod_class}">{$label renewals pod}</th>
+			<th class="{$task_number_class}">{$label renewals task_number}</th>
+			<th class="{$tracking_ref_class}">{$label renewals tracking_ref}</th>
+			<th class="{$delivery_code_class}">{$label renewals delivery_code}</th>
+			<th class="{$pulse_id_class}">{$label renewals pulse_id}</th>
+			<th class="{$date_billed_class}">{$label renewals date_billed}</th>
+			<th class="{$product_id_class}">{$label renewals product_id}</th>
+			<th class="{$recurrence_class}">{$label renewals recurrence}</th>
+			<th class="{$status_id_class}">{$label renewals status_id}</th>
+			<th class="{$cost_class}">{$label renewals cost}</th>
+			<th class="{$vendor_id_class}">{$label renewals vendor_id}</th>
+			<th class="{$sold_to_id_class}">{$label renewals sold_to_id}</th>
+			<th class="{$sourcing_contact_id_class}">{$label renewals sourcing_contact_id}</th>
+			<th class="{$percent_product_sales_class}">{$label renewals percent_product_sales}</th>
+			<th class="{$alert_id_class}">{$label renewals alert_id}</th>
+			<th class="{$ops_contact_id_class}">{$label renewals ops_contact_id}</th>
+			<th class="{$previous_po_class}">{$label renewals previous_po}</th>
+			<th class="{$comment_actions_class}">{$label renewals comment_actions}</th>
+			<th class="{$previous_lbg_pp_class}">{$label renewals previous_lbg_pp}</th>
+			<th class="{$erf_class}">{$label renewals erf}</th>
+			<th class="{$order_description_class}">{$label renewals order_description}</th>
+			<th class="{$impacted_by_dollar_class}">{$label renewals impacted_by_dollar}</th>
+			<th class="{$improvement_last_year_class}">{$label renewals improvement_last_year}</th>
+			<th class="{$renewal_date_class}">{$label renewals renewal_date}</th>
+			<th class="{$improvement_comments_class}">{$label renewals improvement_comments}</th>
+			<th class="{$support_end_date_class}">{$label renewals support_end_date}</th>
+			<th class="{$documents_class}">{$label renewals documents}</th>
+			<th class="{$service_type_id_class}">{$label renewals service_type_id}</th>
+			<th class="{$term_id_class}">{$label renewals term_id}</th>
+			<th class="{$support_start_date_class}">{$label renewals support_start_date}</th>
+			<th class="{$last_update_class}">{$label renewals last_update}</th>
+			<th class="{$vendor_contact_id_class}">{$label renewals vendor_contact_id}</th>
+			<th class="{$guid_class}">{$label renewals guid}</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="{$id_class}">{$id_mastervalue}</td>
+			<td class="{$request_date_class}">{$request_date_mastervalue}</td>
+			<td class="{$quote_ref_class}">{$quote_ref_mastervalue}</td>
+			<td class="{$po_class}">{$po_mastervalue}</td>
+			<td class="{$cc_so_class}">{$cc_so_mastervalue}</td>
+			<td class="{$supplier_ref_class}">{$supplier_ref_mastervalue}</td>
+			<td class="{$supplier_order_ref_class}">{$supplier_order_ref_mastervalue}</td>
+			<td class="{$pod_class}">{$pod_mastervalue}</td>
+			<td class="{$task_number_class}">{$task_number_mastervalue}</td>
+			<td class="{$tracking_ref_class}">{$tracking_ref_mastervalue}</td>
+			<td class="{$delivery_code_class}">{$delivery_code_mastervalue}</td>
+			<td class="{$pulse_id_class}">{$pulse_id_mastervalue}</td>
+			<td class="{$date_billed_class}">{$date_billed_mastervalue}</td>
+			<td class="{$product_id_class}">{$product_id_mastervalue}</td>
+			<td class="{$recurrence_class}">{$recurrence_mastervalue}</td>
+			<td class="{$status_id_class}">{$status_id_mastervalue}</td>
+			<td class="{$cost_class}">{$cost_mastervalue}</td>
+			<td class="{$vendor_id_class}">{$vendor_id_mastervalue}</td>
+			<td class="{$sold_to_id_class}">{$sold_to_id_mastervalue}</td>
+			<td class="{$sourcing_contact_id_class}">{$sourcing_contact_id_mastervalue}</td>
+			<td class="{$percent_product_sales_class}">{$percent_product_sales_mastervalue}</td>
+			<td class="{$alert_id_class}">{$alert_id_mastervalue}</td>
+			<td class="{$ops_contact_id_class}">{$ops_contact_id_mastervalue}</td>
+			<td class="{$previous_po_class}">{$previous_po_mastervalue}</td>
+			<td class="{$comment_actions_class}">{$comment_actions_mastervalue}</td>
+			<td class="{$previous_lbg_pp_class}">{$previous_lbg_pp_mastervalue}</td>
+			<td class="{$erf_class}">{$erf_mastervalue}</td>
+			<td class="{$order_description_class}">{$order_description_mastervalue}</td>
+			<td class="{$impacted_by_dollar_class}">{$impacted_by_dollar_mastervalue}</td>
+			<td class="{$improvement_last_year_class}">{$improvement_last_year_mastervalue}</td>
+			<td class="{$renewal_date_class}">{$renewal_date_mastervalue}</td>
+			<td class="{$improvement_comments_class}">{$improvement_comments_mastervalue}</td>
+			<td class="{$support_end_date_class}">{$support_end_date_mastervalue}</td>
+			<td class="{$documents_class}">{$documents_mastervalue}</td>
+			<td class="{$service_type_id_class}">{$service_type_id_mastervalue}</td>
+			<td class="{$term_id_class}">{$term_id_mastervalue}</td>
+			<td class="{$support_start_date_class}">{$support_start_date_mastervalue}</td>
+			<td class="{$last_update_class}">{$last_update_mastervalue}</td>
+			<td class="{$vendor_contact_id_class}">{$vendor_contact_id_mastervalue}</td>
+			<td class="{$guid_class}">{$guid_mastervalue}</td>
+		</tr>
+	</tbody>
+
+</table> 
+
+
+
+
+{END container_mastergrid}
+
+</div>

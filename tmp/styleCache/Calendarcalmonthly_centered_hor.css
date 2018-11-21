@@ -1,0 +1,170 @@
+body.page-preview
+{
+padding-top:10px; padding-left:10px;
+}
+.page-preview > .rnr-page
+{
+display: table;
+}
+body.page-preview > .rnr-page
+{
+margin:auto;
+}
+.page-preview > .rnr-page > .rnr-middle
+{
+width: 100%;
+}
+.page-preview > .rnr-page
+{
+width: 500px;;
+}
+.page-preview .rnr-c-recordcontrols,
+  .rnr-pagewrapper .page-preview .rnr-c-recordcontrols,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-c-recordcontrols
+{
+margin-bottom:0px;
+}
+.page-preview .rnr-c-recordcontrols,
+  .rnr-pagewrapper .page-preview .rnr-c-recordcontrols,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-c-recordcontrols
+{
+min-width: 100px;
+}
+.page-preview .rnr-b-toplinks_hidden,
+  .rnr-pagewrapper .page-preview .rnr-b-toplinks_hidden,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-toplinks_hidden
+{
+white-space: nowrap;
+}
+.page-preview .rnr-b-toplinks_hidden,
+  .rnr-pagewrapper .page-preview .rnr-b-toplinks_hidden,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-toplinks_hidden
+{
+text-align: left;
+}
+.page-preview .rnr-b-toplinks_hidden > *,
+  .rnr-pagewrapper .page-preview .rnr-b-toplinks_hidden > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-toplinks_hidden > *
+{
+
+}
+.page-preview .rnr-c-form,
+  .rnr-pagewrapper .page-preview .rnr-c-form,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-c-form
+{
+margin-bottom:0px;
+}
+.page-preview .rnr-c-form,
+  .rnr-pagewrapper .page-preview .rnr-c-form,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-c-form
+{
+min-width: 100px;
+}
+.page-preview .rnr-b-calmonthly_list,
+  .rnr-pagewrapper .page-preview .rnr-b-calmonthly_list,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-calmonthly_list
+{
+white-space: nowrap;
+}
+.page-preview .rnr-b-calmonthly_list,
+  .rnr-pagewrapper .page-preview .rnr-b-calmonthly_list,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-calmonthly_list
+{
+text-align: left;
+}
+.page-preview .rnr-b-calmonthly_list > *,
+  .rnr-pagewrapper .page-preview .rnr-b-calmonthly_list > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-calmonthly_list > *
+{
+
+}
+body.page-preview  > * > * > .rnr-center
+{
+width:100%;
+}
+body.page-preview .rnr-center
+{
+padding-right: 0px;
+}
+.page-preview .rnr-c-toplinks,
+  .rnr-pagewrapper .page-preview .rnr-c-toplinks,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-c-toplinks
+{
+margin-bottom:0px;
+}
+.page-preview .rnr-b-loggedas,
+  .rnr-pagewrapper .page-preview .rnr-b-loggedas,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-loggedas
+{
+white-space: nowrap;
+}
+.page-preview .rnr-b-loggedas,
+  .rnr-pagewrapper .page-preview .rnr-b-loggedas,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-loggedas
+{
+text-align: right;
+}
+.page-preview .rnr-b-loggedas > *,
+  .rnr-pagewrapper .page-preview .rnr-b-loggedas > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-loggedas > *
+{
+
+}
+.page-preview .rnr-b-languages,
+  .rnr-pagewrapper .page-preview .rnr-b-languages,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-languages
+{
+white-space: nowrap;
+}
+.page-preview .rnr-b-languages,
+  .rnr-pagewrapper .page-preview .rnr-b-languages,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-languages
+{
+text-align: right;
+}
+.page-preview .rnr-b-languages > *,
+  .rnr-pagewrapper .page-preview .rnr-b-languages > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-languages > *
+{
+
+}
+.page-preview .rnr-c-hmenu,
+  .rnr-pagewrapper .page-preview .rnr-c-hmenu,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-c-hmenu
+{
+margin-bottom:0px;
+}
+.page-preview .rnr-c-hmenu.rnr-c-hmenu:before,
+  .rnr-pagewrapper .page-preview .rnr-c-hmenu.rnr-c-hmenu:before,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-c-hmenu.rnr-c-hmenu:before
+{
+display: none;
+}
+.page-preview .rnr-c-hmenu.rnr-c-hmenu:after,
+  .rnr-pagewrapper .page-preview .rnr-c-hmenu.rnr-c-hmenu:after,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-c-hmenu.rnr-c-hmenu:after
+{
+display: none;
+}
+.page-preview .rnr-b-hmenu,
+  .rnr-pagewrapper .page-preview .rnr-b-hmenu,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-hmenu
+{
+white-space: nowrap;
+}
+.page-preview .rnr-b-hmenu,
+  .rnr-pagewrapper .page-preview .rnr-b-hmenu,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-hmenu
+{
+text-align: left;
+}
+.page-preview .rnr-b-hmenu > *,
+  .rnr-pagewrapper .page-preview .rnr-b-hmenu > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-hmenu > *
+{
+
+}
+body.page-preview .rnr-top
+{
+padding-right: 0px;
+}

@@ -1,0 +1,631 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_viewpage}
+<div {$viewpage_chiddenattr} data-pageid="{$pageid}" data-container="viewpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}
+<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-9 col-md-offset-3"> 
+
+{BEGIN viewheader}
+	<h2 {$viewheader_hiddenattr} data-pageid="{$pageid}" data-brick="viewheader" >{$pagetitlelabel renewals view}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END viewheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+</div>
+{END container_viewpage}
+
+
+
+{BEGIN container_fields}
+<div {$fields_chiddenattr} data-pageid="{$pageid}" data-container="fields" class=" form-horizontal  col-md-12 "> 
+
+
+<div {$viewfields_hiddenattr} data-pageid="{$pageid}" data-brick="viewfields" >
+	{BEGIN id_fieldblock}
+<div class="container">
+	<div class="{$fielddispclass_id} bs-viewform-group" data-fieldname="id">
+		<label class="bs-view-label col-md-4 text-right" for="{$labelfor_id}">
+			{$label renewals id}
+		</label>
+		<div class="col-md-6 bs-horizontal-value" >
+			{$id_value}&nbsp;
+		</div>
+	</div>
+</div>
+{END id_fieldblock}
+	{BEGIN request_date_fieldblock}
+<div class="container">
+	<div class="{$fielddispclass_request_date} bs-viewform-group" data-fieldname="request_date">
+		<label class="bs-view-label col-md-4 text-right" for="{$labelfor_request_date}">
+			{$label renewals request_date}
+		</label>
+		<div class="col-md-6 bs-horizontal-value" >
+			{$request_date_value}&nbsp;
+		</div>
+	</div>
+</div>
+{END request_date_fieldblock}
+	{BEGIN quote_ref_fieldblock}
+<div class="container">
+	<div class="{$fielddispclass_quote_ref} bs-viewform-group" data-fieldname="quote_ref">
+		<label class="bs-view-label col-md-4 text-right" for="{$labelfor_quote_ref}">
+			{$label renewals quote_ref}
+		</label>
+		<div class="col-md-6 bs-horizontal-value" >
+			{$quote_ref_value}&nbsp;
+		</div>
+	</div>
+</div>
+{END quote_ref_fieldblock}
+	{BEGIN po_fieldblock}
+<div class="container">
+	<div class="{$fielddispclass_po} bs-viewform-group" data-fieldname="po">
+		<label class="bs-view-label col-md-4 text-right" for="{$labelfor_po}">
+			{$label renewals po}
+		</label>
+		<div class="col-md-6 bs-horizontal-value" >
+			{$po_value}&nbsp;
+		</div>
+	</div>
+</div>
+{END po_fieldblock}
+	{BEGIN cc_so_fieldblock}
+<div class="container">
+	<div class="{$fielddispclass_cc_so} bs-viewform-group" data-fieldname="cc_so">
+		<label class="bs-view-label col-md-4 text-right" for="{$labelfor_cc_so}">
+			{$label renewals cc_so}
+		</label>
+		<div class="col-md-6 bs-horizontal-value" >
+			{$cc_so_value}&nbsp;
+		</div>
+	</div>
+</div>
+{END cc_so_fieldblock}
+	{BEGIN supplier_ref_fieldblock}
+<div class="container">
+	<div class="{$fielddispclass_supplier_ref} bs-viewform-group" data-fieldname="supplier_ref">
+		<label class="bs-view-label col-md-4 text-right" for="{$labelfor_supplier_ref}">
+			{$label renewals supplier_ref}
+		</label>
+		<div class="col-md-6 bs-horizontal-value" >
+			{$supplier_ref_value}&nbsp;
+		</div>
+	</div>
+</div>
+{END supplier_ref_fieldblock}
+	{BEGIN supplier_order_ref_fieldblock}
+<div class="container">
+	<div class="{$fielddispclass_supplier_order_ref} bs-viewform-group" data-fieldname="supplier_order_ref">
+		<label class="bs-view-label col-md-4 text-right" for="{$labelfor_supplier_order_ref}">
+			{$label renewals supplier_order_ref}
+		</label>
+		<div class="col-md-6 bs-horizontal-value" >
+			{$supplier_order_ref_value}&nbsp;
+		</div>
+	</div>
+</div>
+{END supplier_order_ref_fieldblock}
+	{BEGIN pod_fieldblock}
+<div class="container">
+	<div class="{$fielddispclass_pod} bs-viewform-group" data-fieldname="pod">
+		<label class="bs-view-label col-md-4 text-right" for="{$labelfor_pod}">
+			{$label renewals pod}
+		</label>
+		<div class="col-md-6 bs-horizontal-value" >
+			{$pod_value}&nbsp;
+		</div>
+	</div>
+</div>
+{END pod_fieldblock}
+	{BEGIN task_number_fieldblock}
+<div class="container">
+	<div class="{$fielddispclass_task_number} bs-viewform-group" data-fieldname="task_number">
+		<label class="bs-view-label col-md-4 text-right" for="{$labelfor_task_number}">
+			{$label renewals task_number}
+		</label>
+		<div class="col-md-6 bs-horizontal-value" >
+			{$task_number_value}&nbsp;
+		</div>
+	</div>
+</div>
+{END task_number_fieldblock}
+	{BEGIN tracking_ref_fieldblock}
+<div class="container">
+	<div class="{$fielddispclass_tracking_ref} bs-viewform-group" data-fieldname="tracking_ref">
+		<label class="bs-view-label col-md-4 text-right" for="{$labelfor_tracking_ref}">
+			{$label renewals tracking_ref}
+		</label>
+		<div class="col-md-6 bs-horizontal-value" >
+			{$tracking_ref_value}&nbsp;
+		</div>
+	</div>
+</div>
+{END tracking_ref_fieldblock}
+	{BEGIN delivery_code_fieldblock}
+<div class="container">
+	<div class="{$fielddispclass_delivery_code} bs-viewform-group" data-fieldname="delivery_code">
+		<label class="bs-view-label col-md-4 text-right" for="{$labelfor_delivery_code}">
+			{$label renewals delivery_code}
+		</label>
+		<div class="col-md-6 bs-horizontal-value" >
+			{$delivery_code_value}&nbsp;
+		</div>
+	</div>
+</div>
+{END delivery_code_fieldblock}
+	{BEGIN pulse_id_fieldblock}
+<div class="container">
+	<div class="{$fielddispclass_pulse_id} bs-viewform-group" data-fieldname="pulse_id">
+		<label class="bs-view-label col-md-4 text-right" for="{$labelfor_pulse_id}">
+			{$label renewals pulse_id}
+		</label>
+		<div class="col-md-6 bs-horizontal-value" >
+			{$pulse_id_value}&nbsp;
+		</div>
+	</div>
+</div>
+{END pulse_id_fieldblock}
+	{BEGIN date_billed_fieldblock}
+<div class="container">
+	<div class="{$fielddispclass_date_billed} bs-viewform-group" data-fieldname="date_billed">
+		<label class="bs-view-label col-md-4 text-right" for="{$labelfor_date_billed}">
+			{$label renewals date_billed}
+		</label>
+		<div class="col-md-6 bs-horizontal-value" >
+			{$date_billed_value}&nbsp;
+		</div>
+	</div>
+</div>
+{END date_billed_fieldblock}
+	{BEGIN product_id_fieldblock}
+<div class="container">
+	<div class="{$fielddispclass_product_id} bs-viewform-group" data-fieldname="product_id">
+		<label class="bs-view-label col-md-4 text-right" for="{$labelfor_product_id}">
+			{$label renewals product_id}
+		</label>
+		<div class="col-md-6 bs-horizontal-value" >
+			{$product_id_value}&nbsp;
+		</div>
+	</div>
+</div>
+{END product_id_fieldblock}
+	{BEGIN recurrence_fieldblock}
+<div class="container">
+	<div class="{$fielddispclass_recurrence} bs-viewform-group" data-fieldname="recurrence">
+		<label class="bs-view-label col-md-4 text-right" for="{$labelfor_recurrence}">
+			{$label renewals recurrence}
+		</label>
+		<div class="col-md-6 bs-horizontal-value" >
+			{$recurrence_value}&nbsp;
+		</div>
+	</div>
+</div>
+{END recurrence_fieldblock}
+	{BEGIN status_id_fieldblock}
+<div class="container">
+	<div class="{$fielddispclass_status_id} bs-viewform-group" data-fieldname="status_id">
+		<label class="bs-view-label col-md-4 text-right" for="{$labelfor_status_id}">
+			{$label renewals status_id}
+		</label>
+		<div class="col-md-6 bs-horizontal-value" >
+			{$status_id_value}&nbsp;
+		</div>
+	</div>
+</div>
+{END status_id_fieldblock}
+	{BEGIN cost_fieldblock}
+<div class="container">
+	<div class="{$fielddispclass_cost} bs-viewform-group" data-fieldname="cost">
+		<label class="bs-view-label col-md-4 text-right" for="{$labelfor_cost}">
+			{$label renewals cost}
+		</label>
+		<div class="col-md-6 bs-horizontal-value" >
+			{$cost_value}&nbsp;
+		</div>
+	</div>
+</div>
+{END cost_fieldblock}
+	{BEGIN vendor_id_fieldblock}
+<div class="container">
+	<div class="{$fielddispclass_vendor_id} bs-viewform-group" data-fieldname="vendor_id">
+		<label class="bs-view-label col-md-4 text-right" for="{$labelfor_vendor_id}">
+			{$label renewals vendor_id}
+		</label>
+		<div class="col-md-6 bs-horizontal-value" >
+			{$vendor_id_value}&nbsp;
+		</div>
+	</div>
+</div>
+{END vendor_id_fieldblock}
+	{BEGIN alert_id_fieldblock}
+<div class="container">
+	<div class="{$fielddispclass_alert_id} bs-viewform-group" data-fieldname="alert_id">
+		<label class="bs-view-label col-md-4 text-right" for="{$labelfor_alert_id}">
+			{$label renewals alert_id}
+		</label>
+		<div class="col-md-6 bs-horizontal-value" >
+			{$alert_id_value}&nbsp;
+		</div>
+	</div>
+</div>
+{END alert_id_fieldblock}
+	{BEGIN sold_to_id_fieldblock}
+<div class="container">
+	<div class="{$fielddispclass_sold_to_id} bs-viewform-group" data-fieldname="sold_to_id">
+		<label class="bs-view-label col-md-4 text-right" for="{$labelfor_sold_to_id}">
+			{$label renewals sold_to_id}
+		</label>
+		<div class="col-md-6 bs-horizontal-value" >
+			{$sold_to_id_value}&nbsp;
+		</div>
+	</div>
+</div>
+{END sold_to_id_fieldblock}
+	{BEGIN sourcing_contact_id_fieldblock}
+<div class="container">
+	<div class="{$fielddispclass_sourcing_contact_id} bs-viewform-group" data-fieldname="sourcing_contact_id">
+		<label class="bs-view-label col-md-4 text-right" for="{$labelfor_sourcing_contact_id}">
+			{$label renewals sourcing_contact_id}
+		</label>
+		<div class="col-md-6 bs-horizontal-value" >
+			{$sourcing_contact_id_value}&nbsp;
+		</div>
+	</div>
+</div>
+{END sourcing_contact_id_fieldblock}
+	{BEGIN previous_po_fieldblock}
+<div class="container">
+	<div class="{$fielddispclass_previous_po} bs-viewform-group" data-fieldname="previous_po">
+		<label class="bs-view-label col-md-4 text-right" for="{$labelfor_previous_po}">
+			{$label renewals previous_po}
+		</label>
+		<div class="col-md-6 bs-horizontal-value" >
+			{$previous_po_value}&nbsp;
+		</div>
+	</div>
+</div>
+{END previous_po_fieldblock}
+	{BEGIN ops_contact_id_fieldblock}
+<div class="container">
+	<div class="{$fielddispclass_ops_contact_id} bs-viewform-group" data-fieldname="ops_contact_id">
+		<label class="bs-view-label col-md-4 text-right" for="{$labelfor_ops_contact_id}">
+			{$label renewals ops_contact_id}
+		</label>
+		<div class="col-md-6 bs-horizontal-value" >
+			{$ops_contact_id_value}&nbsp;
+		</div>
+	</div>
+</div>
+{END ops_contact_id_fieldblock}
+	{BEGIN previous_lbg_pp_fieldblock}
+<div class="container">
+	<div class="{$fielddispclass_previous_lbg_pp} bs-viewform-group" data-fieldname="previous_lbg_pp">
+		<label class="bs-view-label col-md-4 text-right" for="{$labelfor_previous_lbg_pp}">
+			{$label renewals previous_lbg_pp}
+		</label>
+		<div class="col-md-6 bs-horizontal-value" >
+			{$previous_lbg_pp_value}&nbsp;
+		</div>
+	</div>
+</div>
+{END previous_lbg_pp_fieldblock}
+	{BEGIN erf_fieldblock}
+<div class="container">
+	<div class="{$fielddispclass_erf} bs-viewform-group" data-fieldname="erf">
+		<label class="bs-view-label col-md-4 text-right" for="{$labelfor_erf}">
+			{$label renewals erf}
+		</label>
+		<div class="col-md-6 bs-horizontal-value" >
+			{$erf_value}&nbsp;
+		</div>
+	</div>
+</div>
+{END erf_fieldblock}
+	{BEGIN impacted_by_dollar_fieldblock}
+<div class="container">
+	<div class="{$fielddispclass_impacted_by_dollar} bs-viewform-group" data-fieldname="impacted_by_dollar">
+		<label class="bs-view-label col-md-4 text-right" for="{$labelfor_impacted_by_dollar}">
+			{$label renewals impacted_by_dollar}
+		</label>
+		<div class="col-md-6 bs-horizontal-value" >
+			{$impacted_by_dollar_value}&nbsp;
+		</div>
+	</div>
+</div>
+{END impacted_by_dollar_fieldblock}
+	{BEGIN order_description_fieldblock}
+<div class="container">
+	<div class="{$fielddispclass_order_description} bs-viewform-group" data-fieldname="order_description">
+		<label class="bs-view-label col-md-4 text-right" for="{$labelfor_order_description}">
+			{$label renewals order_description}
+		</label>
+		<div class="col-md-6 bs-horizontal-value" >
+			{$order_description_value}&nbsp;
+		</div>
+	</div>
+</div>
+{END order_description_fieldblock}
+	{BEGIN renewal_date_fieldblock}
+<div class="container">
+	<div class="{$fielddispclass_renewal_date} bs-viewform-group" data-fieldname="renewal_date">
+		<label class="bs-view-label col-md-4 text-right" for="{$labelfor_renewal_date}">
+			{$label renewals renewal_date}
+		</label>
+		<div class="col-md-6 bs-horizontal-value" >
+			{$renewal_date_value}&nbsp;
+		</div>
+	</div>
+</div>
+{END renewal_date_fieldblock}
+	{BEGIN improvement_last_year_fieldblock}
+<div class="container">
+	<div class="{$fielddispclass_improvement_last_year} bs-viewform-group" data-fieldname="improvement_last_year">
+		<label class="bs-view-label col-md-4 text-right" for="{$labelfor_improvement_last_year}">
+			{$label renewals improvement_last_year}
+		</label>
+		<div class="col-md-6 bs-horizontal-value" >
+			{$improvement_last_year_value}&nbsp;
+		</div>
+	</div>
+</div>
+{END improvement_last_year_fieldblock}
+	{BEGIN improvement_comments_fieldblock}
+<div class="container">
+	<div class="{$fielddispclass_improvement_comments} bs-viewform-group" data-fieldname="improvement_comments">
+		<label class="bs-view-label col-md-4 text-right" for="{$labelfor_improvement_comments}">
+			{$label renewals improvement_comments}
+		</label>
+		<div class="col-md-6 bs-horizontal-value" >
+			{$improvement_comments_value}&nbsp;
+		</div>
+	</div>
+</div>
+{END improvement_comments_fieldblock}
+	{BEGIN support_end_date_fieldblock}
+<div class="container">
+	<div class="{$fielddispclass_support_end_date} bs-viewform-group" data-fieldname="support_end_date">
+		<label class="bs-view-label col-md-4 text-right" for="{$labelfor_support_end_date}">
+			{$label renewals support_end_date}
+		</label>
+		<div class="col-md-6 bs-horizontal-value" >
+			{$support_end_date_value}&nbsp;
+		</div>
+	</div>
+</div>
+{END support_end_date_fieldblock}
+	{BEGIN documents_fieldblock}
+<div class="container">
+	<div class="{$fielddispclass_documents} bs-viewform-group" data-fieldname="documents">
+		<label class="bs-view-label col-md-4 text-right" for="{$labelfor_documents}">
+			{$label renewals documents}
+		</label>
+		<div class="col-md-6 bs-horizontal-value" >
+			{$documents_value}&nbsp;
+		</div>
+	</div>
+</div>
+{END documents_fieldblock}
+	{BEGIN service_type_id_fieldblock}
+<div class="container">
+	<div class="{$fielddispclass_service_type_id} bs-viewform-group" data-fieldname="service_type_id">
+		<label class="bs-view-label col-md-4 text-right" for="{$labelfor_service_type_id}">
+			{$label renewals service_type_id}
+		</label>
+		<div class="col-md-6 bs-horizontal-value" >
+			{$service_type_id_value}&nbsp;
+		</div>
+	</div>
+</div>
+{END service_type_id_fieldblock}
+	{BEGIN term_id_fieldblock}
+<div class="container">
+	<div class="{$fielddispclass_term_id} bs-viewform-group" data-fieldname="term_id">
+		<label class="bs-view-label col-md-4 text-right" for="{$labelfor_term_id}">
+			{$label renewals term_id}
+		</label>
+		<div class="col-md-6 bs-horizontal-value" >
+			{$term_id_value}&nbsp;
+		</div>
+	</div>
+</div>
+{END term_id_fieldblock}
+	{BEGIN support_start_date_fieldblock}
+<div class="container">
+	<div class="{$fielddispclass_support_start_date} bs-viewform-group" data-fieldname="support_start_date">
+		<label class="bs-view-label col-md-4 text-right" for="{$labelfor_support_start_date}">
+			{$label renewals support_start_date}
+		</label>
+		<div class="col-md-6 bs-horizontal-value" >
+			{$support_start_date_value}&nbsp;
+		</div>
+	</div>
+</div>
+{END support_start_date_fieldblock}
+	{BEGIN last_update_fieldblock}
+<div class="container">
+	<div class="{$fielddispclass_last_update} bs-viewform-group" data-fieldname="last_update">
+		<label class="bs-view-label col-md-4 text-right" for="{$labelfor_last_update}">
+			{$label renewals last_update}
+		</label>
+		<div class="col-md-6 bs-horizontal-value" >
+			{$last_update_value}&nbsp;
+		</div>
+	</div>
+</div>
+{END last_update_fieldblock}
+	{BEGIN vendor_contact_id_fieldblock}
+<div class="container">
+	<div class="{$fielddispclass_vendor_contact_id} bs-viewform-group" data-fieldname="vendor_contact_id">
+		<label class="bs-view-label col-md-4 text-right" for="{$labelfor_vendor_contact_id}">
+			{$label renewals vendor_contact_id}
+		</label>
+		<div class="col-md-6 bs-horizontal-value" >
+			{$vendor_contact_id_value}&nbsp;
+		</div>
+	</div>
+</div>
+{END vendor_contact_id_fieldblock}
+	{BEGIN guid_fieldblock}
+<div class="container">
+	<div class="{$fielddispclass_guid} bs-viewform-group" data-fieldname="guid">
+		<label class="bs-view-label col-md-4 text-right" for="{$labelfor_guid}">
+			{$label renewals guid}
+		</label>
+		<div class="col-md-6 bs-horizontal-value" >
+			{$guid_value}&nbsp;
+		</div>
+	</div>
+</div>
+{END guid_fieldblock}
+</div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}
+<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container    "> 
+
+
+
+
+{BEGIN container_buttons}
+<div {$buttons_chiddenattr} data-pageid="{$pageid}" data-container="buttons" class=" form-group   "> 
+
+
+
+
+{BEGIN container_leftbuttons}
+<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-3 col-md-offset-3"> 
+
+{BEGIN viewbuttons}
+{BEGIN back_button}
+<button class="btn btn-primary" {$backbutton_attrs}>Back to list</button>
+{END back_button}
+{BEGIN close_button}
+<button href="#" class="btn btn-primary" {$closebutton_attrs}>Close window</button>
+{END close_button}
+{END viewbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+
+
+{BEGIN container_leftbuttons_1}
+<div {$leftbuttons_1_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons_1" class="  text-right col-md-3 "> 
+
+{BEGIN rightviewbuttons}
+<div class="btn-group" role="group">
+		{BEGIN prev_button}
+	<button class="btn btn-default {$prevbutton_class}" {$prevbutton_attrs}><span class="glyphicon glyphicon-chevron-left"></span></button>
+	{END prev_button}
+	{BEGIN next_button}
+	<button class="btn btn-default {$nextbutton_class}" {$nextbutton_attrs}><span class="glyphicon glyphicon-chevron-right"></span></button>
+	{END next_button}
+		{BEGIN view_menu_button}
+	<div class="btn-group dropup" role="group">
+		<button class="btn btn-default dropdown-toggle {$groupbutton_class}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+		<ul class="dropdown-menu dropdown-left">
+									{BEGIN edit_page_button}
+				<li><a href=# {$edit_page_button_attrs}>Edit</a></li>
+			{END edit_page_button}
+		</ul>
+	</div>
+	{END view_menu_button}
+</div>
+{END rightviewbuttons}
+
+
+
+</div>
+{END container_leftbuttons_1}
+
+
+
+
+
+
+</div>
+{END container_buttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

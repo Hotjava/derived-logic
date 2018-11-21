@@ -1,0 +1,84 @@
+body.page-preview
+{
+padding-top:10px; padding-left:10px;
+}
+.page-preview .rnr-c-form,
+  .rnr-pagewrapper .page-preview .rnr-c-form,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-c-form
+{
+margin-bottom:5px;
+}
+.page-preview .rnr-b-calmonthly_print,
+  .rnr-pagewrapper .page-preview .rnr-b-calmonthly_print,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-calmonthly_print
+{
+white-space: nowrap;
+}
+.page-preview .rnr-b-calmonthly_print,
+  .rnr-pagewrapper .page-preview .rnr-b-calmonthly_print,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-calmonthly_print
+{
+text-align: left;
+}
+.page-preview .rnr-b-calmonthly_print > *,
+  .rnr-pagewrapper .page-preview .rnr-b-calmonthly_print > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-calmonthly_print > *
+{
+
+}
+body.page-preview .rnr-center
+{
+padding-right: 5px;
+}
+.page-preview .rnr-c-add_css,
+  .rnr-pagewrapper .page-preview .rnr-c-add_css,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-c-add_css
+{
+margin-bottom:5px;
+}
+.page-preview .rnr-b-add_css,
+  .rnr-pagewrapper .page-preview .rnr-b-add_css,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-add_css
+{
+white-space: nowrap;
+}
+.page-preview .rnr-b-add_css,
+  .rnr-pagewrapper .page-preview .rnr-b-add_css,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-add_css
+{
+text-align: left;
+}
+.page-preview .rnr-b-add_css > *,
+  .rnr-pagewrapper .page-preview .rnr-b-add_css > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-add_css > *
+{
+
+}
+.page-preview .rnr-c-printheader,
+  .rnr-pagewrapper .page-preview .rnr-c-printheader,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-c-printheader
+{
+margin-bottom:5px;
+}
+.page-preview .rnr-b-printheader,
+  .rnr-pagewrapper .page-preview .rnr-b-printheader,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-printheader
+{
+white-space: nowrap;
+}
+.page-preview .rnr-b-printheader,
+  .rnr-pagewrapper .page-preview .rnr-b-printheader,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-printheader
+{
+text-align: left;
+}
+.page-preview .rnr-b-printheader > *,
+  .rnr-pagewrapper .page-preview .rnr-b-printheader > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-printheader > *
+{
+
+}
+body.page-preview .rnr-top
+{
+padding-right: 5px;
+}

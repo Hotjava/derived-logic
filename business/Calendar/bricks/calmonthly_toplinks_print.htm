@@ -1,0 +1,5 @@
+{BEGIN print_link}
+	<a target=_blank href="##@TABLE.strShortTableName s##_print.##@ext##" class="rnr-button" {$printlink_attrs}>##if IsReport(@TABLE)####message PRINTER_FRIENDLY####else####message PRINT_THIS_PAGE####endif##</a>
+{END print_link}
+
+

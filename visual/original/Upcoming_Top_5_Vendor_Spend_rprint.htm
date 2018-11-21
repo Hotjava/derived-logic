@@ -1,0 +1,128 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-rprint" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_pdf}
+<div {$pdf_chiddenattr} data-pageid="{$pageid}" data-container="pdf" class="   col-md-12 "> 
+
+{BEGIN printbuttons}
+
+{END printbuttons}
+
+
+
+</div>
+{END container_pdf}
+
+
+
+
+
+{BEGIN container_pageheader}
+<div {$pageheader_chiddenattr} data-pageid="{$pageid}" data-container="pageheader" class="    "> 
+
+{BEGIN printheader}
+	<h2 {$printheader_hiddenattr} data-pageid="{$pageid}" data-brick="printheader" >{$pagetitlelabel Upcoming_Top_5_Vendor_Spend rprint}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END printheader}
+
+
+{BEGIN page_number}
+<span>Page <span class="rp-pageno">{$pageno}</span> of <span class="rp-pagecount">{$pagecount}</span></span>
+{END page_number}
+
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+
+{BEGIN grid_block}
+<style>
+	td.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary {background-color:#ffffbb;}
+	td.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary {background-color:#ffe0b0;}
+
+</style>
+
+<div id="grid_block{$id}" class="rnr-report-gridblock">
+			<table {$report_print_hiddenattr} data-pageid="{$pageid}" data-brick="report_print" class="table table-striped table-bordered rnr-b-grid rnr-gridtable" cellpadding="0" >
+<thead>
+<tr class="rnr-toprow table-header style1">
+
+<th>{$label Upcoming_Top_5_Vendor_Spend vendor_name}</th>
+<th>{$label Upcoming_Top_5_Vendor_Spend Total_Previous_Spend}</th>
+</tr>
+</thead>
+<tbody>
+{BEGIN grid_row}
+<!-------------------------------------  data ----------------------------------------->
+{BEGIN row_data}
+<tr class="rnr-row style1" {$rowattrs}>
+	<td {$recordattrs}>{$vendor_name_value}</td>
+	<td {$recordattrs}>{$Total_Previous_Spend_value}</td>
+</tr>
+{END row_data}
+
+{END grid_row}
+</tbody>
+</table>
+</div>
+{END grid_block}
+
+
+
+
+
+{END container_grid}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

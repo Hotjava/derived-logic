@@ -1,0 +1,110 @@
+body.page-Calendarcalmonthly_view
+{
+padding-top:10px; padding-left:10px;
+}
+.page-Calendarcalmonthly_view .rnr-c-fields,
+  .rnr-pagewrapper .page-Calendarcalmonthly_view .rnr-c-fields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalmonthly_view .rnr-c-fields
+{
+margin-bottom:5px;
+}
+.page-Calendarcalmonthly_view .rnr-c-fields,
+  .rnr-pagewrapper .page-Calendarcalmonthly_view .rnr-c-fields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalmonthly_view .rnr-c-fields
+{
+min-width: 300px;
+}
+.page-Calendarcalmonthly_view .rnr-b-viewheader,
+  .rnr-pagewrapper .page-Calendarcalmonthly_view .rnr-b-viewheader,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalmonthly_view .rnr-b-viewheader
+{
+white-space: nowrap;
+}
+.page-Calendarcalmonthly_view .rnr-b-viewheader,
+  .rnr-pagewrapper .page-Calendarcalmonthly_view .rnr-b-viewheader,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalmonthly_view .rnr-b-viewheader
+{
+text-align: right;
+}
+.page-Calendarcalmonthly_view .rnr-b-viewheader > *,
+  .rnr-pagewrapper .page-Calendarcalmonthly_view .rnr-b-viewheader > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalmonthly_view .rnr-b-viewheader > *
+{
+font-size: 120%;
+}
+.page-Calendarcalmonthly_view .rnr-b-viewfields,
+  .rnr-pagewrapper .page-Calendarcalmonthly_view .rnr-b-viewfields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalmonthly_view .rnr-b-viewfields
+{
+white-space: normal;
+}
+.page-Calendarcalmonthly_view .rnr-b-viewfields,
+  .rnr-pagewrapper .page-Calendarcalmonthly_view .rnr-b-viewfields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalmonthly_view .rnr-b-viewfields
+{
+text-align: right;
+}
+.page-Calendarcalmonthly_view .rnr-b-viewfields > *,
+  .rnr-pagewrapper .page-Calendarcalmonthly_view .rnr-b-viewfields > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalmonthly_view .rnr-b-viewfields > *
+{
+
+}
+.page-Calendarcalmonthly_view .rnr-b-viewbuttons,
+  .rnr-pagewrapper .page-Calendarcalmonthly_view .rnr-b-viewbuttons,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalmonthly_view .rnr-b-viewbuttons
+{
+white-space: nowrap;
+}
+.page-Calendarcalmonthly_view .rnr-b-viewbuttons,
+  .rnr-pagewrapper .page-Calendarcalmonthly_view .rnr-b-viewbuttons,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalmonthly_view .rnr-b-viewbuttons
+{
+text-align: right;
+}
+.page-Calendarcalmonthly_view .rnr-b-viewbuttons > *,
+  .rnr-pagewrapper .page-Calendarcalmonthly_view .rnr-b-viewbuttons > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalmonthly_view .rnr-b-viewbuttons > *
+{
+
+}
+.page-Calendarcalmonthly_view .rnr-c-details,
+  .rnr-pagewrapper .page-Calendarcalmonthly_view .rnr-c-details,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalmonthly_view .rnr-c-details
+{
+margin-bottom:5px;
+}
+.page-Calendarcalmonthly_view .rnr-c-details,
+  .rnr-pagewrapper .page-Calendarcalmonthly_view .rnr-c-details,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalmonthly_view .rnr-c-details
+{
+; display:inline-block
+}
+.page-Calendarcalmonthly_view .rnr-cw-details,
+  .rnr-pagewrapper .page-Calendarcalmonthly_view .rnr-cw-details,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalmonthly_view .rnr-cw-details
+{
+text-align: left;
+}
+.page-Calendarcalmonthly_view .rnr-b-viewdetails,
+  .rnr-pagewrapper .page-Calendarcalmonthly_view .rnr-b-viewdetails,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalmonthly_view .rnr-b-viewdetails
+{
+white-space: nowrap;
+}
+.page-Calendarcalmonthly_view .rnr-b-viewdetails,
+  .rnr-pagewrapper .page-Calendarcalmonthly_view .rnr-b-viewdetails,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalmonthly_view .rnr-b-viewdetails
+{
+text-align: right;
+}
+.page-Calendarcalmonthly_view .rnr-b-viewdetails > *,
+  .rnr-pagewrapper .page-Calendarcalmonthly_view .rnr-b-viewdetails > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Calendarcalmonthly_view .rnr-b-viewdetails > *
+{
+
+}
+body.page-Calendarcalmonthly_view .rnr-top
+{
+padding-right: 5px;
+}

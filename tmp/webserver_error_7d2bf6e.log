@@ -1,0 +1,11 @@
+[Sat Oct 20 20:57:16.379545 2018] [core:warn] [pid 31412:tid 536] AH00117: Ignoring deprecated use of DefaultType in line 21 of D:/ImportLogs/RandstadNA/Calendar_backup_20181007/Calendar/tmp/webserver.conf.
+[Sat Oct 20 20:57:16.514746 2018] [mpm_winnt:notice] [pid 31412:tid 536] AH00455: Apache/2.4.10 (Win32) PHP/5.5.18 configured -- resuming normal operations
+[Sat Oct 20 20:57:16.514746 2018] [mpm_winnt:notice] [pid 31412:tid 536] AH00456: Apache Lounge VC11 Server built: Jul 17 2014 11:50:08
+[Sat Oct 20 20:57:16.514746 2018] [core:notice] [pid 31412:tid 536] AH00094: Command line: 'C:\\Program Files\\PHPRunner9.8\\EmbeddedServer\\bin\\httpd.exe -d C:/Program Files/PHPRunner9.8/EmbeddedServer -d C:\\Program Files\\PHPRunner9.8\\EmbeddedServer -f D:\\ImportLogs\\RandstadNA\\Calendar_backup_20181007\\Calendar\\tmp\\webserver.conf'
+[Sat Oct 20 20:57:16.529758 2018] [mpm_winnt:notice] [pid 31412:tid 536] AH00418: Parent: Created child process 1692
+[Sat Oct 20 20:57:17.240414 2018] [core:warn] [pid 1692:tid 660] AH00117: Ignoring deprecated use of DefaultType in line 21 of D:/ImportLogs/RandstadNA/Calendar_backup_20181007/Calendar/tmp/webserver.conf.
+[Sat Oct 20 20:57:17.315155 2018] [core:warn] [pid 1692:tid 660] AH00117: Ignoring deprecated use of DefaultType in line 21 of D:/ImportLogs/RandstadNA/Calendar_backup_20181007/Calendar/tmp/webserver.conf.
+[Sat Oct 20 20:57:17.423934 2018] [mpm_winnt:notice] [pid 1692:tid 660] AH00354: Child: Starting 64 worker threads.
+[Sat Oct 20 21:45:05.701003 2018] [mpm_winnt:notice] [pid 31412:tid 536] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sat Oct 20 21:45:07.702290 2018] [mpm_winnt:notice] [pid 1692:tid 660] AH00364: Child: All worker threads have exited.
+[Sat Oct 20 21:45:07.730351 2018] [mpm_winnt:notice] [pid 31412:tid 536] AH00430: Parent: Child process 1692 exited successfully.

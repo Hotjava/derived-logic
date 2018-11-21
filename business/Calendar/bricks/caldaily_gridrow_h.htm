@@ -1,0 +1,101 @@
+								{BEGIN grid_row}
+								<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+									{BEGIN grid_record}
+									{BEGIN listIcons_column}
+									<td class="rnr-cc rnr-bc rnr-icons" iEditCont="all" {$rowstyle} {$recordattrs}>
+									##if @TABLE.bEdit##
+									{BEGIN edit_column}
+									{BEGIN edit_link}
+									##if @TABLE.bListIcons##
+										<a class="rnr-button-img" {$my_editlink_attrs} data-icon="edit" title="##message EDIT##"></a>
+									##else##
+										<a  {$my_editlink_attrs}>##message EDIT##</a>
+									##endif##
+									{END edit_link}
+									{END edit_column}
+									##endif##
+
+									##if @TABLE.bInlineEdit##
+									{BEGIN inlineedit_column}
+									{BEGIN inlineedit_link}
+									##if @TABLE.bListIcons##
+										<a class="rnr-button-img" {$my_inlineeditlink_attrs} data-icon="inlineedit" title="##message INLINE_EDIT##"></a>
+									##else##
+										<a  {my_$inlineeditlink_attrs}>##message INLINE_EDIT##</a>
+									##endif##
+									{END inlineedit_link}
+									{END inlineedit_column}
+									##endif##
+
+									##if @TABLE.bCopy##
+									{BEGIN copy_column}
+									{BEGIN copy_link}
+									##if @TABLE.bListIcons##
+										<a class="rnr-button-img" {$copylink_attrs} data-icon="copy" title="##message COPY##"></a>
+									##else##
+										<a  {$copylink_attrs}>##message COPY##</a>
+									##endif##
+									{END copy_link}
+									{END copy_column}
+									##endif##
+
+									##if @TABLE.bView##
+									{BEGIN view_column}
+									{BEGIN view_link}
+									##if @TABLE.bListIcons##
+										<a class="rnr-button-img" {$my_viewlink_attrs} data-icon="view" title="##message VIEW##"></a>
+									##else##
+										<a  {$my_viewlink_attrs}>##message VIEW##</a>
+									##endif##
+									{END view_link}
+									{END view_column}
+									##endif##
+									</td>	
+									{END listIcons_column}	
+
+									##if @TABLE.arrKeyFields.len && (@TABLE.bDelete || @TABLE.bExportTo || @TABLE.bPrinterFriendly || @TABLE.bInlineEdit)##
+									{BEGIN checkbox_column}
+									<td class="rnr-bc" iEditCont="checkBox" {$rowstyle} {$recordattrs}>
+									{BEGIN checkbox}
+									<input type="checkbox" {$checkbox_attrs}>
+									{END checkbox}
+									</td>
+									{END checkbox_column}
+									##endif##
+
+									##foreach @TABLE.arrDetailTables as @d##
+									##if @first##
+									{BEGIN ##@TABLE.strDataSourceTable g##_dtable_column}
+									<td class="rnr-nowrap" {$rowstyle} {$recordattrs}>
+									##endif##
+									{BEGIN ##@BUILDER.tables{@d}.strShortTableName##_dtable_link}
+									<span>
+									<a {$##@BUILDER.tables{@d}.strShortTableName##_dtablelink_attrs}>
+										##caption @d##
+										##if @BUILDER.tables{@d}.arrMasterTables{@TABLE.strDataSourceTable}.bDisplayChildCount##
+										<span {$##@BUILDER.tables{@d}.strShortTableName##_childnumber_attr} dir="ltr">{BEGIN ##@BUILDER.tables{@d}.strShortTableName##_childcount}({$##@BUILDER.tables{@d}.strShortTableName##_childnumber}){END ##@BUILDER.tables{@d}.strShortTableName##_childcount}</span>
+									##endif##
+									</a>
+									##if @TABLE.bDetailLinksHorizontal##
+									&nbsp;
+									##else##
+									<br>
+									##endif##
+									</span>
+									{END ##@BUILDER.tables{@d}.strShortTableName##_dtable_link}
+									##if @last##
+									</td>
+									{END ##@TABLE.strDataSourceTable g##_dtable_column}
+									##endif##
+									##endfor##
+
+									##brick_param gridfieldsrow_horizontal##
+									<td class="rnr-edge">&nbsp;</td>
+									{BEGIN endrecord_block}
+									<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+									{END endrecord_block}
+																	
+									{END grid_record}
+
+								</tr>
+								{END grid_row}

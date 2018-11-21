@@ -1,0 +1,379 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_editpage}
+<div {$editpage_chiddenattr} data-pageid="{$pageid}" data-container="editpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}
+<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-9 col-md-offset-3"> 
+
+{BEGIN addheader}
+	<h2 {$addheader_hiddenattr} data-pageid="{$pageid}" data-brick="addheader" >{$pagetitlelabel calcalendar add}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END addheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+
+
+{BEGIN container_message}
+<div {$message_chiddenattr} data-pageid="{$pageid}" data-container="message" class="   col-md-6 col-md-offset-3"> 
+
+{BEGIN message_block}
+<div {$message_hiddenattr} data-pageid="{$pageid}" data-brick="message" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+		<button class="btn btn-sm btn-default" {$backbutton_attrs}>Back to list</button>
+{END back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>View</button>
+{END view_page_button}
+{BEGIN edit_page_button}
+	<button class="btn btn-sm btn-default" {$edit_page_button_attrs}>Edit</button>
+{END edit_page_button}
+</div>
+</div>
+
+{END message_block}
+
+
+
+</div>
+{END container_message}
+
+
+
+
+
+
+
+</div>
+{END container_editpage}
+
+
+
+{BEGIN container_fields}
+<div {$fields_chiddenattr} data-pageid="{$pageid}" data-container="fields" class="   col-md-12 "> 
+
+
+<div {$addfields_hiddenattr} data-pageid="{$pageid}" data-brick="addfields" class="form-horizontal" role="form">
+			{BEGIN DateField_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_DateField}" data-fieldname="DateField" data-signal-error-for="DateField{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_DateField}">
+		{BEGIN DateField_label}{$label calcalendar DateField}{END DateField_label}
+	</label>
+	<div class="col-md-6" >
+		{$DateField_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="DateField">
+		<div class="text-muted" >
+		{$tooltip calcalendar DateField}
+		</div>
+	</div>
+</div>
+</div>
+{END DateField_fieldblock}
+
+			{BEGIN Description_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_Description}" data-fieldname="Description" data-signal-error-for="Description{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_Description}">
+		{BEGIN Description_label}{$label calcalendar Description}{END Description_label}
+	</label>
+	<div class="col-md-6" >
+		{$Description_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="Description">
+		<div class="text-muted" >
+		{$tooltip calcalendar Description}
+		</div>
+	</div>
+</div>
+</div>
+{END Description_fieldblock}
+
+			{BEGIN Subject_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_Subject}" data-fieldname="Subject" data-signal-error-for="Subject{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_Subject}">
+		{BEGIN Subject_label}{$label calcalendar Subject}{END Subject_label}
+	</label>
+	<div class="col-md-6" >
+		{$Subject_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="Subject">
+		<div class="text-muted" >
+		{$tooltip calcalendar Subject}
+		</div>
+	</div>
+</div>
+</div>
+{END Subject_fieldblock}
+
+			{BEGIN TimeField_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_TimeField}" data-fieldname="TimeField" data-signal-error-for="TimeField{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_TimeField}">
+		{BEGIN TimeField_label}{$label calcalendar TimeField}{END TimeField_label}
+	</label>
+	<div class="col-md-6" >
+		{$TimeField_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="TimeField">
+		<div class="text-muted" >
+		{$tooltip calcalendar TimeField}
+		</div>
+	</div>
+</div>
+</div>
+{END TimeField_fieldblock}
+
+			{BEGIN EndTime_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_EndTime}" data-fieldname="EndTime" data-signal-error-for="EndTime{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_EndTime}">
+		{BEGIN EndTime_label}{$label calcalendar EndTime}{END EndTime_label}
+	</label>
+	<div class="col-md-6" >
+		{$EndTime_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="EndTime">
+		<div class="text-muted" >
+		{$tooltip calcalendar EndTime}
+		</div>
+	</div>
+</div>
+</div>
+{END EndTime_fieldblock}
+
+			{BEGIN DayEvent_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_DayEvent}" data-fieldname="DayEvent" data-signal-error-for="DayEvent{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_DayEvent}">
+		{BEGIN DayEvent_label}{$label calcalendar DayEvent}{END DayEvent_label}
+	</label>
+	<div class="col-md-6" >
+		{$DayEvent_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="DayEvent">
+		<div class="text-muted" >
+		{$tooltip calcalendar DayEvent}
+		</div>
+	</div>
+</div>
+</div>
+{END DayEvent_fieldblock}
+
+			{BEGIN EndDate_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_EndDate}" data-fieldname="EndDate" data-signal-error-for="EndDate{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_EndDate}">
+		{BEGIN EndDate_label}{$label calcalendar EndDate}{END EndDate_label}
+	</label>
+	<div class="col-md-6" >
+		{$EndDate_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="EndDate">
+		<div class="text-muted" >
+		{$tooltip calcalendar EndDate}
+		</div>
+	</div>
+</div>
+</div>
+{END EndDate_fieldblock}
+
+			{BEGIN Period_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_Period}" data-fieldname="Period" data-signal-error-for="Period{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_Period}">
+		{BEGIN Period_label}{$label calcalendar Period}{END Period_label}
+	</label>
+	<div class="col-md-6" >
+		{$Period_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="Period">
+		<div class="text-muted" >
+		{$tooltip calcalendar Period}
+		</div>
+	</div>
+</div>
+</div>
+{END Period_fieldblock}
+
+			{BEGIN Recurrence_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_Recurrence}" data-fieldname="Recurrence" data-signal-error-for="Recurrence{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_Recurrence}">
+		{BEGIN Recurrence_label}{$label calcalendar Recurrence}{END Recurrence_label}
+	</label>
+	<div class="col-md-6" >
+		{$Recurrence_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="Recurrence">
+		<div class="text-muted" >
+		{$tooltip calcalendar Recurrence}
+		</div>
+	</div>
+</div>
+</div>
+{END Recurrence_fieldblock}
+
+			{BEGIN Category_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_Category}" data-fieldname="Category" data-signal-error-for="Category{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_Category}">
+		{BEGIN Category_label}{$label calcalendar Category}{END Category_label}
+	</label>
+	<div class="col-md-6" >
+		{$Category_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="Category">
+		<div class="text-muted" >
+		{$tooltip calcalendar Category}
+		</div>
+	</div>
+</div>
+</div>
+{END Category_fieldblock}
+
+			{BEGIN PeriodDays_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_PeriodDays}" data-fieldname="PeriodDays" data-signal-error-for="PeriodDays{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_PeriodDays}">
+		{BEGIN PeriodDays_label}{$label calcalendar PeriodDays}{END PeriodDays_label}
+	</label>
+	<div class="col-md-6" >
+		{$PeriodDays_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="PeriodDays">
+		<div class="text-muted" >
+		{$tooltip calcalendar PeriodDays}
+		</div>
+	</div>
+</div>
+</div>
+{END PeriodDays_fieldblock}
+
+
+</div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}
+<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container    "> 
+
+
+
+
+{BEGIN container_buttons}
+<div {$buttons_chiddenattr} data-pageid="{$pageid}" data-container="buttons" class=" form-group   "> 
+
+
+
+
+{BEGIN container_leftbuttons}
+<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-3 col-md-offset-3"> 
+
+{BEGIN addbuttons}
+	{BEGIN save_button}
+	<button class="btn btn-primary" {$savebutton_attrs}>Save</button>
+	{END save_button}
+	{BEGIN reset_button}
+	<button class="btn btn-default" id="resetButton{$id}">Reset</button>
+	{END reset_button}
+	{BEGIN back_button}
+		<button class="btn btn-default" id="backButton{$id}">Back to list</button>
+	{END back_button}
+	{BEGIN cancel_button}
+	<a href="#" class="btn btn-default" id="cancelButton{$id}">Cancel</a>
+	{END cancel_button}
+
+{END addbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+</div>
+{END container_buttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

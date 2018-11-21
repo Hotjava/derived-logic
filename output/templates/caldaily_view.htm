@@ -1,0 +1,130 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div style="white-space: nowrap;" class="rnr-brickcontents style2 rnr-b-viewheader {$brickclass_viewheader}"><span>{$windvalue}
+<div id="header_block_view" class="top" style="white-space:nowrap;height:31px;padding-top:5px;text-align:center;{$row00headervalue}" {$row00headervalue2}>
+View Event</div></span></div>
+
+
+
+	    {BEGIN Subject_fieldblock}
+<div data-fieldname="Subject" class="rnr-field style1 {$fielddispclass_Subject} calendar-subject" {$bgc_category}>
+	<span class="rnr-control style3 "  >{$Subject_value}</span>
+</div>
+{END Subject_fieldblock}
+
+	     {BEGIN Description_fieldblock}
+	<div data-fieldname="Description" class="rnr-field style1 {$fielddispclass_Description}">
+   <span class="rnr-control style3 " >{$Description_value}</span>
+  </div>
+{END Description_fieldblock} 
+
+	     {BEGIN DateField_fieldblock}
+	<div data-fieldname="DateField" class="rnr-field style1 {$fielddispclass_DateField}">
+  <span class="rnr-control style3">{$DateField_value}</span>   
+  {BEGIN EndDate_fieldblock} 
+  <span data-fieldname="DateField" class="rnr-field style1 {$fielddispclass_EndDate}"> 
+  <span class="rnr-label">{$label caldaily EndDate}</span> 
+  <span class="rnr-control style3"> {$EndDate_value}</span> 
+  </span>
+  {END EndDate_fieldblock}
+    </div>
+{END DateField_fieldblock}
+
+	      {BEGIN TimeField_fieldblock}
+<div data-fieldname="TimeField" class="rnr-field style1 {$fielddispclass_TimeField}">
+   <span class="rnr-label">{$label caldaily TimeField}</span>
+   <span class="rnr-control style3">{$TimeField_value}</span>   
+   {BEGIN EndTime_fieldblock} 
+   <span data-fieldname="TimeField" class="rnr-field style1 {$fielddispclass_EndTime}"> 
+	<span class="rnr-label">{$label caldaily EndTime}</span> 
+   <span class="rnr-control style3">{$EndTime_value}</span>
+   </span>
+   {END EndTime_fieldblock}
+ </div>
+{END TimeField_fieldblock}
+
+	     {BEGIN DayEvent_fieldblock}
+	<div data-fieldname="DayEvent" class="rnr-field style1 {$fielddispclass_DayEvent}">
+   <span class="rnr-control style3 " >{$DayEvent_value}</span>
+  </div>
+{END DayEvent_fieldblock} 
+
+	  {BEGIN Recurrence_fieldblock}
+<div data-fieldname="Recurrence" class="rnr-field style1 {$fielddispclass_Recurrence}">
+	<span class="rnr-label">{$label caldaily Recurrence}</span>
+	{BEGIN Period_fieldblock}<span class="rnr-control style3">{$Period_value}</span> {END Period_fieldblock} 
+	{BEGIN PeriodDays_fieldblock}
+	<span data-fieldname="Recurrence" class="rnr-field style1 {$fielddispclass_PeriodDays}"> 
+	<span class="rnr-label">{$label caldaily PeriodDays}</span>
+	<span class="rnr-control style3">{$PeriodDays_value}</span>
+	</span>
+	{END PeriodDays_fieldblock}
+ </div>
+{END Recurrence_fieldblock}
+
+
+
+
+
+<div style="white-space: nowrap;" class="rnr-brickcontents style2 rnr-b-viewbuttons {$brickclass_viewbuttons}">{BEGIN back_button}
+<a href="#" class="rnr-button" {$my_backbutton_attrs}>Back to list</a>
+{END back_button}</div>
+
+
+</div>
+{END container_fields}
+
+
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

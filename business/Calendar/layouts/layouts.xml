@@ -1,0 +1,344 @@
+<layouts>
+<layout>
+    <file>calcategory_add.ly</file>
+    <page>add</page>
+    <name>Calendar</name>
+    <table>calcategory</table>
+</layout>
+<layout>
+    <file>calcategory_edit.ly</file>
+    <page>edit</page>
+    <name>Calendar</name>
+    <table>calcategory</table>
+</layout>
+<layout>
+    <file>caldaily_add.ly</file>
+    <page>add</page>
+    <name>Calendar</name>
+    <table>caldaily</table>
+</layout>
+<layout>
+    <file>caldaily_edit.ly</file>
+    <page>edit</page>
+    <name>Calendar</name>
+    <table>caldaily</table>
+</layout>
+<layout>
+    <file>caldaily_view.ly</file>
+    <page>view</page>
+    <name>Calendar</name>
+    <table>caldaily</table>
+</layout>
+<layout>
+    <file>calmonthly_list.ly</file>
+    <page>list</page>
+    <name>list</name>
+    <table>calmonthly</table>
+</layout>
+<layout>
+    <file>calmonthly_list2.ly</file>
+    <page>list</page>
+    <name>list2</name>
+    <table>calmonthly</table>
+</layout>
+<layout>
+    <file>calmonthly_list3.ly</file>
+    <page>list</page>
+    <name>list3</name>
+    <table>calmonthly</table>
+</layout>
+<layout>
+    <file>calmonthly_list4.ly</file>
+    <page>list</page>
+    <name>list4</name>
+    <table>calmonthly</table>
+</layout>
+<layout>
+    <file>calmonthly_list5.ly</file>
+    <page>list</page>
+    <name>list5</name>
+    <table>calmonthly</table>
+</layout>
+<layout>
+    <file>calmonthly_list6.ly</file>
+    <page>list</page>
+    <name>list6</name>
+    <table>calmonthly</table>
+</layout>
+<layout>
+    <file>calmonthly_list7.ly</file>
+    <page>list</page>
+    <name>list7</name>
+    <table>calmonthly</table>
+</layout>
+<layout>
+    <file>calmonthly_list8.ly</file>
+    <page>list</page>
+    <name>list8</name>
+    <table>calmonthly</table>
+</layout>
+<layout>
+    <file>calmonthly_centered_vert.ly</file>
+    <page>list</page>
+    <name>centered_vert</name>
+    <table>calmonthly</table>
+</layout>
+<layout>
+    <file>calmonthly_centered_hor.ly</file>
+    <page>list</page>
+    <name>centered_hor</name>
+    <table>calmonthly</table>
+</layout>
+<layout>
+    <file>calmonthly_centered_horvert.ly</file>
+    <page>list</page>
+    <name>centered_horvert</name>
+    <table>calmonthly</table>
+</layout>
+<layout>
+    <file>calmonthly_add.ly</file>
+    <page>add</page>
+    <name>Calendar</name>
+    <table>calmonthly</table>
+</layout>
+<layout>
+    <file>calmonthly_edit.ly</file>
+    <page>edit</page>
+    <name>Calendar</name>
+    <table>calmonthly</table>
+</layout>
+<layout>
+    <file>calmonthly_view.ly</file>
+    <page>view</page>
+    <name>Calendar</name>
+    <table>calmonthly</table>
+</layout>
+<layout>
+    <file>calmonthly_print.ly</file>
+    <page>print</page>
+    <name>calmonthly</name>
+    <table>calmonthly</table>
+</layout>
+<layout>
+    <file>calweekly_list.ly</file>
+    <page>list</page>
+    <name>list</name>
+    <table>calweekly</table>
+</layout>
+<layout>
+    <file>calweekly_list2.ly</file>
+    <page>list</page>
+    <name>list2</name>
+    <table>calweekly</table>
+</layout>
+<layout>
+    <file>calweekly_list3.ly</file>
+    <page>list</page>
+    <name>list3</name>
+    <table>calweekly</table>
+</layout>
+<layout>
+    <file>calweekly_list4.ly</file>
+    <page>list</page>
+    <name>list4</name>
+    <table>calweekly</table>
+</layout>
+<layout>
+    <file>calweekly_list5.ly</file>
+    <page>list</page>
+    <name>list5</name>
+    <table>calweekly</table>
+</layout>
+<layout>
+    <file>calweekly_list6.ly</file>
+    <page>list</page>
+    <name>list6</name>
+    <table>calweekly</table>
+</layout>
+<layout>
+    <file>calweekly_list7.ly</file>
+    <page>list</page>
+    <name>list7</name>
+    <table>calweekly</table>
+</layout>
+<layout>
+    <file>calweekly_list8.ly</file>
+    <page>list</page>
+    <name>list8</name>
+    <table>calweekly</table>
+</layout>
+<layout>
+    <file>calweekly_centered_vert.ly</file>
+    <page>list</page>
+    <name>centered_vert</name>
+    <table>calweekly</table>
+</layout>
+<layout>
+    <file>calweekly_centered_hor.ly</file>
+    <page>list</page>
+    <name>centered_hor</name>
+    <table>calweekly</table>
+</layout>
+<layout>
+    <file>calweekly_centered_horvert.ly</file>
+    <page>list</page>
+    <name>centered_horvert</name>
+    <table>calweekly</table>
+</layout>
+<layout>
+    <file>calweekly_add.ly</file>
+    <page>add</page>
+    <name>Calendar</name>
+    <table>calweekly</table>
+</layout>
+<layout>
+    <file>calweekly_edit.ly</file>
+    <page>edit</page>
+    <name>Calendar</name>
+    <table>calweekly</table>
+</layout>
+<layout>
+    <file>calweekly_view.ly</file>
+    <page>view</page>
+    <name>Calendar</name>
+    <table>calweekly</table>
+</layout>
+<layout>
+    <file>calweekly_print.ly</file>
+    <page>print</page>
+    <name>calweekly</name>
+    <table>calweekly</table>
+</layout>
+<layout>
+    <file>calyearly_list.ly</file>
+    <page>list</page>
+    <name>list</name>
+    <table>calyearly</table>
+</layout>
+<layout>
+    <file>calyearly_list2.ly</file>
+    <page>list</page>
+    <name>list2</name>
+    <table>calyearly</table>
+</layout>
+<layout>
+    <file>calyearly_list3.ly</file>
+    <page>list</page>
+    <name>list3</name>
+    <table>calyearly</table>
+</layout>
+<layout>
+    <file>calyearly_list4.ly</file>
+    <page>list</page>
+    <name>list4</name>
+    <table>calyearly</table>
+</layout>
+<layout>
+    <file>calyearly_list5.ly</file>
+    <page>list</page>
+    <name>list5</name>
+    <table>calyearly</table>
+</layout>
+<layout>
+    <file>calyearly_list6.ly</file>
+    <page>list</page>
+    <name>list6</name>
+    <table>calyearly</table>
+</layout>
+<layout>
+    <file>calyearly_list7.ly</file>
+    <page>list</page>
+    <name>list7</name>
+    <table>calyearly</table>
+</layout>
+<layout>
+    <file>calyearly_list8.ly</file>
+    <page>list</page>
+    <name>list8</name>
+    <table>calyearly</table>
+</layout>
+<layout>
+    <file>calyearly_centered_vert.ly</file>
+    <page>list</page>
+    <name>centered_vert</name>
+    <table>calyearly</table>
+</layout>
+<layout>
+    <file>calyearly_centered_hor.ly</file>
+    <page>list</page>
+    <name>centered_hor</name>
+    <table>calyearly</table>
+</layout>
+<layout>
+    <file>calyearly_centered_horvert.ly</file>
+    <page>list</page>
+    <name>centered_horvert</name>
+    <table>calyearly</table>
+</layout>
+<layout>
+    <file>caldaily_list.ly</file>
+    <page>list</page>
+    <name>list</name>
+    <table>caldaily</table>
+</layout>
+<layout>
+    <file>caldaily_list2.ly</file>
+    <page>list</page>
+    <name>list2</name>
+    <table>caldaily</table>
+</layout>
+<layout>
+    <file>caldaily_list3.ly</file>
+    <page>list</page>
+    <name>list3</name>
+    <table>caldaily</table>
+</layout>
+<layout>
+    <file>caldaily_list4.ly</file>
+    <page>list</page>
+    <name>list4</name>
+    <table>caldaily</table>
+</layout>
+<layout>
+    <file>caldaily_list5.ly</file>
+    <page>list</page>
+    <name>list5</name>
+    <table>caldaily</table>
+</layout>
+<layout>
+    <file>caldaily_list6.ly</file>
+    <page>list</page>
+    <name>list6</name>
+    <table>caldaily</table>
+</layout>
+<layout>
+    <file>caldaily_list7.ly</file>
+    <page>list</page>
+    <name>list7</name>
+    <table>caldaily</table>
+</layout>
+<layout>
+    <file>caldaily_list8.ly</file>
+    <page>list</page>
+    <name>list8</name>
+    <table>caldaily</table>
+</layout>
+<layout>
+    <file>caldaily_centered_vert.ly</file>
+    <page>list</page>
+    <name>centered_vert</name>
+    <table>caldaily</table>
+</layout>
+<layout>
+    <file>caldaily_centered_hor.ly</file>
+    <page>list</page>
+    <name>centered_hor</name>
+    <table>caldaily</table>
+</layout>
+<layout>
+    <file>caldaily_centered_horvert.ly</file>
+    <page>list</page>
+    <name>centered_horvert</name>
+    <table>caldaily</table>
+</layout>
+</layouts>

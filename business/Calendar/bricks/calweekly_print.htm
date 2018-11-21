@@ -1,0 +1,32 @@
+<table style="width:1000px">
+	##repeat 7 @i##
+	<tr>
+		<td>
+		{BEGIN row00##@i##Datevisible}
+			<table height=100 width=100% border=0 cellpadding=0 cellspacing=0>
+				<tr>
+					<td height=20 align=right style="border-bottom:1px solid black;vertical-align:bottom">
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=left>&nbsp;</td>
+								<td align=right>
+								<b>{$row00##@i##Datevalue}</b>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=left valign=top style="padding-top:5px">
+						{$row00##@i##Dayvalue}
+					</td>
+				</tr>
+				<tr>
+					<td height=5></td>
+				</tr>
+			</table>
+		{END row00##@i##Datevisible}
+		</td>
+	</tr>
+	##endrepeat##
+</table>

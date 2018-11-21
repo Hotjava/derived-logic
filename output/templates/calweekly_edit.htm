@@ -1,0 +1,230 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-edit" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+{BEGIN editheader}
+<div style="white-space: nowrap;" class="rnr-brickcontents style2 rnr-b-editheader {$brickclass_editheader}"><span>{$event calweekly_snippet2}
+Edit Event</span></div>{END editheader}
+
+
+{BEGIN message_block}
+<div  class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>{END message_block}
+
+
+
+<div style="white-space: nowrap;" class="rnr-brickcontents style1 rnr-b-editfields {$brickclass_editfields}"><table class="fieldGrid">
+	{BEGIN Subject_fieldblock}
+<tr class="{$fielddispclass_Subject}" data-fieldname="Subject" id=Subject>
+		<td class="rnr-label">
+			{BEGIN Subject_label}{$label calweekly Subject}{END Subject_label}
+		</td>
+		<td class="rnr-control style3" 
+		colspan=3 
+		
+		>
+			{$Subject_editcontrol}&nbsp;
+		</td>
+						
+    </tr>
+{END Subject_fieldblock}
+
+	{BEGIN Category_fieldblock}
+<tr class="{$fielddispclass_Category}" data-fieldname="Category" id=Category>
+		<td class="rnr-label">
+			{BEGIN Category_label}{$label calweekly Category}{END Category_label}
+		</td>
+		<td class="rnr-control style3" 
+		colspan=3 
+		id=bgc
+		>
+			{$Category_editcontrol}&nbsp;
+		</td>
+						
+    </tr>
+{END Category_fieldblock}
+
+	{BEGIN Description_fieldblock}
+<tr class="{$fielddispclass_Description}" data-fieldname="Description" id=Description>
+		<td class="rnr-label">
+			{BEGIN Description_label}{$label calweekly Description}{END Description_label}
+		</td>
+		<td class="rnr-control style3" 
+		colspan=3 
+		
+		>
+			{$Description_editcontrol}&nbsp;
+		</td>
+						
+    </tr>
+{END Description_fieldblock}
+
+	{BEGIN DateField_fieldblock}
+<tr class="{$fielddispclass_DateField}" data-fieldname="DateField" id=DateField>
+		<td class="rnr-label">
+			{BEGIN DateField_label}{$label calweekly DateField}{END DateField_label}
+		</td>
+		<td class="rnr-control style3" 
+		colspan=3 
+		
+		>
+			{$DateField_editcontrol}&nbsp;
+		</td>
+						
+    </tr>
+{END DateField_fieldblock}
+
+	{BEGIN EndDate_fieldblock}
+<tr class="{$fielddispclass_EndDate}" data-fieldname="EndDate" id=EndDate>
+		<td class="rnr-label">
+			{BEGIN EndDate_label}{$label calweekly EndDate}{END EndDate_label}
+		</td>
+		<td class="rnr-control style3" 
+		colspan=3 
+		
+		>
+			{$EndDate_editcontrol}&nbsp;
+		</td>
+						
+    </tr>
+{END EndDate_fieldblock}
+
+	{BEGIN TimeField_fieldblock}
+<tr class="{$fielddispclass_TimeField}" data-fieldname="TimeField" id=TimeField>
+		<td class="rnr-label">
+			{BEGIN TimeField_label}{$label calweekly TimeField}{END TimeField_label}
+		</td>
+		<td class="rnr-control style3" 
+		 
+		
+		>
+			{$TimeField_editcontrol}&nbsp;
+		</td>
+				<td class="rnr-label {$fielddispclass_EndTime}">
+			To&nbsp;
+		</td>
+		<td class="rnr-control style3 {$fielddispclass_EndTime}">
+			{$EndTime_editcontrol}
+		</td>
+				
+    </tr>
+{END TimeField_fieldblock}
+
+	{BEGIN DayEvent_fieldblock}
+<tr class="{$fielddispclass_DayEvent}" data-fieldname="DayEvent" id=DayEvent>
+		<td class="rnr-label">
+			{BEGIN DayEvent_label}{$label calweekly DayEvent}{END DayEvent_label}
+		</td>
+		<td class="rnr-control style3" 
+		 
+		
+		>
+			{$DayEvent_editcontrol}&nbsp;
+		</td>
+						<td class="rnr-label {$fielddispclass_Recurrence}" >
+			Repeat&nbsp;
+		</td>
+		<td class="rnr-control style3 {$fielddispclass_Recurrence}">
+			{$Recurrence_editcontrol}
+		</td>
+		
+    </tr>
+{END DayEvent_fieldblock}
+
+	{BEGIN Period_fieldblock}
+<tr class="{$fielddispclass_Period}" data-fieldname="Period" id=Period>
+		<td class="rnr-label">
+			{BEGIN Period_label}{$label calweekly Period}{END Period_label}
+		</td>
+		<td class="rnr-control style3" 
+		colspan=3 
+		
+		>
+			{$Period_editcontrol}&nbsp;
+		</td>
+						
+    </tr>
+{END Period_fieldblock}
+
+	{BEGIN PeriodDays_fieldblock}
+<tr class="{$fielddispclass_PeriodDays}" data-fieldname="PeriodDays" id=PeriodDays>
+		<td class="rnr-label">
+			{BEGIN PeriodDays_label}{$label calweekly PeriodDays}{END PeriodDays_label}
+		</td>
+		<td class="rnr-control style3" 
+		colspan=3 
+		
+		>
+			{$PeriodDays_editcontrol}&nbsp;
+		</td>
+						
+    </tr>
+{END PeriodDays_fieldblock}
+
+</table></div>
+
+
+{BEGIN editbuttons}
+<div style="white-space: nowrap;" class="rnr-brickcontents style2 rnr-b-editbuttons {$brickclass_editbuttons}">{BEGIN save_button}
+<a href="#" class="rnr-button" {$savebutton_attrs}>Save</a>
+{END save_button}
+{BEGIN reset_button}
+<a href="#" class="rnr-button" id=deleteButton {$deleteAttr}>Delete</a>
+{END reset_button}
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Back to list</a>
+{END back_button}
+</div>{END editbuttons}
+
+
+</div>
+{END container_fields}
+
+
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

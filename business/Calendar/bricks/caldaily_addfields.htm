@@ -1,0 +1,11 @@
+<table class="fieldGrid">
+##foreach @TABLE.arrAddPageLayout as @l filter @l.id!="EndTime" && @l.id!="Recurrence"  order @l.order##
+##if !@l.type##	
+	##brick_param addfield##
+##elseif @l.type==1##	
+	##brick_param addtab##
+##elseif @l.type==2##	
+	##brick_param addsection##
+##endif##
+##endfor##
+</table>

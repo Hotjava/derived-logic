@@ -1,0 +1,14 @@
+<span id="newrecord_controls{$id}">
+	##if @TABLE.bAdd##
+	{BEGIN add_link}
+		<a class="rnr-button" {$my_addlink_attrs}>##message ADD_NEW##</a>
+	{END add_link}
+	##endif##
+
+	##if @TABLE.bInlineAdd##
+	{BEGIN inlineadd_link}
+		<a href="#" class="rnr-button" {$inlineaddlink_attrs}>##message INLINE_ADD##</a>
+	{END inlineadd_link}
+	##endif##
+</span>
+

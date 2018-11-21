@@ -1,0 +1,869 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_searchpage}
+<div {$searchpage_chiddenattr} data-pageid="{$pageid}" data-container="searchpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}
+<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-6 col-md-offset-3"> 
+
+{BEGIN searchheader}
+	<h2 {$bssearchheader_hiddenattr} data-pageid="{$pageid}" data-brick="bssearchheader" >{$pagetitlelabel renewals search}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END searchheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+</div>
+{END container_searchpage}
+
+
+
+{BEGIN container_fields}
+<div {$fields_chiddenattr} data-pageid="{$pageid}" data-container="fields" class="   col-md-12 "> 
+
+
+<div {$bssearchfields_hiddenattr} data-pageid="{$pageid}" data-brick="bssearchfields" class="form-horizontal" role="form">
+<div class="container">
+	<div class="form-group">
+		<div class="col-md-12" >
+			&nbsp;
+		</div>
+	</div>
+</div>
+	{BEGIN id_fieldblock}		
+	<div class="container {$fielddispclass_id}" data-fieldname="id">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_id}">
+				{$label renewals id}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_id}
+			</div>
+			<div class="col-md-4" >
+				{$id_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$id_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END id_fieldblock}
+	{BEGIN request_date_fieldblock}		
+	<div class="container {$fielddispclass_request_date}" data-fieldname="request_date">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_request_date}">
+				{$label renewals request_date}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_request_date}
+			</div>
+			<div class="col-md-4" >
+				{$request_date_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$request_date_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END request_date_fieldblock}
+	{BEGIN quote_ref_fieldblock}		
+	<div class="container {$fielddispclass_quote_ref}" data-fieldname="quote_ref">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_quote_ref}">
+				{$label renewals quote_ref}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_quote_ref}
+			</div>
+			<div class="col-md-4" >
+				{$quote_ref_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$quote_ref_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END quote_ref_fieldblock}
+	{BEGIN po_fieldblock}		
+	<div class="container {$fielddispclass_po}" data-fieldname="po">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_po}">
+				{$label renewals po}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_po}
+			</div>
+			<div class="col-md-4" >
+				{$po_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$po_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END po_fieldblock}
+	{BEGIN cc_so_fieldblock}		
+	<div class="container {$fielddispclass_cc_so}" data-fieldname="cc_so">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_cc_so}">
+				{$label renewals cc_so}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_cc_so}
+			</div>
+			<div class="col-md-4" >
+				{$cc_so_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$cc_so_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END cc_so_fieldblock}
+	{BEGIN supplier_ref_fieldblock}		
+	<div class="container {$fielddispclass_supplier_ref}" data-fieldname="supplier_ref">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_supplier_ref}">
+				{$label renewals supplier_ref}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_supplier_ref}
+			</div>
+			<div class="col-md-4" >
+				{$supplier_ref_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$supplier_ref_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END supplier_ref_fieldblock}
+	{BEGIN supplier_order_ref_fieldblock}		
+	<div class="container {$fielddispclass_supplier_order_ref}" data-fieldname="supplier_order_ref">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_supplier_order_ref}">
+				{$label renewals supplier_order_ref}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_supplier_order_ref}
+			</div>
+			<div class="col-md-4" >
+				{$supplier_order_ref_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$supplier_order_ref_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END supplier_order_ref_fieldblock}
+	{BEGIN pod_fieldblock}		
+	<div class="container {$fielddispclass_pod}" data-fieldname="pod">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_pod}">
+				{$label renewals pod}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_pod}
+			</div>
+			<div class="col-md-4" >
+				{$pod_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$pod_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END pod_fieldblock}
+	{BEGIN task_number_fieldblock}		
+	<div class="container {$fielddispclass_task_number}" data-fieldname="task_number">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_task_number}">
+				{$label renewals task_number}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_task_number}
+			</div>
+			<div class="col-md-4" >
+				{$task_number_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$task_number_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END task_number_fieldblock}
+	{BEGIN tracking_ref_fieldblock}		
+	<div class="container {$fielddispclass_tracking_ref}" data-fieldname="tracking_ref">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_tracking_ref}">
+				{$label renewals tracking_ref}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_tracking_ref}
+			</div>
+			<div class="col-md-4" >
+				{$tracking_ref_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$tracking_ref_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END tracking_ref_fieldblock}
+	{BEGIN delivery_code_fieldblock}		
+	<div class="container {$fielddispclass_delivery_code}" data-fieldname="delivery_code">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_delivery_code}">
+				{$label renewals delivery_code}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_delivery_code}
+			</div>
+			<div class="col-md-4" >
+				{$delivery_code_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$delivery_code_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END delivery_code_fieldblock}
+	{BEGIN pulse_id_fieldblock}		
+	<div class="container {$fielddispclass_pulse_id}" data-fieldname="pulse_id">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_pulse_id}">
+				{$label renewals pulse_id}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_pulse_id}
+			</div>
+			<div class="col-md-4" >
+				{$pulse_id_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$pulse_id_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END pulse_id_fieldblock}
+	{BEGIN date_billed_fieldblock}		
+	<div class="container {$fielddispclass_date_billed}" data-fieldname="date_billed">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_date_billed}">
+				{$label renewals date_billed}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_date_billed}
+			</div>
+			<div class="col-md-4" >
+				{$date_billed_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$date_billed_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END date_billed_fieldblock}
+	{BEGIN product_id_fieldblock}		
+	<div class="container {$fielddispclass_product_id}" data-fieldname="product_id">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_product_id}">
+				{$label renewals product_id}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_product_id}
+			</div>
+			<div class="col-md-4" >
+				{$product_id_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$product_id_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END product_id_fieldblock}
+	{BEGIN recurrence_fieldblock}		
+	<div class="container {$fielddispclass_recurrence}" data-fieldname="recurrence">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_recurrence}">
+				{$label renewals recurrence}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_recurrence}
+			</div>
+			<div class="col-md-4" >
+				{$recurrence_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$recurrence_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END recurrence_fieldblock}
+	{BEGIN status_id_fieldblock}		
+	<div class="container {$fielddispclass_status_id}" data-fieldname="status_id">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_status_id}">
+				{$label renewals status_id}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_status_id}
+			</div>
+			<div class="col-md-4" >
+				{$status_id_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$status_id_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END status_id_fieldblock}
+	{BEGIN cost_fieldblock}		
+	<div class="container {$fielddispclass_cost}" data-fieldname="cost">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_cost}">
+				{$label renewals cost}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_cost}
+			</div>
+			<div class="col-md-4" >
+				{$cost_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$cost_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END cost_fieldblock}
+	{BEGIN vendor_id_fieldblock}		
+	<div class="container {$fielddispclass_vendor_id}" data-fieldname="vendor_id">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_vendor_id}">
+				{$label renewals vendor_id}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_vendor_id}
+			</div>
+			<div class="col-md-4" >
+				{$vendor_id_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$vendor_id_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END vendor_id_fieldblock}
+	{BEGIN sold_to_id_fieldblock}		
+	<div class="container {$fielddispclass_sold_to_id}" data-fieldname="sold_to_id">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_sold_to_id}">
+				{$label renewals sold_to_id}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_sold_to_id}
+			</div>
+			<div class="col-md-4" >
+				{$sold_to_id_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$sold_to_id_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END sold_to_id_fieldblock}
+	{BEGIN sourcing_contact_id_fieldblock}		
+	<div class="container {$fielddispclass_sourcing_contact_id}" data-fieldname="sourcing_contact_id">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_sourcing_contact_id}">
+				{$label renewals sourcing_contact_id}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_sourcing_contact_id}
+			</div>
+			<div class="col-md-4" >
+				{$sourcing_contact_id_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$sourcing_contact_id_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END sourcing_contact_id_fieldblock}
+	{BEGIN percent_product_sales_fieldblock}		
+	<div class="container {$fielddispclass_percent_product_sales}" data-fieldname="percent_product_sales">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_percent_product_sales}">
+				{$label renewals percent_product_sales}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_percent_product_sales}
+			</div>
+			<div class="col-md-4" >
+				{$percent_product_sales_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$percent_product_sales_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END percent_product_sales_fieldblock}
+	{BEGIN alert_id_fieldblock}		
+	<div class="container {$fielddispclass_alert_id}" data-fieldname="alert_id">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_alert_id}">
+				{$label renewals alert_id}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_alert_id}
+			</div>
+			<div class="col-md-4" >
+				{$alert_id_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$alert_id_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END alert_id_fieldblock}
+	{BEGIN ops_contact_id_fieldblock}		
+	<div class="container {$fielddispclass_ops_contact_id}" data-fieldname="ops_contact_id">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_ops_contact_id}">
+				{$label renewals ops_contact_id}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_ops_contact_id}
+			</div>
+			<div class="col-md-4" >
+				{$ops_contact_id_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$ops_contact_id_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END ops_contact_id_fieldblock}
+	{BEGIN previous_po_fieldblock}		
+	<div class="container {$fielddispclass_previous_po}" data-fieldname="previous_po">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_previous_po}">
+				{$label renewals previous_po}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_previous_po}
+			</div>
+			<div class="col-md-4" >
+				{$previous_po_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$previous_po_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END previous_po_fieldblock}
+	{BEGIN comment_actions_fieldblock}		
+	<div class="container {$fielddispclass_comment_actions}" data-fieldname="comment_actions">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_comment_actions}">
+				{$label renewals comment_actions}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_comment_actions}
+			</div>
+			<div class="col-md-4" >
+				{$comment_actions_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$comment_actions_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END comment_actions_fieldblock}
+	{BEGIN previous_lbg_pp_fieldblock}		
+	<div class="container {$fielddispclass_previous_lbg_pp}" data-fieldname="previous_lbg_pp">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_previous_lbg_pp}">
+				{$label renewals previous_lbg_pp}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_previous_lbg_pp}
+			</div>
+			<div class="col-md-4" >
+				{$previous_lbg_pp_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$previous_lbg_pp_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END previous_lbg_pp_fieldblock}
+	{BEGIN erf_fieldblock}		
+	<div class="container {$fielddispclass_erf}" data-fieldname="erf">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_erf}">
+				{$label renewals erf}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_erf}
+			</div>
+			<div class="col-md-4" >
+				{$erf_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$erf_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END erf_fieldblock}
+	{BEGIN order_description_fieldblock}		
+	<div class="container {$fielddispclass_order_description}" data-fieldname="order_description">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_order_description}">
+				{$label renewals order_description}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_order_description}
+			</div>
+			<div class="col-md-4" >
+				{$order_description_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$order_description_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END order_description_fieldblock}
+	{BEGIN impacted_by_dollar_fieldblock}		
+	<div class="container {$fielddispclass_impacted_by_dollar}" data-fieldname="impacted_by_dollar">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_impacted_by_dollar}">
+				{$label renewals impacted_by_dollar}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_impacted_by_dollar}
+			</div>
+			<div class="col-md-4" >
+				{$impacted_by_dollar_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$impacted_by_dollar_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END impacted_by_dollar_fieldblock}
+	{BEGIN improvement_last_year_fieldblock}		
+	<div class="container {$fielddispclass_improvement_last_year}" data-fieldname="improvement_last_year">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_improvement_last_year}">
+				{$label renewals improvement_last_year}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_improvement_last_year}
+			</div>
+			<div class="col-md-4" >
+				{$improvement_last_year_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$improvement_last_year_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END improvement_last_year_fieldblock}
+	{BEGIN renewal_date_fieldblock}		
+	<div class="container {$fielddispclass_renewal_date}" data-fieldname="renewal_date">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_renewal_date}">
+				{$label renewals renewal_date}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_renewal_date}
+			</div>
+			<div class="col-md-4" >
+				{$renewal_date_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$renewal_date_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END renewal_date_fieldblock}
+	{BEGIN improvement_comments_fieldblock}		
+	<div class="container {$fielddispclass_improvement_comments}" data-fieldname="improvement_comments">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_improvement_comments}">
+				{$label renewals improvement_comments}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_improvement_comments}
+			</div>
+			<div class="col-md-4" >
+				{$improvement_comments_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$improvement_comments_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END improvement_comments_fieldblock}
+	{BEGIN support_end_date_fieldblock}		
+	<div class="container {$fielddispclass_support_end_date}" data-fieldname="support_end_date">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_support_end_date}">
+				{$label renewals support_end_date}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_support_end_date}
+			</div>
+			<div class="col-md-4" >
+				{$support_end_date_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$support_end_date_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END support_end_date_fieldblock}
+	{BEGIN documents_fieldblock}		
+	<div class="container {$fielddispclass_documents}" data-fieldname="documents">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_documents}">
+				{$label renewals documents}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_documents}
+			</div>
+			<div class="col-md-4" >
+				{$documents_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$documents_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END documents_fieldblock}
+	{BEGIN service_type_id_fieldblock}		
+	<div class="container {$fielddispclass_service_type_id}" data-fieldname="service_type_id">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_service_type_id}">
+				{$label renewals service_type_id}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_service_type_id}
+			</div>
+			<div class="col-md-4" >
+				{$service_type_id_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$service_type_id_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END service_type_id_fieldblock}
+	{BEGIN term_id_fieldblock}		
+	<div class="container {$fielddispclass_term_id}" data-fieldname="term_id">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_term_id}">
+				{$label renewals term_id}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_term_id}
+			</div>
+			<div class="col-md-4" >
+				{$term_id_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$term_id_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END term_id_fieldblock}
+	{BEGIN support_start_date_fieldblock}		
+	<div class="container {$fielddispclass_support_start_date}" data-fieldname="support_start_date">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_support_start_date}">
+				{$label renewals support_start_date}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_support_start_date}
+			</div>
+			<div class="col-md-4" >
+				{$support_start_date_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$support_start_date_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END support_start_date_fieldblock}
+	{BEGIN last_update_fieldblock}		
+	<div class="container {$fielddispclass_last_update}" data-fieldname="last_update">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_last_update}">
+				{$label renewals last_update}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_last_update}
+			</div>
+			<div class="col-md-4" >
+				{$last_update_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$last_update_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END last_update_fieldblock}
+	{BEGIN vendor_contact_id_fieldblock}		
+	<div class="container {$fielddispclass_vendor_contact_id}" data-fieldname="vendor_contact_id">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_vendor_contact_id}">
+				{$label renewals vendor_contact_id}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_vendor_contact_id}
+			</div>
+			<div class="col-md-4" >
+				{$vendor_contact_id_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$vendor_contact_id_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END vendor_contact_id_fieldblock}
+	{BEGIN guid_fieldblock}		
+	<div class="container {$fielddispclass_guid}" data-fieldname="guid">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="{$labelfor_guid}">
+				{$label renewals guid}
+			</label>
+			<div class="col-md-2 bs-srchoption" >
+				{$searchtype_guid}
+			</div>
+			<div class="col-md-4" >
+				{$guid_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$guid_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END guid_fieldblock}
+</div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}
+<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container form-horizontal   "> 
+
+
+
+
+{BEGIN container_bbuttons}
+<div {$bbuttons_chiddenattr} data-pageid="{$pageid}" data-container="bbuttons" class=" form-group   "> 
+
+
+
+
+{BEGIN container_leftbuttons}
+<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-10 col-md-offset-2"> 
+
+{BEGIN searchbuttons}
+{BEGIN search_button}
+<button class="btn btn-primary" {$searchbutton_attrs}>Search</button>
+{END search_button} 
+{BEGIN reset_button}
+<button class="btn btn-default" {$resetbutton_attrs}>Reset</button>
+{END reset_button}
+{BEGIN back_button}
+<button class="btn btn-default" {$backbutton_attrs}>Back to list</button>
+{END back_button}
+{END searchbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+</div>
+{END container_bbuttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,10 @@
+{BEGIN ##@l.id g##_fieldblock}
+<tr class="{$fielddispclass_##@l.id g##}" data-fieldname="##@l.id g##">
+	<td class="rnr-label">
+		<b>##label @TABLE.strDataSourceTable @l.id##</b>
+	</td>
+		<td class="rnr-control style3" ##if @l.id=="Category"##id="bgc" {$bg_edit}##endif##>
+			{$##@l.id g##_value}&nbsp;
+		</td>
+	</tr>
+{END ##@l.id g##_fieldblock}

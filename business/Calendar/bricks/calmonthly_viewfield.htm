@@ -1,0 +1,64 @@
+  ##if @l.id=="Subject"##
+  {BEGIN ##@l.id g##_fieldblock}
+<div data-fieldname="##@l.id g##" class="rnr-field style1 {$fielddispclass_##@l.id g##} calendar-subject" {$bgc_category}>
+	<span class="rnr-control style3 "  >{$##@l.id g##_value}</span>
+</div>
+{END ##@l.id g##_fieldblock}
+  ##elseif @l.id=="Description"##
+   {BEGIN ##@l.id g##_fieldblock}
+	<div data-fieldname="##@l.id g##" class="rnr-field style1 {$fielddispclass_##@l.id g##}">
+   <span class="rnr-control style3 " >{$##@l.id g##_value}</span>
+  </div>
+{END ##@l.id g##_fieldblock} 
+ ##elseif @l.id=="DayEvent"##
+   {BEGIN ##@l.id g##_fieldblock}
+	<div data-fieldname="##@l.id g##" class="rnr-field style1 {$fielddispclass_##@l.id g##}">
+   <span class="rnr-control style3 " >{$##@l.id g##_value}</span>
+  </div>
+{END ##@l.id g##_fieldblock} 
+  ##elseif @l.id=="DateField"##
+   {BEGIN ##@l.id g##_fieldblock}
+	<div data-fieldname="##@l.id g##" class="rnr-field style1 {$fielddispclass_##@l.id g##}">
+  <span class="rnr-control style3">{$DateField_value}</span>   
+  {BEGIN EndDate_fieldblock} 
+  <span data-fieldname="##@l.id g##" class="rnr-field style1 {$fielddispclass_EndDate}"> 
+  <span class="rnr-label">{$label calmonthly EndDate}</span> 
+  <span class="rnr-control style3"> {$EndDate_value}</span> 
+  </span>
+  {END EndDate_fieldblock}
+    </div>
+{END ##@l.id g##_fieldblock}
+   ##elseif @l.id=="TimeField"##
+    {BEGIN ##@l.id g##_fieldblock}
+<div data-fieldname="##@l.id g##" class="rnr-field style1 {$fielddispclass_##@l.id g##}">
+   <span class="rnr-label">##label @TABLE.strDataSourceTable @l.id##</span>
+   <span class="rnr-control style3">{$TimeField_value}</span>   
+   {BEGIN EndTime_fieldblock} 
+   <span data-fieldname="##@l.id g##" class="rnr-field style1 {$fielddispclass_EndTime}"> 
+	<span class="rnr-label">{$label calmonthly EndTime}</span> 
+   <span class="rnr-control style3">{$EndTime_value}</span>
+   </span>
+   {END EndTime_fieldblock}
+ </div>
+{END ##@l.id g##_fieldblock}
+   ##elseif @l.id=="Recurrence"##
+{BEGIN ##@l.id g##_fieldblock}
+<div data-fieldname="##@l.id g##" class="rnr-field style1 {$fielddispclass_##@l.id g##}">
+	<span class="rnr-label">##label @TABLE.strDataSourceTable @l.id##</span>
+	{BEGIN Period_fieldblock}<span class="rnr-control style3">{$Period_value}</span> {END Period_fieldblock} 
+	{BEGIN PeriodDays_fieldblock}
+	<span data-fieldname="##@l.id g##" class="rnr-field style1 {$fielddispclass_PeriodDays}"> 
+	<span class="rnr-label">{$label calmonthly PeriodDays}</span>
+	<span class="rnr-control style3">{$PeriodDays_value}</span>
+	</span>
+	{END PeriodDays_fieldblock}
+ </div>
+{END ##@l.id g##_fieldblock}
+  ##else##
+  {BEGIN ##@l.id g##_fieldblock}
+<div data-fieldname="##@l.id g##" class="rnr-field style1 {$fielddispclass_##@l.id g##}">
+  <span class="rnr-label">##label @TABLE.strDataSourceTable @l.id##:</span>
+  <span class="rnr-control style3">{$##@l.id g##_value}</span>
+</div>
+{END ##@l.id g##_fieldblock} 
+ ##endif##

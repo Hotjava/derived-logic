@@ -1,0 +1,558 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_pdf}
+<div {$pdf_chiddenattr} data-pageid="{$pageid}" data-container="pdf" class="   col-md-12 "> 
+
+{BEGIN printbuttons}
+
+{END printbuttons}
+
+
+
+</div>
+{END container_pdf}
+
+
+
+{BEGIN container_master}
+<div {$master_chiddenattr} data-pageid="{$pageid}" data-container="master" class="    "> 
+
+{BEGIN mastertable_block}
+<div class="panel panel-info table-panel">
+	<div class="panel-heading">
+		{$master_heading}
+	</div>
+	<div class="panel-body">
+		{$showmasterfile}
+		
+	</div>
+</div>
+
+{END mastertable_block}
+
+
+
+</div>
+{END container_master}
+
+
+
+{BEGIN container_pageheader}
+<div {$pageheader_chiddenattr} data-pageid="{$pageid}" data-container="pageheader" class="    "> 
+
+{BEGIN printheader}
+	<h2 {$printheader_hiddenattr} data-pageid="{$pageid}" data-brick="printheader" >{$pagetitlelabel renewals print}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END printheader}
+
+
+{BEGIN page_number}
+<span>Page <span class="rp-pageno">{$pageno}</span> of <span class="rp-pagecount">{$pagecount}</span></span>
+{END page_number}
+
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="table table-bordered rp-maintable" {$printgrid_hiddenattr} data-pageid="{$pageid}" data-brick="printgrid" >
+	<thead>
+	{BEGIN grid_header}
+		<tr class="{$gridHeader_class}" >
+		{BEGIN record_header}
+			{BEGIN id_fieldheadercolumn}
+			<th class="{$id_class}" {$id_style}  data-field="id">
+				{$label renewals id}
+			</th>
+			{END id_fieldheadercolumn}
+			{BEGIN request_date_fieldheadercolumn}
+			<th class="{$request_date_class}" {$request_date_style}  data-field="request_date">
+				{$label renewals request_date}
+			</th>
+			{END request_date_fieldheadercolumn}
+			{BEGIN quote_ref_fieldheadercolumn}
+			<th class="{$quote_ref_class}" {$quote_ref_style}  data-field="quote_ref">
+				{$label renewals quote_ref}
+			</th>
+			{END quote_ref_fieldheadercolumn}
+			{BEGIN po_fieldheadercolumn}
+			<th class="{$po_class}" {$po_style}  data-field="po">
+				{$label renewals po}
+			</th>
+			{END po_fieldheadercolumn}
+			{BEGIN cc_so_fieldheadercolumn}
+			<th class="{$cc_so_class}" {$cc_so_style}  data-field="cc_so">
+				{$label renewals cc_so}
+			</th>
+			{END cc_so_fieldheadercolumn}
+			{BEGIN supplier_ref_fieldheadercolumn}
+			<th class="{$supplier_ref_class}" {$supplier_ref_style}  data-field="supplier_ref">
+				{$label renewals supplier_ref}
+			</th>
+			{END supplier_ref_fieldheadercolumn}
+			{BEGIN supplier_order_ref_fieldheadercolumn}
+			<th class="{$supplier_order_ref_class}" {$supplier_order_ref_style}  data-field="supplier_order_ref">
+				{$label renewals supplier_order_ref}
+			</th>
+			{END supplier_order_ref_fieldheadercolumn}
+			{BEGIN pod_fieldheadercolumn}
+			<th class="{$pod_class}" {$pod_style}  data-field="pod">
+				{$label renewals pod}
+			</th>
+			{END pod_fieldheadercolumn}
+			{BEGIN task_number_fieldheadercolumn}
+			<th class="{$task_number_class}" {$task_number_style}  data-field="task_number">
+				{$label renewals task_number}
+			</th>
+			{END task_number_fieldheadercolumn}
+			{BEGIN tracking_ref_fieldheadercolumn}
+			<th class="{$tracking_ref_class}" {$tracking_ref_style}  data-field="tracking_ref">
+				{$label renewals tracking_ref}
+			</th>
+			{END tracking_ref_fieldheadercolumn}
+			{BEGIN delivery_code_fieldheadercolumn}
+			<th class="{$delivery_code_class}" {$delivery_code_style}  data-field="delivery_code">
+				{$label renewals delivery_code}
+			</th>
+			{END delivery_code_fieldheadercolumn}
+			{BEGIN pulse_id_fieldheadercolumn}
+			<th class="{$pulse_id_class}" {$pulse_id_style}  data-field="pulse_id">
+				{$label renewals pulse_id}
+			</th>
+			{END pulse_id_fieldheadercolumn}
+			{BEGIN date_billed_fieldheadercolumn}
+			<th class="{$date_billed_class}" {$date_billed_style}  data-field="date_billed">
+				{$label renewals date_billed}
+			</th>
+			{END date_billed_fieldheadercolumn}
+			{BEGIN product_id_fieldheadercolumn}
+			<th class="{$product_id_class}" {$product_id_style}  data-field="product_id">
+				{$label renewals product_id}
+			</th>
+			{END product_id_fieldheadercolumn}
+			{BEGIN recurrence_fieldheadercolumn}
+			<th class="{$recurrence_class}" {$recurrence_style}  data-field="recurrence">
+				{$label renewals recurrence}
+			</th>
+			{END recurrence_fieldheadercolumn}
+			{BEGIN status_id_fieldheadercolumn}
+			<th class="{$status_id_class}" {$status_id_style}  data-field="status_id">
+				{$label renewals status_id}
+			</th>
+			{END status_id_fieldheadercolumn}
+			{BEGIN cost_fieldheadercolumn}
+			<th class="{$cost_class}" {$cost_style}  data-field="cost">
+				{$label renewals cost}
+			</th>
+			{END cost_fieldheadercolumn}
+			{BEGIN vendor_id_fieldheadercolumn}
+			<th class="{$vendor_id_class}" {$vendor_id_style}  data-field="vendor_id">
+				{$label renewals vendor_id}
+			</th>
+			{END vendor_id_fieldheadercolumn}
+			{BEGIN sold_to_id_fieldheadercolumn}
+			<th class="{$sold_to_id_class}" {$sold_to_id_style}  data-field="sold_to_id">
+				{$label renewals sold_to_id}
+			</th>
+			{END sold_to_id_fieldheadercolumn}
+			{BEGIN sourcing_contact_id_fieldheadercolumn}
+			<th class="{$sourcing_contact_id_class}" {$sourcing_contact_id_style}  data-field="sourcing_contact_id">
+				{$label renewals sourcing_contact_id}
+			</th>
+			{END sourcing_contact_id_fieldheadercolumn}
+			{BEGIN percent_product_sales_fieldheadercolumn}
+			<th class="{$percent_product_sales_class}" {$percent_product_sales_style}  data-field="percent_product_sales">
+				{$label renewals percent_product_sales}
+			</th>
+			{END percent_product_sales_fieldheadercolumn}
+			{BEGIN alert_id_fieldheadercolumn}
+			<th class="{$alert_id_class}" {$alert_id_style}  data-field="alert_id">
+				{$label renewals alert_id}
+			</th>
+			{END alert_id_fieldheadercolumn}
+			{BEGIN ops_contact_id_fieldheadercolumn}
+			<th class="{$ops_contact_id_class}" {$ops_contact_id_style}  data-field="ops_contact_id">
+				{$label renewals ops_contact_id}
+			</th>
+			{END ops_contact_id_fieldheadercolumn}
+			{BEGIN previous_po_fieldheadercolumn}
+			<th class="{$previous_po_class}" {$previous_po_style}  data-field="previous_po">
+				{$label renewals previous_po}
+			</th>
+			{END previous_po_fieldheadercolumn}
+			{BEGIN comment_actions_fieldheadercolumn}
+			<th class="{$comment_actions_class}" {$comment_actions_style}  data-field="comment_actions">
+				{$label renewals comment_actions}
+			</th>
+			{END comment_actions_fieldheadercolumn}
+			{BEGIN previous_lbg_pp_fieldheadercolumn}
+			<th class="{$previous_lbg_pp_class}" {$previous_lbg_pp_style}  data-field="previous_lbg_pp">
+				{$label renewals previous_lbg_pp}
+			</th>
+			{END previous_lbg_pp_fieldheadercolumn}
+			{BEGIN erf_fieldheadercolumn}
+			<th class="{$erf_class}" {$erf_style}  data-field="erf">
+				{$label renewals erf}
+			</th>
+			{END erf_fieldheadercolumn}
+			{BEGIN order_description_fieldheadercolumn}
+			<th class="{$order_description_class}" {$order_description_style}  data-field="order_description">
+				{$label renewals order_description}
+			</th>
+			{END order_description_fieldheadercolumn}
+			{BEGIN impacted_by_dollar_fieldheadercolumn}
+			<th class="{$impacted_by_dollar_class}" {$impacted_by_dollar_style}  data-field="impacted_by_dollar">
+				{$label renewals impacted_by_dollar}
+			</th>
+			{END impacted_by_dollar_fieldheadercolumn}
+			{BEGIN improvement_last_year_fieldheadercolumn}
+			<th class="{$improvement_last_year_class}" {$improvement_last_year_style}  data-field="improvement_last_year">
+				{$label renewals improvement_last_year}
+			</th>
+			{END improvement_last_year_fieldheadercolumn}
+			{BEGIN renewal_date_fieldheadercolumn}
+			<th class="{$renewal_date_class}" {$renewal_date_style}  data-field="renewal_date">
+				{$label renewals renewal_date}
+			</th>
+			{END renewal_date_fieldheadercolumn}
+			{BEGIN improvement_comments_fieldheadercolumn}
+			<th class="{$improvement_comments_class}" {$improvement_comments_style}  data-field="improvement_comments">
+				{$label renewals improvement_comments}
+			</th>
+			{END improvement_comments_fieldheadercolumn}
+			{BEGIN support_end_date_fieldheadercolumn}
+			<th class="{$support_end_date_class}" {$support_end_date_style}  data-field="support_end_date">
+				{$label renewals support_end_date}
+			</th>
+			{END support_end_date_fieldheadercolumn}
+			{BEGIN documents_fieldheadercolumn}
+			<th class="{$documents_class}" {$documents_style}  data-field="documents">
+				{$label renewals documents}
+			</th>
+			{END documents_fieldheadercolumn}
+			{BEGIN service_type_id_fieldheadercolumn}
+			<th class="{$service_type_id_class}" {$service_type_id_style}  data-field="service_type_id">
+				{$label renewals service_type_id}
+			</th>
+			{END service_type_id_fieldheadercolumn}
+			{BEGIN term_id_fieldheadercolumn}
+			<th class="{$term_id_class}" {$term_id_style}  data-field="term_id">
+				{$label renewals term_id}
+			</th>
+			{END term_id_fieldheadercolumn}
+			{BEGIN support_start_date_fieldheadercolumn}
+			<th class="{$support_start_date_class}" {$support_start_date_style}  data-field="support_start_date">
+				{$label renewals support_start_date}
+			</th>
+			{END support_start_date_fieldheadercolumn}
+			{BEGIN last_update_fieldheadercolumn}
+			<th class="{$last_update_class}" {$last_update_style}  data-field="last_update">
+				{$label renewals last_update}
+			</th>
+			{END last_update_fieldheadercolumn}
+			{BEGIN vendor_contact_id_fieldheadercolumn}
+			<th class="{$vendor_contact_id_class}" {$vendor_contact_id_style}  data-field="vendor_contact_id">
+				{$label renewals vendor_contact_id}
+			</th>
+			{END vendor_contact_id_fieldheadercolumn}
+			{BEGIN guid_fieldheadercolumn}
+			<th class="{$guid_class}" {$guid_style}  data-field="guid">
+				{$label renewals guid}
+			</th>
+			{END guid_fieldheadercolumn}
+			{BEGIN endrecordheader_block}
+			<th class="rnr-cs">&nbsp;</th>
+			{END endrecordheader_block}
+		{END record_header}
+		</tr>
+	{END grid_header}
+	</thead>
+	
+	<tbody>	
+	{BEGIN grid_row}
+		<tr class="{$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+			{BEGIN id_fieldcolumn}
+			<td  class="{$id_class}" {$id_style} {$recordattrs}>
+				{$id_value}
+			</td>
+			{END id_fieldcolumn}
+			{BEGIN request_date_fieldcolumn}
+			<td  class="{$request_date_class}" {$request_date_style} {$recordattrs}>
+				{$request_date_value}
+			</td>
+			{END request_date_fieldcolumn}
+			{BEGIN quote_ref_fieldcolumn}
+			<td  class="{$quote_ref_class}" {$quote_ref_style} {$recordattrs}>
+				{$quote_ref_value}
+			</td>
+			{END quote_ref_fieldcolumn}
+			{BEGIN po_fieldcolumn}
+			<td  class="{$po_class}" {$po_style} {$recordattrs}>
+				{$po_value}
+			</td>
+			{END po_fieldcolumn}
+			{BEGIN cc_so_fieldcolumn}
+			<td  class="{$cc_so_class}" {$cc_so_style} {$recordattrs}>
+				{$cc_so_value}
+			</td>
+			{END cc_so_fieldcolumn}
+			{BEGIN supplier_ref_fieldcolumn}
+			<td  class="{$supplier_ref_class}" {$supplier_ref_style} {$recordattrs}>
+				{$supplier_ref_value}
+			</td>
+			{END supplier_ref_fieldcolumn}
+			{BEGIN supplier_order_ref_fieldcolumn}
+			<td  class="{$supplier_order_ref_class}" {$supplier_order_ref_style} {$recordattrs}>
+				{$supplier_order_ref_value}
+			</td>
+			{END supplier_order_ref_fieldcolumn}
+			{BEGIN pod_fieldcolumn}
+			<td  class="{$pod_class}" {$pod_style} {$recordattrs}>
+				{$pod_value}
+			</td>
+			{END pod_fieldcolumn}
+			{BEGIN task_number_fieldcolumn}
+			<td  class="{$task_number_class}" {$task_number_style} {$recordattrs}>
+				{$task_number_value}
+			</td>
+			{END task_number_fieldcolumn}
+			{BEGIN tracking_ref_fieldcolumn}
+			<td  class="{$tracking_ref_class}" {$tracking_ref_style} {$recordattrs}>
+				{$tracking_ref_value}
+			</td>
+			{END tracking_ref_fieldcolumn}
+			{BEGIN delivery_code_fieldcolumn}
+			<td  class="{$delivery_code_class}" {$delivery_code_style} {$recordattrs}>
+				{$delivery_code_value}
+			</td>
+			{END delivery_code_fieldcolumn}
+			{BEGIN pulse_id_fieldcolumn}
+			<td  class="{$pulse_id_class}" {$pulse_id_style} {$recordattrs}>
+				{$pulse_id_value}
+			</td>
+			{END pulse_id_fieldcolumn}
+			{BEGIN date_billed_fieldcolumn}
+			<td  class="{$date_billed_class}" {$date_billed_style} {$recordattrs}>
+				{$date_billed_value}
+			</td>
+			{END date_billed_fieldcolumn}
+			{BEGIN product_id_fieldcolumn}
+			<td  class="{$product_id_class}" {$product_id_style} {$recordattrs}>
+				{$product_id_value}
+			</td>
+			{END product_id_fieldcolumn}
+			{BEGIN recurrence_fieldcolumn}
+			<td  class="{$recurrence_class}" {$recurrence_style} {$recordattrs}>
+				{$recurrence_value}
+			</td>
+			{END recurrence_fieldcolumn}
+			{BEGIN status_id_fieldcolumn}
+			<td  class="{$status_id_class}" {$status_id_style} {$recordattrs}>
+				{$status_id_value}
+			</td>
+			{END status_id_fieldcolumn}
+			{BEGIN cost_fieldcolumn}
+			<td  class="{$cost_class}" {$cost_style} {$recordattrs}>
+				{$cost_value}
+			</td>
+			{END cost_fieldcolumn}
+			{BEGIN vendor_id_fieldcolumn}
+			<td  class="{$vendor_id_class}" {$vendor_id_style} {$recordattrs}>
+				{$vendor_id_value}
+			</td>
+			{END vendor_id_fieldcolumn}
+			{BEGIN sold_to_id_fieldcolumn}
+			<td  class="{$sold_to_id_class}" {$sold_to_id_style} {$recordattrs}>
+				{$sold_to_id_value}
+			</td>
+			{END sold_to_id_fieldcolumn}
+			{BEGIN sourcing_contact_id_fieldcolumn}
+			<td  class="{$sourcing_contact_id_class}" {$sourcing_contact_id_style} {$recordattrs}>
+				{$sourcing_contact_id_value}
+			</td>
+			{END sourcing_contact_id_fieldcolumn}
+			{BEGIN percent_product_sales_fieldcolumn}
+			<td  class="{$percent_product_sales_class}" {$percent_product_sales_style} {$recordattrs}>
+				{$percent_product_sales_value}
+			</td>
+			{END percent_product_sales_fieldcolumn}
+			{BEGIN alert_id_fieldcolumn}
+			<td  class="{$alert_id_class}" {$alert_id_style} {$recordattrs}>
+				{$alert_id_value}
+			</td>
+			{END alert_id_fieldcolumn}
+			{BEGIN ops_contact_id_fieldcolumn}
+			<td  class="{$ops_contact_id_class}" {$ops_contact_id_style} {$recordattrs}>
+				{$ops_contact_id_value}
+			</td>
+			{END ops_contact_id_fieldcolumn}
+			{BEGIN previous_po_fieldcolumn}
+			<td  class="{$previous_po_class}" {$previous_po_style} {$recordattrs}>
+				{$previous_po_value}
+			</td>
+			{END previous_po_fieldcolumn}
+			{BEGIN comment_actions_fieldcolumn}
+			<td  class="{$comment_actions_class}" {$comment_actions_style} {$recordattrs}>
+				{$comment_actions_value}
+			</td>
+			{END comment_actions_fieldcolumn}
+			{BEGIN previous_lbg_pp_fieldcolumn}
+			<td  class="{$previous_lbg_pp_class}" {$previous_lbg_pp_style} {$recordattrs}>
+				{$previous_lbg_pp_value}
+			</td>
+			{END previous_lbg_pp_fieldcolumn}
+			{BEGIN erf_fieldcolumn}
+			<td  class="{$erf_class}" {$erf_style} {$recordattrs}>
+				{$erf_value}
+			</td>
+			{END erf_fieldcolumn}
+			{BEGIN order_description_fieldcolumn}
+			<td  class="{$order_description_class}" {$order_description_style} {$recordattrs}>
+				{$order_description_value}
+			</td>
+			{END order_description_fieldcolumn}
+			{BEGIN impacted_by_dollar_fieldcolumn}
+			<td  class="{$impacted_by_dollar_class}" {$impacted_by_dollar_style} {$recordattrs}>
+				{$impacted_by_dollar_value}
+			</td>
+			{END impacted_by_dollar_fieldcolumn}
+			{BEGIN improvement_last_year_fieldcolumn}
+			<td  class="{$improvement_last_year_class}" {$improvement_last_year_style} {$recordattrs}>
+				{$improvement_last_year_value}
+			</td>
+			{END improvement_last_year_fieldcolumn}
+			{BEGIN renewal_date_fieldcolumn}
+			<td  class="{$renewal_date_class}" {$renewal_date_style} {$recordattrs}>
+				{$renewal_date_value}
+			</td>
+			{END renewal_date_fieldcolumn}
+			{BEGIN improvement_comments_fieldcolumn}
+			<td  class="{$improvement_comments_class}" {$improvement_comments_style} {$recordattrs}>
+				{$improvement_comments_value}
+			</td>
+			{END improvement_comments_fieldcolumn}
+			{BEGIN support_end_date_fieldcolumn}
+			<td  class="{$support_end_date_class}" {$support_end_date_style} {$recordattrs}>
+				{$support_end_date_value}
+			</td>
+			{END support_end_date_fieldcolumn}
+			{BEGIN documents_fieldcolumn}
+			<td  class="{$documents_class}" {$documents_style} {$recordattrs}>
+				{$documents_value}
+			</td>
+			{END documents_fieldcolumn}
+			{BEGIN service_type_id_fieldcolumn}
+			<td  class="{$service_type_id_class}" {$service_type_id_style} {$recordattrs}>
+				{$service_type_id_value}
+			</td>
+			{END service_type_id_fieldcolumn}
+			{BEGIN term_id_fieldcolumn}
+			<td  class="{$term_id_class}" {$term_id_style} {$recordattrs}>
+				{$term_id_value}
+			</td>
+			{END term_id_fieldcolumn}
+			{BEGIN support_start_date_fieldcolumn}
+			<td  class="{$support_start_date_class}" {$support_start_date_style} {$recordattrs}>
+				{$support_start_date_value}
+			</td>
+			{END support_start_date_fieldcolumn}
+			{BEGIN last_update_fieldcolumn}
+			<td  class="{$last_update_class}" {$last_update_style} {$recordattrs}>
+				{$last_update_value}
+			</td>
+			{END last_update_fieldcolumn}
+			{BEGIN vendor_contact_id_fieldcolumn}
+			<td  class="{$vendor_contact_id_class}" {$vendor_contact_id_style} {$recordattrs}>
+				{$vendor_contact_id_value}
+			</td>
+			{END vendor_contact_id_fieldcolumn}
+			{BEGIN guid_fieldcolumn}
+			<td  class="{$guid_class}" {$guid_style} {$recordattrs}>
+				{$guid_value}
+			</td>
+			{END guid_fieldcolumn}
+			{BEGIN endrecord_block}
+			<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+			{END endrecord_block}
+		{END grid_record}
+		</tr>
+	{BEGIN details_row}
+		<tr class="{$rowclass}" {$rowattrs} {$rowstyle}>
+			{BEGIN details_record}
+				<td colspan="41">
+					{BEGIN details_table}
+						{$details}
+					{END details_table}
+				</td>
+				{BEGIN endrecord_block}
+				<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+				{END endrecord_block}
+			{END details_record}
+		</tr>
+	{END details_row}
+{END grid_row}
+	</tbody>
+
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

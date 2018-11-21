@@ -1,0 +1,61 @@
+##if @TABLE.bAdd || @TABLE.bInlineAdd##
+{BEGIN newrecord_controls}
+<span id="newrecord_controls{$id}">
+	##if @TABLE.bAdd##
+	{BEGIN add_link}
+		<a href="#" class="rnr-button" onclick="window.location.href='caldaily_add.##@ext##?wind=daily'">##message ADD_NEW##</a>
+	{END add_link}
+	##endif##
+
+	##if @TABLE.bInlineAdd##
+	{BEGIN inlineadd_link}
+		<a href="#" class="rnr-button" {$inlineaddlink_attrs}>##message INLINE_ADD##</a>
+	{END inlineadd_link}
+	##endif##
+</span>
+{END newrecord_controls}
+##endif##
+
+{BEGIN record_controls}
+<span id="record_controls{$id}">
+	##if @TABLE.bListVerticalLayout##
+	##if @TABLE.arrKeyFields.len && (@TABLE.bDelete || @TABLE.bExportTo || @TABLE.bPrinterFriendly || @TABLE.bInlineEdit)##
+	{BEGIN selectall_link}
+		<a href="#" class="rnr-button" {$selectalllink_attrs}>##message SELECT##</a>
+	{END selectall_link}
+	##endif##
+	##endif##
+
+	##if @TABLE.bInlineEdit || @TABLE.bInlineAdd##
+	##if @TABLE.bInlineEdit##
+	{BEGIN editselected_link}
+		<a href="#" class="rnr-button" {$editselectedlink_attrs}>##message EDIT_SELECTED##</a>
+	{END editselected_link}
+	##endif##
+	{BEGIN saveall_link}
+		<a href="#" class="rnr-button" {$savealllink_attrs}>##message SAVE_ALL##</a>
+	{END saveall_link}
+	{BEGIN cancelall_link}
+		<a href="#" class="rnr-button" {$cancelalllink_attrs}>##message CANCEL_ALL##</a>
+	{END cancelall_link}
+	##endif##
+
+	##if @TABLE.bDelete##
+	{BEGIN deleteselected_link}
+		<a href="#" class="rnr-button" {$deleteselectedlink_attrs}>##message DELETE_SELECTED##</a>
+	{END deleteselected_link}
+	##endif##
+
+	##if @TABLE.bExportTo && @TABLE.arrKeyFields.len && !IsReport(@TABLE)##
+	{BEGIN exportselected_link}
+		<a href="#" class="rnr-button" {$exportselectedlink_attrs}>##message EXPORT_SELECTED##</a>
+	{END exportselected_link}
+	##endif##
+
+	##if @TABLE.bPrinterFriendly && @TABLE.arrKeyFields.len && !IsReport(@TABLE)##
+	{BEGIN printselected_link}
+		<a href="#" class="rnr-button" {$printselectedlink_attrs}>##message PRINT_SELECTED##</a>
+	{END printselected_link}
+	##endif##
+</span>
+{END record_controls}

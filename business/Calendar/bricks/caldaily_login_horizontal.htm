@@ -1,0 +1,40 @@
+<div id="login_block{$id}">
+	{BEGIN guestloginbutton}
+	<span>
+##if @BUILDER.nLoginForm==2##
+		<input type="text" name="username" {$username_attrs}>&nbsp;
+		<input type="password" name="password" {$password_attrs}>
+		<a href="#" class="rnr-button" {$guestloginlink_attrs}>##message LOGIN##</a>
+		<input type="checkbox" {$rememberbox_attrs}>&nbsp;##message REMEMBER##
+	##if @BUILDER.Registration.bRemindPwdPage && @BUILDER.nLoginMethod==SECURITY_TABLE##
+		<a href="remind.##@ext##" class="rnr-button" {$forgotlink_attrs}>?</a>
+	##endif##
+	##if @BUILDER.Registration.bNewUserPage && @BUILDER.nLoginMethod==SECURITY_TABLE##
+		<a href="register.##@ext##" class="rnr-button" {$registerlink_attrs}>##message SIGN_UP##</a>
+	##endif##
+##else##
+		<a href="#" class="rnr-button" {$guestloginlink_attrs}>##message LOGIN##</a>
+##endif##
+	</span>
+	{END guestloginbutton}
+	{BEGIN logoutbutton}
+	<a href="#" class="rnr-button" {$logoutlink_attrs}>##message LOG_OUT##</a>
+	{END logoutbutton}
+##if @BUILDER.bDynamicPermissions##
+##if !IsAdminTable(@TABLE)##
+	{BEGIN adminarea_link}
+	<a href="admin_rights_list.##@ext##" class="rnr-button" {$adminarealink_attrs}>##message AA_ADMINAREA##</a>
+	{END adminarea_link}
+##else##
+	{BEGIN exitadminarea_link}
+	<a href="#" class="rnr-button" {$exitaalink_attrs}>##message AA_EXIT_ADMINAREA##</a>
+	{END exitadminarea_link}
+##endif##
+##endif##
+
+##if @BUILDER.Registration.bChangePwdPage && @BUILDER.nLoginMethod == SECURITY_TABLE##
+	{BEGIN changepwd_link}
+	<a href="#" class="rnr-button" {$changepwdlink_attrs}>##message CHANGE_PASSWORD##</a>
+	{END changepwd_link}
+##endif##
+</div>

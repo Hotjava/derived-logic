@@ -1,0 +1,46 @@
+<?php
+$dalTablerenewals = array();
+$dalTablerenewals["id"] = array("type"=>3,"varname"=>"id", "name" => "id");
+$dalTablerenewals["vendor_id"] = array("type"=>3,"varname"=>"vendor_id", "name" => "vendor_id");
+$dalTablerenewals["order_description"] = array("type"=>200,"varname"=>"order_description", "name" => "order_description");
+$dalTablerenewals["sold_to_id"] = array("type"=>3,"varname"=>"sold_to_id", "name" => "sold_to_id");
+$dalTablerenewals["ops_contact_id"] = array("type"=>3,"varname"=>"ops_contact_id", "name" => "ops_contact_id");
+$dalTablerenewals["sourcing_contact_id"] = array("type"=>3,"varname"=>"sourcing_contact_id", "name" => "sourcing_contact_id");
+$dalTablerenewals["previous_po"] = array("type"=>200,"varname"=>"previous_po", "name" => "previous_po");
+$dalTablerenewals["previous_lbg_pp"] = array("type"=>14,"varname"=>"previous_lbg_pp", "name" => "previous_lbg_pp");
+$dalTablerenewals["impacted_by_dollar"] = array("type"=>16,"varname"=>"impacted_by_dollar", "name" => "impacted_by_dollar");
+$dalTablerenewals["improvement_last_year"] = array("type"=>14,"varname"=>"improvement_last_year", "name" => "improvement_last_year");
+$dalTablerenewals["improvement_comments"] = array("type"=>200,"varname"=>"improvement_comments", "name" => "improvement_comments");
+$dalTablerenewals["percent_product_sales"] = array("type"=>5,"varname"=>"percent_product_sales", "name" => "percent_product_sales");
+$dalTablerenewals["service_type_id"] = array("type"=>3,"varname"=>"service_type_id", "name" => "service_type_id");
+$dalTablerenewals["term_id"] = array("type"=>3,"varname"=>"term_id", "name" => "term_id");
+$dalTablerenewals["support_start_date"] = array("type"=>7,"varname"=>"support_start_date", "name" => "support_start_date");
+$dalTablerenewals["support_end_date"] = array("type"=>7,"varname"=>"support_end_date", "name" => "support_end_date");
+$dalTablerenewals["comment_actions"] = array("type"=>201,"varname"=>"comment_actions", "name" => "comment_actions");
+$dalTablerenewals["last_update"] = array("type"=>7,"varname"=>"last_update", "name" => "last_update");
+$dalTablerenewals["alert_id"] = array("type"=>200,"varname"=>"alert_id", "name" => "alert_id");
+$dalTablerenewals["vendor_contact_id"] = array("type"=>3,"varname"=>"vendor_contact_id", "name" => "vendor_contact_id");
+$dalTablerenewals["erf"] = array("type"=>200,"varname"=>"erf", "name" => "erf");
+$dalTablerenewals["guid"] = array("type"=>200,"varname"=>"guid", "name" => "guid");
+$dalTablerenewals["documents"] = array("type"=>201,"varname"=>"documents", "name" => "documents");
+$dalTablerenewals["status_id"] = array("type"=>3,"varname"=>"status_id", "name" => "status_id");
+$dalTablerenewals["cost"] = array("type"=>14,"varname"=>"cost", "name" => "cost");
+$dalTablerenewals["request_date"] = array("type"=>7,"varname"=>"request_date", "name" => "request_date");
+$dalTablerenewals["quote_ref"] = array("type"=>200,"varname"=>"quote_ref", "name" => "quote_ref");
+$dalTablerenewals["po"] = array("type"=>200,"varname"=>"po", "name" => "po");
+$dalTablerenewals["cc_so"] = array("type"=>200,"varname"=>"cc_so", "name" => "cc_so");
+$dalTablerenewals["supplier_ref"] = array("type"=>200,"varname"=>"supplier_ref", "name" => "supplier_ref");
+$dalTablerenewals["supplier_order_ref"] = array("type"=>200,"varname"=>"supplier_order_ref", "name" => "supplier_order_ref");
+$dalTablerenewals["pod"] = array("type"=>200,"varname"=>"pod", "name" => "pod");
+$dalTablerenewals["task_number"] = array("type"=>200,"varname"=>"task_number", "name" => "task_number");
+$dalTablerenewals["tracking_ref"] = array("type"=>200,"varname"=>"tracking_ref", "name" => "tracking_ref");
+$dalTablerenewals["delivery_code"] = array("type"=>200,"varname"=>"delivery_code", "name" => "delivery_code");
+$dalTablerenewals["pulse_id"] = array("type"=>200,"varname"=>"pulse_id", "name" => "pulse_id");
+$dalTablerenewals["date_billed"] = array("type"=>7,"varname"=>"date_billed", "name" => "date_billed");
+$dalTablerenewals["product_id"] = array("type"=>3,"varname"=>"product_id", "name" => "product_id");
+$dalTablerenewals["renewal_date"] = array("type"=>7,"varname"=>"renewal_date", "name" => "renewal_date");
+$dalTablerenewals["recurrence"] = array("type"=>3,"varname"=>"recurrence", "name" => "recurrence");
+	$dalTablerenewals["id"]["key"]=true;
+
+$dal_info["Tables__renewals"] = &$dalTablerenewals;
+?>

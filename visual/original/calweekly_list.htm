@@ -1,0 +1,494 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-list" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_top}
+<div {$top_chiddenattr} data-pageid="{$pageid}" data-container="top" class="container    "> 
+
+
+{BEGIN container_menu}<nav {$menu_chiddenattr} data-pageid="{$pageid}" data-container="menu" class="navbar navbar-default ">					
+
+
+
+{BEGIN container_hdr}
+<div {$hdr_chiddenattr} data-pageid="{$pageid}" data-container="hdr" class=" navbar-header   "> 
+
+{BEGIN logo_block}
+<a href="{$home_link}" {$logo_hiddenattr} data-pageid="{$pageid}" data-brick="logo" class="navbar-brand" >{$logo}</a>
+{END logo_block}
+
+
+{BEGIN collapse_block}
+<button {$bsnavbarcollapse_hiddenattr} data-pageid="{$pageid}" data-brick="bsnavbarcollapse" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target=".bs-navcontrolled">	
+	<span class="sr-only">Toggle navigation</span>	
+	<span class="icon-bar"></span>					
+</button>												
+
+{END collapse_block}
+
+
+
+</div>
+{END container_hdr}
+
+
+
+
+
+
+{BEGIN container_menu_1}<div {$menu_1_chiddenattr} data-pageid="{$pageid}" data-container="menu_1" class="bs-navform navbar-collapse bs-hidden-xs bs-navcontrolled" aria-expanded="false" >												   
+{BEGIN menu_block}
+{$menu main horizontal}
+
+{END menu_block}
+
+
+
+
+
+{BEGIN container_more}
+<div {$more_chiddenattr} data-pageid="{$pageid}" data-container="more" class=" navbar-right navbar-form   "> 
+
+{BEGIN more_list}
+<div {$morebutton_hiddenattr} data-pageid="{$pageid}" data-brick="morebutton" class="btn-group bs-navsection">
+	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		<span class="glyphicon glyphicon-cog"></span>
+		<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu">
+		
+				{BEGIN exportselected_link}
+		<li class="massButton{$id} disabled"><a href="#" {$exportselectedlink_attrs} {$exportselectedlink_span} >Export selected</a></li>
+		{END exportselected_link}
+		
+				
+				<li role="separator" class="divider"></li>	
+
+		
+				
+				
+				<li role="separator" class="divider"></li>	
+		
+				
+				{BEGIN export_link}
+		<li><a target="_blank" href="calweekly_export.php"  {$exportlink_attrs}>Export results</a></li>
+		{END export_link}
+
+		
+				
+	</ul>  
+</div>
+
+{END more_list}
+
+
+{BEGIN security_block}
+<span {$loggedas_hiddenattr} data-pageid="{$pageid}" data-brick="loggedas" id="login_block{$id}" class="bs-navsection">
+	{BEGIN guestloginbutton}
+		<button class="btn btn-info" type="button" {$guestloginlink_attrs}>Login</button>
+	{END guestloginbutton}
+	{BEGIN loggedas_message} 
+		<span class="dropdown">
+			<button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="glyphicon glyphicon-user"></span>	{$username}</button>
+			<ul class="dropdown-menu">
+		{BEGIN logoutbutton}
+				<li><a href="#" {$logoutlink_attrs}>Log out</a></li>
+		{END logoutbutton}
+		
+
+			</ul>
+		</span>
+	{END loggedas_message}
+</span>
+{END security_block}
+
+
+
+</div>
+{END container_more}
+
+
+
+
+
+
+
+
+{BEGIN container_more_1}
+<div {$more_1_chiddenattr} data-pageid="{$pageid}" data-container="more_1" class=" navbar-right navbar-form   "> 
+
+{BEGIN searchform_block}
+<span {$search_hiddenattr} data-pageid="{$pageid}" data-brick="search" class="form-group">
+
+		
+</span>
+{END searchform_block}
+
+
+
+</div>
+{END container_more_1}
+
+
+
+
+												</div>						{END container_menu_1}
+
+
+									</nav>{END container_menu}
+
+
+
+
+
+
+{BEGIN container_breadcrumbs}
+<div {$breadcrumbs_chiddenattr} data-pageid="{$pageid}" data-container="breadcrumbs" class="    "> 
+
+
+
+
+{BEGIN container_bc}
+<div {$bc_chiddenattr} data-pageid="{$pageid}" data-container="bc" class="    "> 
+
+{BEGIN breadcrumbs}
+<ol class="breadcrumb">
+<li ><a href="{$home_link}"><span class="glyphicon glyphicon-home"></span></a>{$crumb_dropdown}</li>
+{BEGIN crumb}
+  <li class="{$crumb_item_class}">
+{BEGIN crumb_title_link}
+	<a {$crumb_attrs}>{$crumb_title}</a>
+{END crumb_title_link}
+{BEGIN crumb_title_span}
+	<span {$crumb_attrs}>{$crumb_title}</span>
+{END crumb_title_span}	
+	{$crumb_dropdown}
+  </li>
+{END crumb}
+</ol>
+{END breadcrumbs}
+
+
+
+</div>
+{END container_bc}
+
+
+
+
+
+
+</div>
+{END container_breadcrumbs}
+
+
+
+
+
+
+
+
+</div>
+{END container_top}
+
+
+		</div>
+		<div class="bs-middle bs-centered">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+
+{BEGIN container_form}
+<div class="rnr-c rnr-ch rnr-c-form">
+
+
+<div style="white-space: nowrap;" class="style1 rnr-bl rnr-b-calweekly_list {$brickclass_calweekly_list}"><style>
+	.rnr-b-calweekly_list{width:99%};
+</style>
+<table style="width:100%;min-width:900px" align=center class="rnr-c">
+	<tr>
+		<td>
+		{BEGIN row001Datevisible}
+			<table height=100 width=100% cellpadding=3 {$row001TableNowvalue} class="rnr-c">
+				<tr>
+					<td height=20 align=right class="">
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr class="rnr-row style3">
+																{BEGIN allow_add}
+								<td align=left class="rnr-cc rnr-cc1" style="width:100px">
+									&nbsp;&nbsp;<a {$row00AddHideW1value} href="" id=addButton1 {$addAttr1}>Add new</a>
+								</td>
+								{END allow_add}
+								<td align=right>
+									<a href="caldaily_list.php?{$row00Dateadd1value}">
+									{$row001Datevalue}
+									</a>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr >
+					<td align=left valign=top id="add{$row001sDayvalue}" class="rnr-cc" {$row001Daystyle}>
+						{$row001Dayvalue}
+					</td>
+				</tr>
+				<tr class="rnr-row style1">
+					<td height=5 >&nbsp;</td>
+				</tr>
+			</table>
+		{END row001Datevisible}
+		</td>
+	</tr>
+	<tr>
+		<td>
+		{BEGIN row002Datevisible}
+			<table height=100 width=100% cellpadding=3 {$row002TableNowvalue} class="rnr-c">
+				<tr>
+					<td height=20 align=right class="">
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr class="rnr-row style3">
+																{BEGIN allow_add}
+								<td align=left class="rnr-cc rnr-cc1" style="width:100px">
+									&nbsp;&nbsp;<a {$row00AddHideW2value} href="" id=addButton2 {$addAttr2}>Add new</a>
+								</td>
+								{END allow_add}
+								<td align=right>
+									<a href="caldaily_list.php?{$row00Dateadd2value}">
+									{$row002Datevalue}
+									</a>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr >
+					<td align=left valign=top id="add{$row002sDayvalue}" class="rnr-cc" {$row002Daystyle}>
+						{$row002Dayvalue}
+					</td>
+				</tr>
+				<tr class="rnr-row style1">
+					<td height=5 >&nbsp;</td>
+				</tr>
+			</table>
+		{END row002Datevisible}
+		</td>
+	</tr>
+	<tr>
+		<td>
+		{BEGIN row003Datevisible}
+			<table height=100 width=100% cellpadding=3 {$row003TableNowvalue} class="rnr-c">
+				<tr>
+					<td height=20 align=right class="">
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr class="rnr-row style3">
+																{BEGIN allow_add}
+								<td align=left class="rnr-cc rnr-cc1" style="width:100px">
+									&nbsp;&nbsp;<a {$row00AddHideW3value} href="" id=addButton3 {$addAttr3}>Add new</a>
+								</td>
+								{END allow_add}
+								<td align=right>
+									<a href="caldaily_list.php?{$row00Dateadd3value}">
+									{$row003Datevalue}
+									</a>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr >
+					<td align=left valign=top id="add{$row003sDayvalue}" class="rnr-cc" {$row003Daystyle}>
+						{$row003Dayvalue}
+					</td>
+				</tr>
+				<tr class="rnr-row style1">
+					<td height=5 >&nbsp;</td>
+				</tr>
+			</table>
+		{END row003Datevisible}
+		</td>
+	</tr>
+	<tr>
+		<td>
+		{BEGIN row004Datevisible}
+			<table height=100 width=100% cellpadding=3 {$row004TableNowvalue} class="rnr-c">
+				<tr>
+					<td height=20 align=right class="">
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr class="rnr-row style3">
+																{BEGIN allow_add}
+								<td align=left class="rnr-cc rnr-cc1" style="width:100px">
+									&nbsp;&nbsp;<a {$row00AddHideW4value} href="" id=addButton4 {$addAttr4}>Add new</a>
+								</td>
+								{END allow_add}
+								<td align=right>
+									<a href="caldaily_list.php?{$row00Dateadd4value}">
+									{$row004Datevalue}
+									</a>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr >
+					<td align=left valign=top id="add{$row004sDayvalue}" class="rnr-cc" {$row004Daystyle}>
+						{$row004Dayvalue}
+					</td>
+				</tr>
+				<tr class="rnr-row style1">
+					<td height=5 >&nbsp;</td>
+				</tr>
+			</table>
+		{END row004Datevisible}
+		</td>
+	</tr>
+	<tr>
+		<td>
+		{BEGIN row005Datevisible}
+			<table height=100 width=100% cellpadding=3 {$row005TableNowvalue} class="rnr-c">
+				<tr>
+					<td height=20 align=right class="">
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr class="rnr-row style3">
+																{BEGIN allow_add}
+								<td align=left class="rnr-cc rnr-cc1" style="width:100px">
+									&nbsp;&nbsp;<a {$row00AddHideW5value} href="" id=addButton5 {$addAttr5}>Add new</a>
+								</td>
+								{END allow_add}
+								<td align=right>
+									<a href="caldaily_list.php?{$row00Dateadd5value}">
+									{$row005Datevalue}
+									</a>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr >
+					<td align=left valign=top id="add{$row005sDayvalue}" class="rnr-cc" {$row005Daystyle}>
+						{$row005Dayvalue}
+					</td>
+				</tr>
+				<tr class="rnr-row style1">
+					<td height=5 >&nbsp;</td>
+				</tr>
+			</table>
+		{END row005Datevisible}
+		</td>
+	</tr>
+	<tr>
+		<td>
+		{BEGIN row006Datevisible}
+			<table height=100 width=100% cellpadding=3 {$row006TableNowvalue} class="rnr-c">
+				<tr>
+					<td height=20 align=right class="">
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr class="rnr-row style3">
+																{BEGIN allow_add}
+								<td align=left class="rnr-cc rnr-cc1" style="width:100px">
+									&nbsp;&nbsp;<a {$row00AddHideW6value} href="" id=addButton6 {$addAttr6}>Add new</a>
+								</td>
+								{END allow_add}
+								<td align=right>
+									<a href="caldaily_list.php?{$row00Dateadd6value}">
+									{$row006Datevalue}
+									</a>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr >
+					<td align=left valign=top id="add{$row006sDayvalue}" class="rnr-cc" {$row006Daystyle}>
+						{$row006Dayvalue}
+					</td>
+				</tr>
+				<tr class="rnr-row style1">
+					<td height=5 >&nbsp;</td>
+				</tr>
+			</table>
+		{END row006Datevisible}
+		</td>
+	</tr>
+	<tr>
+		<td>
+		{BEGIN row007Datevisible}
+			<table height=100 width=100% cellpadding=3 {$row007TableNowvalue} class="rnr-c">
+				<tr>
+					<td height=20 align=right class="">
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr class="rnr-row style3">
+																{BEGIN allow_add}
+								<td align=left class="rnr-cc rnr-cc1" style="width:100px">
+									&nbsp;&nbsp;<a {$row00AddHideW7value} href="" id=addButton7 {$addAttr7}>Add new</a>
+								</td>
+								{END allow_add}
+								<td align=right>
+									<a href="caldaily_list.php?{$row00Dateadd7value}">
+									{$row007Datevalue}
+									</a>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr >
+					<td align=left valign=top id="add{$row007sDayvalue}" class="rnr-cc" {$row007Daystyle}>
+						{$row007Dayvalue}
+					</td>
+				</tr>
+				<tr class="rnr-row style1">
+					<td height=5 >&nbsp;</td>
+				</tr>
+			</table>
+		{END row007Datevisible}
+		</td>
+	</tr>
+</table></div>
+
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_form}
+
+
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

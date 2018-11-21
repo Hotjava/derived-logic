@@ -1,0 +1,13 @@
+{BEGIN ##@l.id g##_fieldblock}
+<tr class="{$fielddispclass_##@l.id g##}" data-fieldname="##@l.id g##">
+	<td class="rnr-label">
+			{BEGIN ##@l.id g##_label}##label @TABLE.strDataSourceTable @l.id##{END ##@l.id g##_label}
+		</td>
+		<td class="rnr-control style3" ##if @l.id=="Category"##id="bgc" {$bg_edit}##endif##>
+			{$##@l.id g##_editcontrol}&nbsp;
+			##if @l.id=="Color"##
+			        {$event Status_Palette1}
+			##endif##
+		</td>
+	</tr>
+{END ##@l.id g##_fieldblock}

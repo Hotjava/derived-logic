@@ -1,0 +1,1035 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_add_css}
+<div class="rnr-c rnr-ch rnr-c-add_css">
+
+
+<div  class="style1 rnr-bl rnr-b- {$brickclass_}"></div>
+
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_add_css}
+
+
+
+{BEGIN container_printheader}
+<div class="rnr-c rnr-ch rnr-c-printheader">
+
+{BEGIN printheader}
+<div  class="style1 rnr-bl rnr-b-printheader {$brickclass_printheader}">	<h1>{$pagetitlelabel calmonthly print}</h1>
+</div>
+{END printheader}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_printheader}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_form}
+<div class="rnr-c rnr-ch rnr-c-form">
+
+
+<div style="white-space: nowrap;" class="style1 rnr-bl rnr-b-calmonthly_print {$brickclass_calmonthly_print}"><table style="width:1000px">
+	<tr colspan=7>
+		<td>&nbsp;{$Monthly_month_year}</td>
+	</tr>
+	<tr>
+		<td width="14%" align=center valign=middle ><b>{$row00sdname1}</b></td>
+		<td width="14%" align=center valign=middle ><b>{$row00sdname2}</b></td>
+		<td width="14%" align=center valign=middle ><b>{$row00sdname3}</b></td>
+		<td width="14%" align=center valign=middle ><b>{$row00sdname4}</b></td>
+		<td width="14%" align=center valign=middle ><b>{$row00sdname5}</b></td>
+		<td width="14%" align=center valign=middle ><b>{$row00sdname6}</b></td>
+		<td width="14%" align=center valign=middle ><b>{$row00sdname7}</b></td>
+	</tr>
+	<tr>
+		<td width="14%" >
+		{BEGIN row001Datevisible}
+			<table height=150 width=100% cellpadding=1 cellspacing=0 style="border:1px solid black;" border=0>
+				<tr>
+					<td  height=20 valign=middle align=right  >
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=right>
+									<b>{$row001Datevalue}</b>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=left valign=top width="14%" id="add{$row001Datevalue}">
+						{$row001Dayvalue}
+					</td>
+				</tr>
+			</table>
+			{END row001Datevisible}
+		</td>
+		<td width="14%" >
+		{BEGIN row002Datevisible}
+			<table height=150 width=100% cellpadding=1 cellspacing=0 style="border:1px solid black;" border=0>
+				<tr>
+					<td  height=20 valign=middle align=right  >
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=right>
+									<b>{$row002Datevalue}</b>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=left valign=top width="14%" id="add{$row002Datevalue}">
+						{$row002Dayvalue}
+					</td>
+				</tr>
+			</table>
+			{END row002Datevisible}
+		</td>
+		<td width="14%" >
+		{BEGIN row003Datevisible}
+			<table height=150 width=100% cellpadding=1 cellspacing=0 style="border:1px solid black;" border=0>
+				<tr>
+					<td  height=20 valign=middle align=right  >
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=right>
+									<b>{$row003Datevalue}</b>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=left valign=top width="14%" id="add{$row003Datevalue}">
+						{$row003Dayvalue}
+					</td>
+				</tr>
+			</table>
+			{END row003Datevisible}
+		</td>
+		<td width="14%" >
+		{BEGIN row004Datevisible}
+			<table height=150 width=100% cellpadding=1 cellspacing=0 style="border:1px solid black;" border=0>
+				<tr>
+					<td  height=20 valign=middle align=right  >
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=right>
+									<b>{$row004Datevalue}</b>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=left valign=top width="14%" id="add{$row004Datevalue}">
+						{$row004Dayvalue}
+					</td>
+				</tr>
+			</table>
+			{END row004Datevisible}
+		</td>
+		<td width="14%" >
+		{BEGIN row005Datevisible}
+			<table height=150 width=100% cellpadding=1 cellspacing=0 style="border:1px solid black;" border=0>
+				<tr>
+					<td  height=20 valign=middle align=right  >
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=right>
+									<b>{$row005Datevalue}</b>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=left valign=top width="14%" id="add{$row005Datevalue}">
+						{$row005Dayvalue}
+					</td>
+				</tr>
+			</table>
+			{END row005Datevisible}
+		</td>
+		<td width="14%" >
+		{BEGIN row006Datevisible}
+			<table height=150 width=100% cellpadding=1 cellspacing=0 style="border:1px solid black;" border=0>
+				<tr>
+					<td  height=20 valign=middle align=right  >
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=right>
+									<b>{$row006Datevalue}</b>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=left valign=top width="14%" id="add{$row006Datevalue}">
+						{$row006Dayvalue}
+					</td>
+				</tr>
+			</table>
+			{END row006Datevisible}
+		</td>
+		<td width="14%" >
+		{BEGIN row007Datevisible}
+			<table height=150 width=100% cellpadding=1 cellspacing=0 style="border:1px solid black;" border=0>
+				<tr>
+					<td  height=20 valign=middle align=right  >
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=right>
+									<b>{$row007Datevalue}</b>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=left valign=top width="14%" id="add{$row007Datevalue}">
+						{$row007Dayvalue}
+					</td>
+				</tr>
+			</table>
+			{END row007Datevisible}
+		</td>
+	</tr>
+	<tr>
+		<td width="14%" >
+		{BEGIN row008Datevisible}
+			<table height=150 width=100% cellpadding=1 cellspacing=0 style="border:1px solid black;" border=0>
+				<tr>
+					<td  height=20 valign=middle align=right  >
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=right>
+									<b>{$row008Datevalue}</b>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=left valign=top width="14%" id="add{$row008Datevalue}">
+						{$row008Dayvalue}
+					</td>
+				</tr>
+			</table>
+			{END row008Datevisible}
+		</td>
+		<td width="14%" >
+		{BEGIN row009Datevisible}
+			<table height=150 width=100% cellpadding=1 cellspacing=0 style="border:1px solid black;" border=0>
+				<tr>
+					<td  height=20 valign=middle align=right  >
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=right>
+									<b>{$row009Datevalue}</b>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=left valign=top width="14%" id="add{$row009Datevalue}">
+						{$row009Dayvalue}
+					</td>
+				</tr>
+			</table>
+			{END row009Datevisible}
+		</td>
+		<td width="14%" >
+		{BEGIN row0010Datevisible}
+			<table height=150 width=100% cellpadding=1 cellspacing=0 style="border:1px solid black;" border=0>
+				<tr>
+					<td  height=20 valign=middle align=right  >
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=right>
+									<b>{$row0010Datevalue}</b>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=left valign=top width="14%" id="add{$row0010Datevalue}">
+						{$row0010Dayvalue}
+					</td>
+				</tr>
+			</table>
+			{END row0010Datevisible}
+		</td>
+		<td width="14%" >
+		{BEGIN row0011Datevisible}
+			<table height=150 width=100% cellpadding=1 cellspacing=0 style="border:1px solid black;" border=0>
+				<tr>
+					<td  height=20 valign=middle align=right  >
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=right>
+									<b>{$row0011Datevalue}</b>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=left valign=top width="14%" id="add{$row0011Datevalue}">
+						{$row0011Dayvalue}
+					</td>
+				</tr>
+			</table>
+			{END row0011Datevisible}
+		</td>
+		<td width="14%" >
+		{BEGIN row0012Datevisible}
+			<table height=150 width=100% cellpadding=1 cellspacing=0 style="border:1px solid black;" border=0>
+				<tr>
+					<td  height=20 valign=middle align=right  >
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=right>
+									<b>{$row0012Datevalue}</b>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=left valign=top width="14%" id="add{$row0012Datevalue}">
+						{$row0012Dayvalue}
+					</td>
+				</tr>
+			</table>
+			{END row0012Datevisible}
+		</td>
+		<td width="14%" >
+		{BEGIN row0013Datevisible}
+			<table height=150 width=100% cellpadding=1 cellspacing=0 style="border:1px solid black;" border=0>
+				<tr>
+					<td  height=20 valign=middle align=right  >
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=right>
+									<b>{$row0013Datevalue}</b>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=left valign=top width="14%" id="add{$row0013Datevalue}">
+						{$row0013Dayvalue}
+					</td>
+				</tr>
+			</table>
+			{END row0013Datevisible}
+		</td>
+		<td width="14%" >
+		{BEGIN row0014Datevisible}
+			<table height=150 width=100% cellpadding=1 cellspacing=0 style="border:1px solid black;" border=0>
+				<tr>
+					<td  height=20 valign=middle align=right  >
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=right>
+									<b>{$row0014Datevalue}</b>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=left valign=top width="14%" id="add{$row0014Datevalue}">
+						{$row0014Dayvalue}
+					</td>
+				</tr>
+			</table>
+			{END row0014Datevisible}
+		</td>
+	</tr>
+	<tr>
+		<td width="14%" >
+		{BEGIN row0015Datevisible}
+			<table height=150 width=100% cellpadding=1 cellspacing=0 style="border:1px solid black;" border=0>
+				<tr>
+					<td  height=20 valign=middle align=right  >
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=right>
+									<b>{$row0015Datevalue}</b>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=left valign=top width="14%" id="add{$row0015Datevalue}">
+						{$row0015Dayvalue}
+					</td>
+				</tr>
+			</table>
+			{END row0015Datevisible}
+		</td>
+		<td width="14%" >
+		{BEGIN row0016Datevisible}
+			<table height=150 width=100% cellpadding=1 cellspacing=0 style="border:1px solid black;" border=0>
+				<tr>
+					<td  height=20 valign=middle align=right  >
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=right>
+									<b>{$row0016Datevalue}</b>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=left valign=top width="14%" id="add{$row0016Datevalue}">
+						{$row0016Dayvalue}
+					</td>
+				</tr>
+			</table>
+			{END row0016Datevisible}
+		</td>
+		<td width="14%" >
+		{BEGIN row0017Datevisible}
+			<table height=150 width=100% cellpadding=1 cellspacing=0 style="border:1px solid black;" border=0>
+				<tr>
+					<td  height=20 valign=middle align=right  >
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=right>
+									<b>{$row0017Datevalue}</b>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=left valign=top width="14%" id="add{$row0017Datevalue}">
+						{$row0017Dayvalue}
+					</td>
+				</tr>
+			</table>
+			{END row0017Datevisible}
+		</td>
+		<td width="14%" >
+		{BEGIN row0018Datevisible}
+			<table height=150 width=100% cellpadding=1 cellspacing=0 style="border:1px solid black;" border=0>
+				<tr>
+					<td  height=20 valign=middle align=right  >
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=right>
+									<b>{$row0018Datevalue}</b>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=left valign=top width="14%" id="add{$row0018Datevalue}">
+						{$row0018Dayvalue}
+					</td>
+				</tr>
+			</table>
+			{END row0018Datevisible}
+		</td>
+		<td width="14%" >
+		{BEGIN row0019Datevisible}
+			<table height=150 width=100% cellpadding=1 cellspacing=0 style="border:1px solid black;" border=0>
+				<tr>
+					<td  height=20 valign=middle align=right  >
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=right>
+									<b>{$row0019Datevalue}</b>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=left valign=top width="14%" id="add{$row0019Datevalue}">
+						{$row0019Dayvalue}
+					</td>
+				</tr>
+			</table>
+			{END row0019Datevisible}
+		</td>
+		<td width="14%" >
+		{BEGIN row0020Datevisible}
+			<table height=150 width=100% cellpadding=1 cellspacing=0 style="border:1px solid black;" border=0>
+				<tr>
+					<td  height=20 valign=middle align=right  >
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=right>
+									<b>{$row0020Datevalue}</b>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=left valign=top width="14%" id="add{$row0020Datevalue}">
+						{$row0020Dayvalue}
+					</td>
+				</tr>
+			</table>
+			{END row0020Datevisible}
+		</td>
+		<td width="14%" >
+		{BEGIN row0021Datevisible}
+			<table height=150 width=100% cellpadding=1 cellspacing=0 style="border:1px solid black;" border=0>
+				<tr>
+					<td  height=20 valign=middle align=right  >
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=right>
+									<b>{$row0021Datevalue}</b>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=left valign=top width="14%" id="add{$row0021Datevalue}">
+						{$row0021Dayvalue}
+					</td>
+				</tr>
+			</table>
+			{END row0021Datevisible}
+		</td>
+	</tr>
+	<tr>
+		<td width="14%" >
+		{BEGIN row0022Datevisible}
+			<table height=150 width=100% cellpadding=1 cellspacing=0 style="border:1px solid black;" border=0>
+				<tr>
+					<td  height=20 valign=middle align=right  >
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=right>
+									<b>{$row0022Datevalue}</b>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=left valign=top width="14%" id="add{$row0022Datevalue}">
+						{$row0022Dayvalue}
+					</td>
+				</tr>
+			</table>
+			{END row0022Datevisible}
+		</td>
+		<td width="14%" >
+		{BEGIN row0023Datevisible}
+			<table height=150 width=100% cellpadding=1 cellspacing=0 style="border:1px solid black;" border=0>
+				<tr>
+					<td  height=20 valign=middle align=right  >
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=right>
+									<b>{$row0023Datevalue}</b>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=left valign=top width="14%" id="add{$row0023Datevalue}">
+						{$row0023Dayvalue}
+					</td>
+				</tr>
+			</table>
+			{END row0023Datevisible}
+		</td>
+		<td width="14%" >
+		{BEGIN row0024Datevisible}
+			<table height=150 width=100% cellpadding=1 cellspacing=0 style="border:1px solid black;" border=0>
+				<tr>
+					<td  height=20 valign=middle align=right  >
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=right>
+									<b>{$row0024Datevalue}</b>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=left valign=top width="14%" id="add{$row0024Datevalue}">
+						{$row0024Dayvalue}
+					</td>
+				</tr>
+			</table>
+			{END row0024Datevisible}
+		</td>
+		<td width="14%" >
+		{BEGIN row0025Datevisible}
+			<table height=150 width=100% cellpadding=1 cellspacing=0 style="border:1px solid black;" border=0>
+				<tr>
+					<td  height=20 valign=middle align=right  >
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=right>
+									<b>{$row0025Datevalue}</b>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=left valign=top width="14%" id="add{$row0025Datevalue}">
+						{$row0025Dayvalue}
+					</td>
+				</tr>
+			</table>
+			{END row0025Datevisible}
+		</td>
+		<td width="14%" >
+		{BEGIN row0026Datevisible}
+			<table height=150 width=100% cellpadding=1 cellspacing=0 style="border:1px solid black;" border=0>
+				<tr>
+					<td  height=20 valign=middle align=right  >
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=right>
+									<b>{$row0026Datevalue}</b>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=left valign=top width="14%" id="add{$row0026Datevalue}">
+						{$row0026Dayvalue}
+					</td>
+				</tr>
+			</table>
+			{END row0026Datevisible}
+		</td>
+		<td width="14%" >
+		{BEGIN row0027Datevisible}
+			<table height=150 width=100% cellpadding=1 cellspacing=0 style="border:1px solid black;" border=0>
+				<tr>
+					<td  height=20 valign=middle align=right  >
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=right>
+									<b>{$row0027Datevalue}</b>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=left valign=top width="14%" id="add{$row0027Datevalue}">
+						{$row0027Dayvalue}
+					</td>
+				</tr>
+			</table>
+			{END row0027Datevisible}
+		</td>
+		<td width="14%" >
+		{BEGIN row0028Datevisible}
+			<table height=150 width=100% cellpadding=1 cellspacing=0 style="border:1px solid black;" border=0>
+				<tr>
+					<td  height=20 valign=middle align=right  >
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=right>
+									<b>{$row0028Datevalue}</b>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=left valign=top width="14%" id="add{$row0028Datevalue}">
+						{$row0028Dayvalue}
+					</td>
+				</tr>
+			</table>
+			{END row0028Datevisible}
+		</td>
+	</tr>
+	<tr>
+		<td width="14%" >
+		{BEGIN row0029Datevisible}
+			<table height=150 width=100% cellpadding=1 cellspacing=0 style="border:1px solid black;" border=0>
+				<tr>
+					<td  height=20 valign=middle align=right  >
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=right>
+									<b>{$row0029Datevalue}</b>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=left valign=top width="14%" id="add{$row0029Datevalue}">
+						{$row0029Dayvalue}
+					</td>
+				</tr>
+			</table>
+			{END row0029Datevisible}
+		</td>
+		<td width="14%" >
+		{BEGIN row0030Datevisible}
+			<table height=150 width=100% cellpadding=1 cellspacing=0 style="border:1px solid black;" border=0>
+				<tr>
+					<td  height=20 valign=middle align=right  >
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=right>
+									<b>{$row0030Datevalue}</b>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=left valign=top width="14%" id="add{$row0030Datevalue}">
+						{$row0030Dayvalue}
+					</td>
+				</tr>
+			</table>
+			{END row0030Datevisible}
+		</td>
+		<td width="14%" >
+		{BEGIN row0031Datevisible}
+			<table height=150 width=100% cellpadding=1 cellspacing=0 style="border:1px solid black;" border=0>
+				<tr>
+					<td  height=20 valign=middle align=right  >
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=right>
+									<b>{$row0031Datevalue}</b>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=left valign=top width="14%" id="add{$row0031Datevalue}">
+						{$row0031Dayvalue}
+					</td>
+				</tr>
+			</table>
+			{END row0031Datevisible}
+		</td>
+		<td width="14%" >
+		{BEGIN row0032Datevisible}
+			<table height=150 width=100% cellpadding=1 cellspacing=0 style="border:1px solid black;" border=0>
+				<tr>
+					<td  height=20 valign=middle align=right  >
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=right>
+									<b>{$row0032Datevalue}</b>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=left valign=top width="14%" id="add{$row0032Datevalue}">
+						{$row0032Dayvalue}
+					</td>
+				</tr>
+			</table>
+			{END row0032Datevisible}
+		</td>
+		<td width="14%" >
+		{BEGIN row0033Datevisible}
+			<table height=150 width=100% cellpadding=1 cellspacing=0 style="border:1px solid black;" border=0>
+				<tr>
+					<td  height=20 valign=middle align=right  >
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=right>
+									<b>{$row0033Datevalue}</b>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=left valign=top width="14%" id="add{$row0033Datevalue}">
+						{$row0033Dayvalue}
+					</td>
+				</tr>
+			</table>
+			{END row0033Datevisible}
+		</td>
+		<td width="14%" >
+		{BEGIN row0034Datevisible}
+			<table height=150 width=100% cellpadding=1 cellspacing=0 style="border:1px solid black;" border=0>
+				<tr>
+					<td  height=20 valign=middle align=right  >
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=right>
+									<b>{$row0034Datevalue}</b>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=left valign=top width="14%" id="add{$row0034Datevalue}">
+						{$row0034Dayvalue}
+					</td>
+				</tr>
+			</table>
+			{END row0034Datevisible}
+		</td>
+		<td width="14%" >
+		{BEGIN row0035Datevisible}
+			<table height=150 width=100% cellpadding=1 cellspacing=0 style="border:1px solid black;" border=0>
+				<tr>
+					<td  height=20 valign=middle align=right  >
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=right>
+									<b>{$row0035Datevalue}</b>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=left valign=top width="14%" id="add{$row0035Datevalue}">
+						{$row0035Dayvalue}
+					</td>
+				</tr>
+			</table>
+			{END row0035Datevisible}
+		</td>
+	</tr>
+	<tr>
+		<td width="14%" >
+		{BEGIN row0036Datevisible}
+			<table height=150 width=100% cellpadding=1 cellspacing=0 style="border:1px solid black;" border=0>
+				<tr>
+					<td  height=20 valign=middle align=right  >
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=right>
+									<b>{$row0036Datevalue}</b>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=left valign=top width="14%" id="add{$row0036Datevalue}">
+						{$row0036Dayvalue}
+					</td>
+				</tr>
+			</table>
+			{END row0036Datevisible}
+		</td>
+		<td width="14%" >
+		{BEGIN row0037Datevisible}
+			<table height=150 width=100% cellpadding=1 cellspacing=0 style="border:1px solid black;" border=0>
+				<tr>
+					<td  height=20 valign=middle align=right  >
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=right>
+									<b>{$row0037Datevalue}</b>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=left valign=top width="14%" id="add{$row0037Datevalue}">
+						{$row0037Dayvalue}
+					</td>
+				</tr>
+			</table>
+			{END row0037Datevisible}
+		</td>
+		<td width="14%" >
+		{BEGIN row0038Datevisible}
+			<table height=150 width=100% cellpadding=1 cellspacing=0 style="border:1px solid black;" border=0>
+				<tr>
+					<td  height=20 valign=middle align=right  >
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=right>
+									<b>{$row0038Datevalue}</b>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=left valign=top width="14%" id="add{$row0038Datevalue}">
+						{$row0038Dayvalue}
+					</td>
+				</tr>
+			</table>
+			{END row0038Datevisible}
+		</td>
+		<td width="14%" >
+		{BEGIN row0039Datevisible}
+			<table height=150 width=100% cellpadding=1 cellspacing=0 style="border:1px solid black;" border=0>
+				<tr>
+					<td  height=20 valign=middle align=right  >
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=right>
+									<b>{$row0039Datevalue}</b>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=left valign=top width="14%" id="add{$row0039Datevalue}">
+						{$row0039Dayvalue}
+					</td>
+				</tr>
+			</table>
+			{END row0039Datevisible}
+		</td>
+		<td width="14%" >
+		{BEGIN row0040Datevisible}
+			<table height=150 width=100% cellpadding=1 cellspacing=0 style="border:1px solid black;" border=0>
+				<tr>
+					<td  height=20 valign=middle align=right  >
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=right>
+									<b>{$row0040Datevalue}</b>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=left valign=top width="14%" id="add{$row0040Datevalue}">
+						{$row0040Dayvalue}
+					</td>
+				</tr>
+			</table>
+			{END row0040Datevisible}
+		</td>
+		<td width="14%" >
+		{BEGIN row0041Datevisible}
+			<table height=150 width=100% cellpadding=1 cellspacing=0 style="border:1px solid black;" border=0>
+				<tr>
+					<td  height=20 valign=middle align=right  >
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=right>
+									<b>{$row0041Datevalue}</b>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=left valign=top width="14%" id="add{$row0041Datevalue}">
+						{$row0041Dayvalue}
+					</td>
+				</tr>
+			</table>
+			{END row0041Datevisible}
+		</td>
+		<td width="14%" >
+		{BEGIN row0042Datevisible}
+			<table height=150 width=100% cellpadding=1 cellspacing=0 style="border:1px solid black;" border=0>
+				<tr>
+					<td  height=20 valign=middle align=right  >
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=right>
+									<b>{$row0042Datevalue}</b>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=left valign=top width="14%" id="add{$row0042Datevalue}">
+						{$row0042Dayvalue}
+					</td>
+				</tr>
+			</table>
+			{END row0042Datevisible}
+		</td>
+	</tr>
+</table></div>
+
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_form}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,9 @@
+##foreach @TABLE.arrViewPageLayout as @l filter @l.id!="EndDate" && @l.id!="Category" && @l.id!="EndTime" && @l.id!="Period" && @l.id!="PeriodDays" order @l.order##
+##if !@l.type##	
+	##brick_param viewfield##
+##elseif @l.type==2##	
+	##brick_param viewsection##
+##elseif @l.type==1##	
+	##brick_param viewtab##
+##endif##
+##endfor##

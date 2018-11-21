@@ -1,0 +1,30 @@
+{BEGIN ##@l.id g##_fieldblock}
+<tr class="{$fielddispclass_##@l.id g##}" data-fieldname="##@l.id g##" id=##@l.id##>
+		<td class="rnr-label">
+			{BEGIN ##@l.id g##_label}##label @TABLE.strDataSourceTable @l.id##{END ##@l.id g##_label}
+		</td>
+		<td class="rnr-control style3" 
+		##if @l.id!="EndTime" && @l.id!="TimeField" && @l.id!="DayEvent" && @l.id!="Recurrence"##colspan=3##endif## 
+		##if @l.id=="Category" ##id=bgc##endif##
+		>
+			{$##@l.id g##_editcontrol}&nbsp;
+		</td>
+		##if @l.id=="TimeField"##
+		<td class="rnr-label {$fielddispclass_EndTime}">
+			To&nbsp;
+		</td>
+		<td class="rnr-control style3 {$fielddispclass_EndTime}">
+			{$EndTime_editcontrol}
+		</td>
+		##endif##
+		##if @l.id=="DayEvent"##
+		<td class="rnr-label {$fielddispclass_Recurrence}" >
+			Repeat&nbsp;
+		</td>
+		<td class="rnr-control style3 {$fielddispclass_Recurrence}">
+			{$Recurrence_editcontrol}
+		</td>
+		##endif##
+		
+    </tr>
+{END ##@l.id g##_fieldblock}

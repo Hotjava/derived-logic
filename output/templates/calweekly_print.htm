@@ -1,0 +1,283 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_add_css}
+<div class="rnr-c rnr-ch rnr-c-add_css">
+
+
+<div  class="style1 rnr-bl rnr-b- {$brickclass_}"></div>
+
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_add_css}
+
+
+
+{BEGIN container_printheader}
+<div class="rnr-c rnr-ch rnr-c-printheader">
+
+{BEGIN printheader}
+<div  class="style1 rnr-bl rnr-b-printheader {$brickclass_printheader}">	<h1>{$pagetitlelabel calweekly print}</h1>
+</div>
+{END printheader}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_printheader}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_form}
+<div class="rnr-c rnr-ch rnr-c-form">
+
+
+<div style="white-space: nowrap;" class="style1 rnr-bl rnr-b-calweekly_print {$brickclass_calweekly_print}"><table style="width:1000px">
+	<tr>
+		<td>
+		{BEGIN row001Datevisible}
+			<table height=100 width=100% border=0 cellpadding=0 cellspacing=0>
+				<tr>
+					<td height=20 align=right style="border-bottom:1px solid black;vertical-align:bottom">
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=left>&nbsp;</td>
+								<td align=right>
+								<b>{$row001Datevalue}</b>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=left valign=top style="padding-top:5px">
+						{$row001Dayvalue}
+					</td>
+				</tr>
+				<tr>
+					<td height=5></td>
+				</tr>
+			</table>
+		{END row001Datevisible}
+		</td>
+	</tr>
+	<tr>
+		<td>
+		{BEGIN row002Datevisible}
+			<table height=100 width=100% border=0 cellpadding=0 cellspacing=0>
+				<tr>
+					<td height=20 align=right style="border-bottom:1px solid black;vertical-align:bottom">
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=left>&nbsp;</td>
+								<td align=right>
+								<b>{$row002Datevalue}</b>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=left valign=top style="padding-top:5px">
+						{$row002Dayvalue}
+					</td>
+				</tr>
+				<tr>
+					<td height=5></td>
+				</tr>
+			</table>
+		{END row002Datevisible}
+		</td>
+	</tr>
+	<tr>
+		<td>
+		{BEGIN row003Datevisible}
+			<table height=100 width=100% border=0 cellpadding=0 cellspacing=0>
+				<tr>
+					<td height=20 align=right style="border-bottom:1px solid black;vertical-align:bottom">
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=left>&nbsp;</td>
+								<td align=right>
+								<b>{$row003Datevalue}</b>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=left valign=top style="padding-top:5px">
+						{$row003Dayvalue}
+					</td>
+				</tr>
+				<tr>
+					<td height=5></td>
+				</tr>
+			</table>
+		{END row003Datevisible}
+		</td>
+	</tr>
+	<tr>
+		<td>
+		{BEGIN row004Datevisible}
+			<table height=100 width=100% border=0 cellpadding=0 cellspacing=0>
+				<tr>
+					<td height=20 align=right style="border-bottom:1px solid black;vertical-align:bottom">
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=left>&nbsp;</td>
+								<td align=right>
+								<b>{$row004Datevalue}</b>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=left valign=top style="padding-top:5px">
+						{$row004Dayvalue}
+					</td>
+				</tr>
+				<tr>
+					<td height=5></td>
+				</tr>
+			</table>
+		{END row004Datevisible}
+		</td>
+	</tr>
+	<tr>
+		<td>
+		{BEGIN row005Datevisible}
+			<table height=100 width=100% border=0 cellpadding=0 cellspacing=0>
+				<tr>
+					<td height=20 align=right style="border-bottom:1px solid black;vertical-align:bottom">
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=left>&nbsp;</td>
+								<td align=right>
+								<b>{$row005Datevalue}</b>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=left valign=top style="padding-top:5px">
+						{$row005Dayvalue}
+					</td>
+				</tr>
+				<tr>
+					<td height=5></td>
+				</tr>
+			</table>
+		{END row005Datevisible}
+		</td>
+	</tr>
+	<tr>
+		<td>
+		{BEGIN row006Datevisible}
+			<table height=100 width=100% border=0 cellpadding=0 cellspacing=0>
+				<tr>
+					<td height=20 align=right style="border-bottom:1px solid black;vertical-align:bottom">
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=left>&nbsp;</td>
+								<td align=right>
+								<b>{$row006Datevalue}</b>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=left valign=top style="padding-top:5px">
+						{$row006Dayvalue}
+					</td>
+				</tr>
+				<tr>
+					<td height=5></td>
+				</tr>
+			</table>
+		{END row006Datevisible}
+		</td>
+	</tr>
+	<tr>
+		<td>
+		{BEGIN row007Datevisible}
+			<table height=100 width=100% border=0 cellpadding=0 cellspacing=0>
+				<tr>
+					<td height=20 align=right style="border-bottom:1px solid black;vertical-align:bottom">
+						<table width=100% border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=left>&nbsp;</td>
+								<td align=right>
+								<b>{$row007Datevalue}</b>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=left valign=top style="padding-top:5px">
+						{$row007Dayvalue}
+					</td>
+				</tr>
+				<tr>
+					<td height=5></td>
+				</tr>
+			</table>
+		{END row007Datevisible}
+		</td>
+	</tr>
+</table></div>
+
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_form}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

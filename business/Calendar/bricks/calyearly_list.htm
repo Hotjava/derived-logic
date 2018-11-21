@@ -1,0 +1,53 @@
+<style>
+	.rnr-b-calmonthly_list{width:99%};
+</style>
+<table style="width:100%;min-width:900px" align=center class="rnr-c">
+##repeat 3 @i##
+	<tr>
+	##repeat 4 @j##
+		<td width=220 height=201 style="border:1px solid gray;">
+			<table cellpadding=0 cellspacing=1 border=0 width=100% height=100% class="rnr-c">
+				<tr class="rnr-row style2">
+					<td height=30 style="text-align:center" colspan=8 class="rnr-cc">
+						<b>
+						<a href="{$linkMonthly##eval (@i-1)*4+@j##}" style="font-family: Verdana, Arial, Helvetica, sans serif;font-size: 14px;">{$row00MonthName##eval (@i-1)*4+@j##}</a>
+						</b>
+					</td>
+				</tr>
+				<tr class="rnr-row style3">
+					<td height=20 width=10></td>
+					<td height=20 width=30 align=center>{$row00sdname1}</td>
+					<td height=20 width=30 align=center>{$row00sdname2}</td>
+					<td height=20 width=30 align=center>{$row00sdname3}</td>
+					<td height=20 width=30 align=center>{$row00sdname4}</td>
+					<td height=20 width=30 align=center>{$row00sdname5}</td>
+					<td height=20 width=30 align=center>{$row00sdname6}</td>
+					<td height=20 width=30 align=center>{$row00sdname7}</td>
+				</tr>
+				##repeat 6 @k##
+					<tr style="{$Month##eval (@i-1)*4+@j##HideRow##@k##}">
+					##repeat 7 @m##
+						##if @m==1##
+						<td align=center width="2%">
+							{$week_linkMon##eval (@i-1)*4+@j##Week##@k##}
+						</td>
+						##endif##
+						<td {$style_m##eval (@i-1)*4+@j##d##eval (@k-1)*7+@m##} align=center>
+						
+							<a href="{$linkDayM##eval (@i-1)*4+@j##Day##eval (@k-1)*7+@m##}" {$divview##eval (@i-1)*4+@j##Day##eval (@k-1)*7+@m##}>
+							{$row00Month##eval (@i-1)*4+@j##Day##eval (@k-1)*7+@m##}
+							</a>
+						
+							
+						
+						</td>
+					##endrepeat##
+					</tr>
+				##endrepeat##
+			</table>
+		</td>
+	##endrepeat##
+	</tr>
+##endrepeat##
+</table>
+{$year_wind}

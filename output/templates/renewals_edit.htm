@@ -1,0 +1,900 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-edit" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_editpage}
+<div {$editpage_chiddenattr} data-pageid="{$pageid}" data-container="editpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}
+<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-9 col-md-offset-3"> 
+
+{BEGIN editheader}
+	<h2 {$editheader_hiddenattr} data-pageid="{$pageid}" data-brick="editheader" >{$pagetitlelabel renewals edit}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END editheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+
+
+{BEGIN container_message}
+<div {$message_chiddenattr} data-pageid="{$pageid}" data-container="message" class="   col-md-6 col-md-offset-3"> 
+
+{BEGIN message_block}
+<div {$message_hiddenattr} data-pageid="{$pageid}" data-brick="message" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+		<button class="btn btn-sm btn-default" {$backbutton_attrs}>Back to list</button>
+{END back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>View</button>
+{END view_page_button}
+</div>
+</div>
+
+{END message_block}
+
+
+
+</div>
+{END container_message}
+
+
+
+
+
+
+
+</div>
+{END container_editpage}
+
+
+
+{BEGIN container_fields}
+<div {$fields_chiddenattr} data-pageid="{$pageid}" data-container="fields" class="   col-md-12 "> 
+
+
+<div {$editfields_hiddenattr} data-pageid="{$pageid}" data-brick="editfields" class="form-horizontal" role="form">
+
+
+
+			{BEGIN product_id_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_product_id}" data-fieldname="product_id" data-signal-error-for="product_id{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_product_id}">
+		{BEGIN product_id_label}{$label renewals product_id}{END product_id_label}
+	</label>
+	<div class="col-md-6" >
+		{$product_id_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="product_id">
+		<div class="text-muted" >
+		{$tooltip renewals product_id}
+		</div>
+	</div>
+</div>
+</div>
+{END product_id_fieldblock}
+
+			{BEGIN date_billed_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_date_billed}" data-fieldname="date_billed" data-signal-error-for="date_billed{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_date_billed}">
+		{BEGIN date_billed_label}{$label renewals date_billed}{END date_billed_label}
+	</label>
+	<div class="col-md-6" >
+		{$date_billed_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="date_billed">
+		<div class="text-muted" >
+		{$tooltip renewals date_billed}
+		</div>
+	</div>
+</div>
+</div>
+{END date_billed_fieldblock}
+
+			{BEGIN request_date_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_request_date}" data-fieldname="request_date" data-signal-error-for="request_date{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_request_date}">
+		{BEGIN request_date_label}{$label renewals request_date}{END request_date_label}
+	</label>
+	<div class="col-md-6" >
+		{$request_date_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="request_date">
+		<div class="text-muted" >
+		{$tooltip renewals request_date}
+		</div>
+	</div>
+</div>
+</div>
+{END request_date_fieldblock}
+
+			{BEGIN pulse_id_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_pulse_id}" data-fieldname="pulse_id" data-signal-error-for="pulse_id{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_pulse_id}">
+		{BEGIN pulse_id_label}{$label renewals pulse_id}{END pulse_id_label}
+	</label>
+	<div class="col-md-6" >
+		{$pulse_id_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="pulse_id">
+		<div class="text-muted" >
+		{$tooltip renewals pulse_id}
+		</div>
+	</div>
+</div>
+</div>
+{END pulse_id_fieldblock}
+
+			{BEGIN delivery_code_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_delivery_code}" data-fieldname="delivery_code" data-signal-error-for="delivery_code{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_delivery_code}">
+		{BEGIN delivery_code_label}{$label renewals delivery_code}{END delivery_code_label}
+	</label>
+	<div class="col-md-6" >
+		{$delivery_code_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="delivery_code">
+		<div class="text-muted" >
+		{$tooltip renewals delivery_code}
+		</div>
+	</div>
+</div>
+</div>
+{END delivery_code_fieldblock}
+
+			{BEGIN tracking_ref_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_tracking_ref}" data-fieldname="tracking_ref" data-signal-error-for="tracking_ref{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_tracking_ref}">
+		{BEGIN tracking_ref_label}{$label renewals tracking_ref}{END tracking_ref_label}
+	</label>
+	<div class="col-md-6" >
+		{$tracking_ref_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="tracking_ref">
+		<div class="text-muted" >
+		{$tooltip renewals tracking_ref}
+		</div>
+	</div>
+</div>
+</div>
+{END tracking_ref_fieldblock}
+
+			{BEGIN task_number_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_task_number}" data-fieldname="task_number" data-signal-error-for="task_number{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_task_number}">
+		{BEGIN task_number_label}{$label renewals task_number}{END task_number_label}
+	</label>
+	<div class="col-md-6" >
+		{$task_number_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="task_number">
+		<div class="text-muted" >
+		{$tooltip renewals task_number}
+		</div>
+	</div>
+</div>
+</div>
+{END task_number_fieldblock}
+
+			{BEGIN pod_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_pod}" data-fieldname="pod" data-signal-error-for="pod{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_pod}">
+		{BEGIN pod_label}{$label renewals pod}{END pod_label}
+	</label>
+	<div class="col-md-6" >
+		{$pod_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="pod">
+		<div class="text-muted" >
+		{$tooltip renewals pod}
+		</div>
+	</div>
+</div>
+</div>
+{END pod_fieldblock}
+
+			{BEGIN supplier_order_ref_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_supplier_order_ref}" data-fieldname="supplier_order_ref" data-signal-error-for="supplier_order_ref{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_supplier_order_ref}">
+		{BEGIN supplier_order_ref_label}{$label renewals supplier_order_ref}{END supplier_order_ref_label}
+	</label>
+	<div class="col-md-6" >
+		{$supplier_order_ref_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="supplier_order_ref">
+		<div class="text-muted" >
+		{$tooltip renewals supplier_order_ref}
+		</div>
+	</div>
+</div>
+</div>
+{END supplier_order_ref_fieldblock}
+
+			{BEGIN supplier_ref_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_supplier_ref}" data-fieldname="supplier_ref" data-signal-error-for="supplier_ref{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_supplier_ref}">
+		{BEGIN supplier_ref_label}{$label renewals supplier_ref}{END supplier_ref_label}
+	</label>
+	<div class="col-md-6" >
+		{$supplier_ref_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="supplier_ref">
+		<div class="text-muted" >
+		{$tooltip renewals supplier_ref}
+		</div>
+	</div>
+</div>
+</div>
+{END supplier_ref_fieldblock}
+
+			{BEGIN cc_so_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_cc_so}" data-fieldname="cc_so" data-signal-error-for="cc_so{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_cc_so}">
+		{BEGIN cc_so_label}{$label renewals cc_so}{END cc_so_label}
+	</label>
+	<div class="col-md-6" >
+		{$cc_so_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="cc_so">
+		<div class="text-muted" >
+		{$tooltip renewals cc_so}
+		</div>
+	</div>
+</div>
+</div>
+{END cc_so_fieldblock}
+
+			{BEGIN po_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_po}" data-fieldname="po" data-signal-error-for="po{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_po}">
+		{BEGIN po_label}{$label renewals po}{END po_label}
+	</label>
+	<div class="col-md-6" >
+		{$po_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="po">
+		<div class="text-muted" >
+		{$tooltip renewals po}
+		</div>
+	</div>
+</div>
+</div>
+{END po_fieldblock}
+
+			{BEGIN quote_ref_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_quote_ref}" data-fieldname="quote_ref" data-signal-error-for="quote_ref{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_quote_ref}">
+		{BEGIN quote_ref_label}{$label renewals quote_ref}{END quote_ref_label}
+	</label>
+	<div class="col-md-6" >
+		{$quote_ref_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="quote_ref">
+		<div class="text-muted" >
+		{$tooltip renewals quote_ref}
+		</div>
+	</div>
+</div>
+</div>
+{END quote_ref_fieldblock}
+
+			{BEGIN recurrence_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_recurrence}" data-fieldname="recurrence" data-signal-error-for="recurrence{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_recurrence}">
+		{BEGIN recurrence_label}{$label renewals recurrence}{END recurrence_label}
+	</label>
+	<div class="col-md-6" >
+		{$recurrence_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="recurrence">
+		<div class="text-muted" >
+		{$tooltip renewals recurrence}
+		</div>
+	</div>
+</div>
+</div>
+{END recurrence_fieldblock}
+
+			{BEGIN status_id_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_status_id}" data-fieldname="status_id" data-signal-error-for="status_id{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_status_id}">
+		{BEGIN status_id_label}{$label renewals status_id}{END status_id_label}
+	</label>
+	<div class="col-md-6" >
+		{$status_id_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="status_id">
+		<div class="text-muted" >
+		{$tooltip renewals status_id}
+		</div>
+	</div>
+</div>
+</div>
+{END status_id_fieldblock}
+
+			{BEGIN cost_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_cost}" data-fieldname="cost" data-signal-error-for="cost{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_cost}">
+		{BEGIN cost_label}{$label renewals cost}{END cost_label}
+	</label>
+	<div class="col-md-6" >
+		{$cost_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="cost">
+		<div class="text-muted" >
+		{$tooltip renewals cost}
+		</div>
+	</div>
+</div>
+</div>
+{END cost_fieldblock}
+
+			{BEGIN vendor_id_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_vendor_id}" data-fieldname="vendor_id" data-signal-error-for="vendor_id{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_vendor_id}">
+		{BEGIN vendor_id_label}{$label renewals vendor_id}{END vendor_id_label}
+	</label>
+	<div class="col-md-6" >
+		{$vendor_id_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="vendor_id">
+		<div class="text-muted" >
+		{$tooltip renewals vendor_id}
+		</div>
+	</div>
+</div>
+</div>
+{END vendor_id_fieldblock}
+
+			{BEGIN sourcing_contact_id_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_sourcing_contact_id}" data-fieldname="sourcing_contact_id" data-signal-error-for="sourcing_contact_id{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_sourcing_contact_id}">
+		{BEGIN sourcing_contact_id_label}{$label renewals sourcing_contact_id}{END sourcing_contact_id_label}
+	</label>
+	<div class="col-md-6" >
+		{$sourcing_contact_id_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="sourcing_contact_id">
+		<div class="text-muted" >
+		{$tooltip renewals sourcing_contact_id}
+		</div>
+	</div>
+</div>
+</div>
+{END sourcing_contact_id_fieldblock}
+
+			{BEGIN sold_to_id_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_sold_to_id}" data-fieldname="sold_to_id" data-signal-error-for="sold_to_id{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_sold_to_id}">
+		{BEGIN sold_to_id_label}{$label renewals sold_to_id}{END sold_to_id_label}
+	</label>
+	<div class="col-md-6" >
+		{$sold_to_id_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="sold_to_id">
+		<div class="text-muted" >
+		{$tooltip renewals sold_to_id}
+		</div>
+	</div>
+</div>
+</div>
+{END sold_to_id_fieldblock}
+
+			{BEGIN percent_product_sales_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_percent_product_sales}" data-fieldname="percent_product_sales" data-signal-error-for="percent_product_sales{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_percent_product_sales}">
+		{BEGIN percent_product_sales_label}{$label renewals percent_product_sales}{END percent_product_sales_label}
+	</label>
+	<div class="col-md-6" >
+		{$percent_product_sales_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="percent_product_sales">
+		<div class="text-muted" >
+		{$tooltip renewals percent_product_sales}
+		</div>
+	</div>
+</div>
+</div>
+{END percent_product_sales_fieldblock}
+
+			{BEGIN alert_id_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_alert_id}" data-fieldname="alert_id" data-signal-error-for="alert_id{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_alert_id}">
+		{BEGIN alert_id_label}{$label renewals alert_id}{END alert_id_label}
+	</label>
+	<div class="col-md-6" >
+		{$alert_id_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="alert_id">
+		<div class="text-muted" >
+		{$tooltip renewals alert_id}
+		</div>
+	</div>
+</div>
+</div>
+{END alert_id_fieldblock}
+
+			{BEGIN previous_po_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_previous_po}" data-fieldname="previous_po" data-signal-error-for="previous_po{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_previous_po}">
+		{BEGIN previous_po_label}{$label renewals previous_po}{END previous_po_label}
+	</label>
+	<div class="col-md-6" >
+		{$previous_po_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="previous_po">
+		<div class="text-muted" >
+		{$tooltip renewals previous_po}
+		</div>
+	</div>
+</div>
+</div>
+{END previous_po_fieldblock}
+
+			{BEGIN comment_actions_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_comment_actions}" data-fieldname="comment_actions" data-signal-error-for="comment_actions{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_comment_actions}">
+		{BEGIN comment_actions_label}{$label renewals comment_actions}{END comment_actions_label}
+	</label>
+	<div class="col-md-6" >
+		{$comment_actions_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="comment_actions">
+		<div class="text-muted" >
+		{$tooltip renewals comment_actions}
+		</div>
+	</div>
+</div>
+</div>
+{END comment_actions_fieldblock}
+
+			{BEGIN ops_contact_id_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_ops_contact_id}" data-fieldname="ops_contact_id" data-signal-error-for="ops_contact_id{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_ops_contact_id}">
+		{BEGIN ops_contact_id_label}{$label renewals ops_contact_id}{END ops_contact_id_label}
+	</label>
+	<div class="col-md-6" >
+		{$ops_contact_id_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="ops_contact_id">
+		<div class="text-muted" >
+		{$tooltip renewals ops_contact_id}
+		</div>
+	</div>
+</div>
+</div>
+{END ops_contact_id_fieldblock}
+
+			{BEGIN previous_lbg_pp_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_previous_lbg_pp}" data-fieldname="previous_lbg_pp" data-signal-error-for="previous_lbg_pp{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_previous_lbg_pp}">
+		{BEGIN previous_lbg_pp_label}{$label renewals previous_lbg_pp}{END previous_lbg_pp_label}
+	</label>
+	<div class="col-md-6" >
+		{$previous_lbg_pp_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="previous_lbg_pp">
+		<div class="text-muted" >
+		{$tooltip renewals previous_lbg_pp}
+		</div>
+	</div>
+</div>
+</div>
+{END previous_lbg_pp_fieldblock}
+
+			{BEGIN erf_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_erf}" data-fieldname="erf" data-signal-error-for="erf{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_erf}">
+		{BEGIN erf_label}{$label renewals erf}{END erf_label}
+	</label>
+	<div class="col-md-6" >
+		{$erf_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="erf">
+		<div class="text-muted" >
+		{$tooltip renewals erf}
+		</div>
+	</div>
+</div>
+</div>
+{END erf_fieldblock}
+
+			{BEGIN impacted_by_dollar_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_impacted_by_dollar}" data-fieldname="impacted_by_dollar" data-signal-error-for="impacted_by_dollar{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_impacted_by_dollar}">
+		{BEGIN impacted_by_dollar_label}{$label renewals impacted_by_dollar}{END impacted_by_dollar_label}
+	</label>
+	<div class="col-md-6" >
+		{$impacted_by_dollar_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="impacted_by_dollar">
+		<div class="text-muted" >
+		{$tooltip renewals impacted_by_dollar}
+		</div>
+	</div>
+</div>
+</div>
+{END impacted_by_dollar_fieldblock}
+
+			{BEGIN order_description_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_order_description}" data-fieldname="order_description" data-signal-error-for="order_description{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_order_description}">
+		{BEGIN order_description_label}{$label renewals order_description}{END order_description_label}
+	</label>
+	<div class="col-md-6" >
+		{$order_description_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="order_description">
+		<div class="text-muted" >
+		{$tooltip renewals order_description}
+		</div>
+	</div>
+</div>
+</div>
+{END order_description_fieldblock}
+
+			{BEGIN renewal_date_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_renewal_date}" data-fieldname="renewal_date" data-signal-error-for="renewal_date{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_renewal_date}">
+		{BEGIN renewal_date_label}{$label renewals renewal_date}{END renewal_date_label}
+	</label>
+	<div class="col-md-6" >
+		{$renewal_date_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="renewal_date">
+		<div class="text-muted" >
+		{$tooltip renewals renewal_date}
+		</div>
+	</div>
+</div>
+</div>
+{END renewal_date_fieldblock}
+
+			{BEGIN improvement_last_year_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_improvement_last_year}" data-fieldname="improvement_last_year" data-signal-error-for="improvement_last_year{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_improvement_last_year}">
+		{BEGIN improvement_last_year_label}{$label renewals improvement_last_year}{END improvement_last_year_label}
+	</label>
+	<div class="col-md-6" >
+		{$improvement_last_year_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="improvement_last_year">
+		<div class="text-muted" >
+		{$tooltip renewals improvement_last_year}
+		</div>
+	</div>
+</div>
+</div>
+{END improvement_last_year_fieldblock}
+
+			{BEGIN improvement_comments_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_improvement_comments}" data-fieldname="improvement_comments" data-signal-error-for="improvement_comments{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_improvement_comments}">
+		{BEGIN improvement_comments_label}{$label renewals improvement_comments}{END improvement_comments_label}
+	</label>
+	<div class="col-md-6" >
+		{$improvement_comments_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="improvement_comments">
+		<div class="text-muted" >
+		{$tooltip renewals improvement_comments}
+		</div>
+	</div>
+</div>
+</div>
+{END improvement_comments_fieldblock}
+
+			{BEGIN support_end_date_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_support_end_date}" data-fieldname="support_end_date" data-signal-error-for="support_end_date{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_support_end_date}">
+		{BEGIN support_end_date_label}{$label renewals support_end_date}{END support_end_date_label}
+	</label>
+	<div class="col-md-6" >
+		{$support_end_date_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="support_end_date">
+		<div class="text-muted" >
+		{$tooltip renewals support_end_date}
+		</div>
+	</div>
+</div>
+</div>
+{END support_end_date_fieldblock}
+
+			{BEGIN documents_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_documents}" data-fieldname="documents" data-signal-error-for="documents{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_documents}">
+		{BEGIN documents_label}{$label renewals documents}{END documents_label}
+	</label>
+	<div class="col-md-6" >
+		{$documents_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="documents">
+		<div class="text-muted" >
+		{$tooltip renewals documents}
+		</div>
+	</div>
+</div>
+</div>
+{END documents_fieldblock}
+
+			{BEGIN service_type_id_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_service_type_id}" data-fieldname="service_type_id" data-signal-error-for="service_type_id{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_service_type_id}">
+		{BEGIN service_type_id_label}{$label renewals service_type_id}{END service_type_id_label}
+	</label>
+	<div class="col-md-6" >
+		{$service_type_id_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="service_type_id">
+		<div class="text-muted" >
+		{$tooltip renewals service_type_id}
+		</div>
+	</div>
+</div>
+</div>
+{END service_type_id_fieldblock}
+
+			{BEGIN term_id_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_term_id}" data-fieldname="term_id" data-signal-error-for="term_id{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_term_id}">
+		{BEGIN term_id_label}{$label renewals term_id}{END term_id_label}
+	</label>
+	<div class="col-md-6" >
+		{$term_id_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="term_id">
+		<div class="text-muted" >
+		{$tooltip renewals term_id}
+		</div>
+	</div>
+</div>
+</div>
+{END term_id_fieldblock}
+
+			{BEGIN support_start_date_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_support_start_date}" data-fieldname="support_start_date" data-signal-error-for="support_start_date{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_support_start_date}">
+		{BEGIN support_start_date_label}{$label renewals support_start_date}{END support_start_date_label}
+	</label>
+	<div class="col-md-6" >
+		{$support_start_date_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="support_start_date">
+		<div class="text-muted" >
+		{$tooltip renewals support_start_date}
+		</div>
+	</div>
+</div>
+</div>
+{END support_start_date_fieldblock}
+
+			{BEGIN last_update_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_last_update}" data-fieldname="last_update" data-signal-error-for="last_update{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_last_update}">
+		{BEGIN last_update_label}{$label renewals last_update}{END last_update_label}
+	</label>
+	<div class="col-md-6" >
+		{$last_update_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="last_update">
+		<div class="text-muted" >
+		{$tooltip renewals last_update}
+		</div>
+	</div>
+</div>
+</div>
+{END last_update_fieldblock}
+
+			{BEGIN vendor_contact_id_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_vendor_contact_id}" data-fieldname="vendor_contact_id" data-signal-error-for="vendor_contact_id{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_vendor_contact_id}">
+		{BEGIN vendor_contact_id_label}{$label renewals vendor_contact_id}{END vendor_contact_id_label}
+	</label>
+	<div class="col-md-6" >
+		{$vendor_contact_id_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="vendor_contact_id">
+		<div class="text-muted" >
+		{$tooltip renewals vendor_contact_id}
+		</div>
+	</div>
+</div>
+</div>
+{END vendor_contact_id_fieldblock}
+
+
+</div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}
+<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container    "> 
+
+
+
+
+{BEGIN container_buttons}
+<div {$buttons_chiddenattr} data-pageid="{$pageid}" data-container="buttons" class=" form-group   "> 
+
+
+
+
+{BEGIN container_leftbuttons}
+<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-3 col-md-offset-3"> 
+
+{BEGIN editbuttons}
+	{BEGIN save_button}
+	<button class="btn btn-primary" {$savebutton_attrs}>Save</button>
+	{END save_button}
+	{BEGIN back_button}
+		<button class="btn btn-default" {$backbutton_attrs}>Back to list</button>
+	{END back_button}
+	{BEGIN close_button}
+	<a href="#" class="btn btn-default" {$closebutton_attrs}>Cancel</a>
+	{END close_button}
+
+{END editbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+
+
+{BEGIN container_leftbuttons_1}
+<div {$leftbuttons_1_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons_1" class="  text-right col-md-3 "> 
+
+{BEGIN righteditbuttons}
+<div class="btn-group" role="group">
+
+	{BEGIN prev_button}
+	<button class="btn btn-default {$prevbutton_class}" {$prevbutton_attrs}><span class="glyphicon glyphicon-chevron-left"></span></button>
+	{END prev_button}
+	{BEGIN next_button}
+	<button class="btn btn-default  {$nextbutton_class}" {$nextbutton_attrs}><span class="glyphicon glyphicon-chevron-right"></span></button>
+	{END next_button}
+	<div class="btn-group dropup" role="group">
+		<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+		<ul class="dropdown-menu dropdown-left">
+			{BEGIN reset_button}
+				<li><a href="#" {$resetbutton_attrs}>Reset</a></li>
+			{END reset_button}
+			{BEGIN view_page_button}
+				<li><a href="#" {$view_page_button_attrs}>View</a></li>
+			{END view_page_button}
+		</ul>
+	</div>
+</div>
+{END righteditbuttons}
+
+
+
+</div>
+{END container_leftbuttons_1}
+
+
+
+
+
+
+</div>
+{END container_buttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

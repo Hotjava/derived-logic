@@ -1,0 +1,676 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_viewpage}<div {$viewpage_chiddenattr} data-pageid="{$pageid}" data-container="viewpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-9 col-md-offset-3"> 
+
+{BEGIN viewheader}<h2 {$viewheader_hiddenattr} data-pageid="{$pageid}" data-brick="viewheader" >{$pagetitlelabel renewals view}</h2>
+	{BEGIN printtabheader}<h4>{$printtabheader_text}</h4>{END printtabheader}
+
+{END viewheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+</div>
+{END container_viewpage}
+
+
+
+{BEGIN container_fields}<DIV class="form-horizontal col-md-12 ff-gridlinesparent" data-container="fields" data-pageid="{$pageid}" {$fields_chiddenattr}>
+            <DIV align="center">
+              <DIV class="rnr-ff-block rnr-ff-container" style="background-position: 0% 0%; width: 1457px; height: 661px; overflow: auto; position: relative; background-image: none; background-attachment: scroll; background-repeat: repeat; background-color: transparent;">
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_id}" style='left: 340px; top: 20px; line-height: 1.4285; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 700; position: absolute;' data-fieldname="id">
+                    {$label renewals id}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_id} rnr-ff-vcwrap" style='left: 360px; top: 20px; width: 248px; height: 20px; line-height: 1; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 400; position: absolute;' data-fieldname="id">
+                    {BEGIN recurrence_fieldblock}<div class="container">
+	<div class="{$fielddispclass_recurrence} bs-viewform-group" data-fieldname="recurrence">
+		<label class="bs-view-label col-md-4 text-right" for="{$labelfor_recurrence}">
+			{$label renewals recurrence}
+		</label>
+		<div class="col-md-6 bs-horizontal-value" >
+			{$recurrence_value}&nbsp;
+		</div>
+	</div>
+</div>
+{END recurrence_fieldblock}
+	{$id_value}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_status_id}" style='left: 770px; top: 20px; line-height: 1.4285; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 700; position: absolute;' data-fieldname="status_id">
+                    {$label renewals status_id}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_status_id} rnr-ff-vcwrap" style='left: 830px; top: 20px; width: 248px; height: 20px; line-height: 1; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 400; position: absolute;' data-fieldname="status_id">
+                    {$status_id_value}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_cost}" style='left: 790px; top: 170px; line-height: 1.4285; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 700; position: absolute;' data-fieldname="cost">
+                    {$label renewals cost}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_cost} rnr-ff-vcwrap" style='left: 830px; top: 170px; width: 248px; height: 20px; line-height: 1; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 400; position: absolute;' data-fieldname="cost">
+                    {$cost_value}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_request_date}" style='left: 730px; top: 200px; line-height: 1.4285; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 700; position: absolute;' data-fieldname="request_date">
+                    {$label renewals request_date}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_request_date} rnr-ff-vcwrap" style='left: 830px; top: 200px; width: 248px; height: 20px; line-height: 1; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 400; position: absolute;' data-fieldname="request_date">
+                    {$request_date_value}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_quote_ref}" style='left: 280px; top: 50px; line-height: 1.4285; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 700; position: absolute;' data-fieldname="quote_ref">
+                    {$label renewals quote_ref}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_quote_ref} rnr-ff-vcwrap" style='left: 360px; top: 50px; width: 248px; height: 20px; line-height: 1; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 400; position: absolute;' data-fieldname="quote_ref">
+                    {$quote_ref_value}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_po}" style='left: 270px; top: 80px; line-height: 1.4285; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 700; position: absolute;' data-fieldname="po">
+                    {$label renewals po}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_po} rnr-ff-vcwrap" style='left: 360px; top: 80px; width: 248px; height: 20px; line-height: 1; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 400; position: absolute;' data-fieldname="po">
+                    {$po_value}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_cc_so}" style='left: 310px; top: 110px; line-height: 1.4285; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 700; position: absolute;' data-fieldname="cc_so">
+                    {$label renewals cc_so}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_cc_so} rnr-ff-vcwrap" style='left: 360px; top: 110px; width: 248px; height: 20px; line-height: 1; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 400; position: absolute;' data-fieldname="cc_so">
+                    {$cc_so_value}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_supplier_ref}" style='left: 240px; top: 140px; line-height: 1.4285; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 700; position: absolute;' data-fieldname="supplier_ref">
+                    {$label renewals supplier_ref}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_supplier_ref} rnr-ff-vcwrap" style='left: 360px; top: 140px; width: 248px; height: 20px; line-height: 1; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 400; position: absolute;' data-fieldname="supplier_ref">
+                    {$supplier_ref_value}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_supplier_order_ref}" style='left: 220px; top: 170px; line-height: 1.4285; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 700; position: absolute;' data-fieldname="supplier_order_ref">
+                    {$label renewals supplier_order_ref}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_supplier_order_ref} rnr-ff-vcwrap" style='left: 360px; top: 170px; width: 248px; height: 20px; line-height: 1; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 400; position: absolute;' data-fieldname="supplier_order_ref">
+                    {$supplier_order_ref_value}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_pod}" style='left: 320px; top: 200px; line-height: 1.4285; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 700; position: absolute;' data-fieldname="pod">
+                    {$label renewals pod}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_pod} rnr-ff-vcwrap" style='left: 360px; top: 200px; width: 248px; height: 20px; line-height: 1; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 400; position: absolute;' data-fieldname="pod">
+                    {$pod_value}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_task_number}" style='left: 260px; top: 230px; line-height: 1.4285; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 700; position: absolute;' data-fieldname="task_number">
+                    {$label renewals task_number}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_task_number} rnr-ff-vcwrap" style='left: 360px; top: 230px; width: 248px; height: 20px; line-height: 1; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 400; position: absolute;' data-fieldname="task_number">
+                    {$task_number_value}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_tracking_ref}" style='left: 260px; top: 260px; line-height: 1.4285; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 700; position: absolute;' data-fieldname="tracking_ref">
+                    {$label renewals tracking_ref}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_tracking_ref} rnr-ff-vcwrap" style='left: 360px; top: 260px; width: 248px; height: 20px; line-height: 1; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 400; position: absolute;' data-fieldname="tracking_ref">
+                    {$tracking_ref_value}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_delivery_code}" style='left: 250px; top: 290px; line-height: 1.4285; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 700; position: absolute;' data-fieldname="delivery_code">
+                    {$label renewals delivery_code}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_delivery_code} rnr-ff-vcwrap" style='left: 360px; top: 290px; width: 248px; height: 20px; line-height: 1; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 400; position: absolute;' data-fieldname="delivery_code">
+                    {$delivery_code_value}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_pulse_id}" style='left: 290px; top: 320px; line-height: 1.4285; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 700; position: absolute;' data-fieldname="pulse_id">
+                    {$label renewals pulse_id}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_pulse_id} rnr-ff-vcwrap" style='left: 360px; top: 320px; width: 248px; height: 20px; line-height: 1; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 400; position: absolute;' data-fieldname="pulse_id">
+                    {$pulse_id_value}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_date_billed}" style='left: 740px; top: 230px; line-height: 1.4285; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 700; position: absolute;' data-fieldname="date_billed">
+                    {$label renewals date_billed}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_date_billed} rnr-ff-vcwrap" style='left: 830px; top: 230px; width: 248px; height: 20px; line-height: 1; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 400; position: absolute;' data-fieldname="date_billed">
+                    {$date_billed_value}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_product_id}" style='left: 760px; top: 80px; line-height: 1.4285; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 700; position: absolute;' data-fieldname="product_id">
+                    {$label renewals product_id}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_product_id} rnr-ff-vcwrap" style='left: 830px; top: 80px; width: 248px; height: 20px; line-height: 1; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 400; position: absolute;' data-fieldname="product_id">
+                    {$product_id_value}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_vendor_id}" style='left: 770px; top: 50px; line-height: 1.4285; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 700; position: absolute;' data-fieldname="vendor_id">
+                    {$label renewals vendor_id}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_vendor_id} rnr-ff-vcwrap" style='left: 830px; top: 50px; width: 248px; height: 20px; line-height: 1; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 400; position: absolute;' data-fieldname="vendor_id">
+                    {$vendor_id_value}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_sold_to_id}" style='left: 770px; top: 110px; line-height: 1.4285; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 700; position: absolute;' data-fieldname="sold_to_id">
+                    {$label renewals sold_to_id}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_sold_to_id} rnr-ff-vcwrap" style='left: 830px; top: 110px; width: 248px; height: 20px; line-height: 1; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 400; position: absolute;' data-fieldname="sold_to_id">
+                    {$sold_to_id_value}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_ops_contact_id}" style='left: 270px; top: 350px; line-height: 1.4285; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 700; position: absolute;' data-fieldname="ops_contact_id">
+                    {$label renewals ops_contact_id}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_ops_contact_id} rnr-ff-vcwrap" style='left: 360px; top: 350px; width: 248px; height: 20px; line-height: 1; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 400; position: absolute;' data-fieldname="ops_contact_id">
+                    {$ops_contact_id_value}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_sourcing_contact_id}" style='left: 700px; top: 140px; line-height: 1.4285; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 700; position: absolute;' data-fieldname="sourcing_contact_id">
+                    {$label renewals sourcing_contact_id}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_sourcing_contact_id} rnr-ff-vcwrap" style='left: 830px; top: 140px; width: 248px; height: 20px; line-height: 1; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 400; position: absolute;' data-fieldname="sourcing_contact_id">
+                    {$sourcing_contact_id_value}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_previous_po}" style='left: 270px; top: 380px; line-height: 1.4285; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 700; position: absolute;' data-fieldname="previous_po">
+                    {$label renewals previous_po}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_previous_po} rnr-ff-vcwrap" style='left: 360px; top: 380px; width: 248px; height: 20px; line-height: 1; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 400; position: absolute;' data-fieldname="previous_po">
+                    {$previous_po_value}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_previous_lbg_pp}" style='left: 250px; top: 410px; line-height: 1.4285; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 700; position: absolute;' data-fieldname="previous_lbg_pp">
+                    {$label renewals previous_lbg_pp}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_previous_lbg_pp} rnr-ff-vcwrap" style='left: 360px; top: 410px; width: 248px; height: 20px; line-height: 1; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 400; position: absolute;' data-fieldname="previous_lbg_pp">
+                    {$previous_lbg_pp_value}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_alert_id}" style='left: 300px; top: 440px; line-height: 1.4285; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 700; position: absolute;' data-fieldname="alert_id">
+                    {$label renewals alert_id}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_alert_id} rnr-ff-vcwrap" style='left: 360px; top: 440px; width: 248px; height: 20px; line-height: 1; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 400; position: absolute;' data-fieldname="alert_id">
+                    {$alert_id_value}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_impacted_by_dollar}" style='left: 220px; top: 470px; line-height: 1.4285; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 700; position: absolute;' data-fieldname="impacted_by_dollar">
+                    {$label renewals impacted_by_dollar}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_impacted_by_dollar} rnr-ff-vcwrap" style='left: 360px; top: 470px; width: 248px; height: 20px; line-height: 1; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 400; position: absolute;' data-fieldname="impacted_by_dollar">
+                    {$impacted_by_dollar_value}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_erf}" style='left: 260px; top: 500px; line-height: 1.4285; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 700; position: absolute;' data-fieldname="erf">
+                    {$label renewals erf}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_erf} rnr-ff-vcwrap" style='left: 360px; top: 500px; width: 248px; height: 20px; line-height: 1; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 400; position: absolute;' data-fieldname="erf">
+                    {$erf_value}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_order_description}" style='left: 230px; top: 530px; line-height: 1.4285; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 700; position: absolute;' data-fieldname="order_description">
+                    {$label renewals order_description}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_order_description} rnr-ff-vcwrap" style='left: 360px; top: 530px; width: 248px; height: 20px; line-height: 1; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 400; position: absolute;' data-fieldname="order_description">
+                    {$order_description_value}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_improvement_last_year}" style='left: 190px; top: 560px; line-height: 1.4285; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 700; position: absolute;' data-fieldname="improvement_last_year">
+                    {$label renewals improvement_last_year}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_improvement_last_year} rnr-ff-vcwrap" style='left: 360px; top: 560px; width: 248px; height: 20px; line-height: 1; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 400; position: absolute;' data-fieldname="improvement_last_year">
+                    {$improvement_last_year_value}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_improvement_comments}" style='left: 180px; top: 590px; line-height: 1.4285; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 700; position: absolute;' data-fieldname="improvement_comments">
+                    {$label renewals improvement_comments}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_improvement_comments} rnr-ff-vcwrap" style='left: 360px; top: 590px; width: 248px; height: 20px; line-height: 1; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 400; position: absolute;' data-fieldname="improvement_comments">
+                    {$improvement_comments_value}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_support_end_date}" style='left: 700px; top: 260px; line-height: 1.4285; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 700; position: absolute;' data-fieldname="support_end_date">
+                    {$label renewals support_end_date}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_support_end_date} rnr-ff-vcwrap" style='left: 830px; top: 260px; width: 248px; height: 20px; line-height: 1; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 400; position: absolute;' data-fieldname="support_end_date">
+                    {$support_end_date_value}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_documents}" style='left: 740px; top: 470px; line-height: 1.4285; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 700; position: absolute;' data-fieldname="documents">
+                    {$label renewals documents}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_documents} rnr-ff-vcwrap" style='left: 830px; top: 470px; width: 248px; height: 20px; line-height: 1; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 400; position: absolute;' data-fieldname="documents">
+                    {$documents_value}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_service_type_id}" style='left: 730px; top: 290px; line-height: 1.4285; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 700; position: absolute;' data-fieldname="service_type_id">
+                    {$label renewals service_type_id}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_service_type_id} rnr-ff-vcwrap" style='left: 830px; top: 290px; width: 248px; height: 20px; line-height: 1; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 400; position: absolute;' data-fieldname="service_type_id">
+                    {$service_type_id_value}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_term_id}" style='left: 780px; top: 320px; line-height: 1.4285; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 700; position: absolute;' data-fieldname="term_id">
+                    {$label renewals term_id}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_term_id} rnr-ff-vcwrap" style='left: 830px; top: 320px; width: 248px; height: 20px; line-height: 1; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 400; position: absolute;' data-fieldname="term_id">
+                    {$term_id_value}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_support_start_date}" style='left: 690px; top: 350px; line-height: 1.4285; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 700; position: absolute;' data-fieldname="support_start_date">
+                    {$label renewals support_start_date}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_support_start_date} rnr-ff-vcwrap" style='left: 830px; top: 350px; width: 248px; height: 20px; line-height: 1; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 400; position: absolute;' data-fieldname="support_start_date">
+                    {$support_start_date_value}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_last_update}" style='left: 740px; top: 380px; line-height: 1.4285; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 700; position: absolute;' data-fieldname="last_update">
+                    {$label renewals last_update}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_last_update} rnr-ff-vcwrap" style='left: 830px; top: 380px; width: 248px; height: 20px; line-height: 1; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 400; position: absolute;' data-fieldname="last_update">
+                    {$last_update_value}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_vendor_contact_id}" style='left: 710px; top: 410px; line-height: 1.4285; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 700; position: absolute;' data-fieldname="vendor_contact_id">
+                    {$label renewals vendor_contact_id}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_vendor_contact_id} rnr-ff-vcwrap" style='left: 830px; top: 410px; width: 248px; height: 20px; line-height: 1; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 400; position: absolute;' data-fieldname="vendor_contact_id">
+                    {$vendor_contact_id_value}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_guid}" style='left: 790px; top: 440px; line-height: 1.4285; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 700; position: absolute;' data-fieldname="guid">
+                    {$label renewals guid}
+                  </DIV>
+                </DIV>
+                <DIV align="left">
+                </DIV>
+                <DIV align="left">
+                  <DIV class="rnr-ff-cwrap {$fielddispclass_guid} rnr-ff-vcwrap" style='left: 830px; top: 440px; width: 248px; height: 20px; line-height: 1; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 400; position: absolute;' data-fieldname="guid">
+                    {$guid_value}
+                  </DIV>
+                </DIV>
+                <DIV 
+align="left">
+                </DIV>
+              </DIV>
+            </div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container    "> 
+
+
+
+
+{BEGIN container_buttons}<div {$buttons_chiddenattr} data-pageid="{$pageid}" data-container="buttons" class=" form-group   "> 
+
+
+
+
+{BEGIN container_leftbuttons}<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-3 col-md-offset-3"> 
+
+{BEGIN viewbuttons}{BEGIN back_button}<button class="btn btn-primary" {$backbutton_attrs}>Back to list</button>
+{END back_button}
+{BEGIN close_button}<button href="#" class="btn btn-primary" {$closebutton_attrs}>Close window</button>
+{END close_button}
+{END viewbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+
+
+{BEGIN container_leftbuttons_1}<div {$leftbuttons_1_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons_1" class="  text-right col-md-3 "> 
+
+{BEGIN rightviewbuttons}<div class="btn-group" role="group">
+		{BEGIN prev_button}<button class="btn btn-default {$prevbutton_class}" {$prevbutton_attrs}><span class="glyphicon glyphicon-chevron-left"></span></button>
+	{END prev_button}
+	{BEGIN next_button}<button class="btn btn-default {$nextbutton_class}" {$nextbutton_attrs}><span class="glyphicon glyphicon-chevron-right"></span></button>
+	{END next_button}
+		{BEGIN view_menu_button}<div class="btn-group dropup" role="group">
+		<button class="btn btn-default dropdown-toggle {$groupbutton_class}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+		<ul class="dropdown-menu dropdown-left">
+									{BEGIN edit_page_button}<li><a href=# {$edit_page_button_attrs}>Edit</a></li>
+			{END edit_page_button}
+		</ul>
+	</div>
+	{END view_menu_button}
+</div>
+{END rightviewbuttons}
+
+
+
+</div>
+{END container_leftbuttons_1}
+
+
+
+
+
+
+</div>
+{END container_buttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

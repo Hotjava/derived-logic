@@ -1,0 +1,75 @@
+<div {$pageattrs}>
+
+{BEGIN container_dcount}
+<div class="rnr-c rnr-cv rnr-c-dcount">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-detailspreviewheader {$brickclass_detailspreviewheader}">	<h1>{$pagetitlelabel renewals detailspreview}</h1>
+</div>
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-detailspreviewdetailsfount {$brickclass_detailspreviewdetailsfount}">Details found: <strong>{$row_count}.</strong>
+</div>
+
+
+{BEGIN display_first}
+<div  class="rnr-brickcontents style1 rnr-b-detailspreviewdispfirst {$brickclass_detailspreviewdispfirst}">Displaying first: <strong>{$display_count}</strong>.
+</div>{END display_first}
+
+
+</div>
+{END container_dcount}
+
+
+
+{BEGIN container_detailspreviewgrid}
+
+
+{BEGIN details_data}
+<table class="rnr-c rnr-cont rnr-c--detailspreviewgrid rnr-b-detailspreviewgrid rnr-gridtable">
+{BEGIN details_row_header}
+	<thead>
+		<tr class="rnr-toprow style1 {$gridHeader_class}" >
+			<th class="{$recurrence_class}">{$label renewals recurrence}</th>
+			<th class="{$status_id_class}">{$label renewals status_id}</th>
+			<th class="{$cost_class}">{$label renewals cost}</th>
+			<th class="{$vendor_id_class}">{$label renewals vendor_id}</th>
+			<th class="{$sold_to_id_class}">{$label renewals sold_to_id}</th>
+			<th class="{$ops_contact_id_class}">{$label renewals ops_contact_id}</th>
+			<th class="{$erf_class}">{$label renewals erf}</th>
+			<th class="{$order_description_class}">{$label renewals order_description}</th>
+			<th class="{$renewal_date_class}">{$label renewals renewal_date}</th>
+			<th class="{$support_end_date_class}">{$label renewals support_end_date}</th>
+			<th class="{$documents_class}">{$label renewals documents}</th>
+			<th class="rnr-edge">&nbsp;</th>
+		</tr>
+	</thead>
+{END details_row_header}
+	<tbody>
+{BEGIN details_row}
+		<tr class="rnr-row style1">
+			<td class="{$recurrence_class}">{$recurrence_value}</td>
+			<td class="{$status_id_class}">{$status_id_value}</td>
+			<td class="{$cost_class}">{$cost_value}</td>
+			<td class="{$vendor_id_class}">{$vendor_id_value}</td>
+			<td class="{$sold_to_id_class}">{$sold_to_id_value}</td>
+			<td class="{$ops_contact_id_class}">{$ops_contact_id_value}</td>
+			<td class="{$erf_class}">{$erf_value}</td>
+			<td class="{$order_description_class}">{$order_description_value}</td>
+			<td class="{$renewal_date_class}">{$renewal_date_value}</td>
+			<td class="{$support_end_date_class}">{$support_end_date_value}</td>
+			<td class="{$documents_class}">{$documents_value}</td>
+			<td class="rnr-edge">&nbsp;</td>
+		</tr>
+{END details_row}	
+	</tbody>
+</table>
+
+{END details_data}
+
+
+
+{END container_detailspreviewgrid}
+
+</div>
